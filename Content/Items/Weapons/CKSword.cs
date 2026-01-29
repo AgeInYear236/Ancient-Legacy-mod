@@ -1,0 +1,90 @@
+﻿using Microsoft.Xna.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace testMod1.Content.Items.Weapons
+{
+    public class CKSword : ModItem
+    {
+        public override void SetDefaults()
+        {
+            Item.width = 50;
+            Item.height = 50;
+            Item.useStyle = ItemUseStyleID.Swing;
+            Item.useTime = 40;
+            Item.useAnimation = 40;
+            Item.DamageType = DamageClass.Melee;
+            Item.knockBack = 4f;
+            Item.value = Item.buyPrice(gold: 10);
+            Item.rare = ItemRarityID.LightRed;
+            Item.UseSound = SoundID.Item1;
+            Item.autoReuse = true;
+
+            Item.damage = 20;
+        }
+
+        public override void ModifyHitNPC(Player player, NPC target, ref NPC.HitModifiers modifiers)
+        {
+            modifiers.SourceDamage.Flat += Main.rand.Next(0, 31);
+
+            if (Main.rand.NextFloat() < 0.15f)
+            {
+                float extraCrit = Main.rand.NextFloat(0.2f, 2.0f);
+                modifiers.CritDamage += extraCrit;
+
+                modifiers.SetCrit();
+
+                string critText = $"{(int)(extraCrit * 100)}% CRIT!";
+                CombatText.NewText(player.getRect(), Color.OrangeRed, critText, true);
+                for (int i = 0; i < 10; i++)
+                {
+                    Dust.NewDust(target.position, target.width, target.height, DustID.FlameBurst, 0, -2, 0, Color.OrangeRed);
+                }
+
+            }
+            else
+            {
+                modifiers.DisableCrit();
+            }
+
+            if (Main.rand.NextFloat() < 0.15f)
+            {
+                int healAmount = Main.rand.Next(2, 11);
+                player.statLife += healAmount;
+                player.HealEffect(healAmount);
+
+                string healText = $"{(int)(healAmount)} HP!";
+                CombatText.NewText(player.getRect(), Color.Red, healText, true);
+
+                for (int i = 0; i < 10; i++)
+                {
+                    Dust.NewDust(target.position, target.width, target.height, DustID.HeartCrystal, 0, -2, 0, Color.Red);
+                }
+            }
+
+        }
+
+        public override void HoldItem(Player player)
+        {
+            if (Main.myPlayer == player.whoAmI)
+            {
+                player.ChangeDir(Main.MouseWorld.X < player.Center.X ? -1 : 1);
+            }
+
+            Vector2 dir = (Main.MouseWorld - player.MountedCenter).SafeNormalize(Vector2.UnitX);
+
+            player.itemRotation = dir.ToRotation() + MathHelper.PiOver4;
+
+            if (player.direction == -1)
+            {
+                player.itemRotation += MathHelper.PiOver2;
+            }
+        }
+    }
+}

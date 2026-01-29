@@ -58,7 +58,7 @@ namespace testMod1.Content.Items.Weapons
         {
             if (player.altFunctionUse == 2)
             {
-                BasicModPlayer modPlayer = player.GetModPlayer<BasicModPlayer>();
+                modPlayer1 modPlayer = player.GetModPlayer<modPlayer1>();
 
                 if (!modPlayer.CanUseRogueDash())
                 {

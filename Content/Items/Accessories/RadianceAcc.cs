@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Content.Buffs;
 using testMod1.Content.Players;
 
 namespace testMod1.Content.Items.Accessories
@@ -23,9 +24,11 @@ namespace testMod1.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            player.AddBuff(ModContent.BuffType<RadianceBuff>(), 2);
+
             var modPlayer = player.GetModPlayer<RadiancePlayer>();
             modPlayer.radianceActive = true;
-            modPlayer.radianceRadius = 240f; 
+            modPlayer.radianceRadius = 140f; 
             modPlayer.damage = 15;
         }
     }

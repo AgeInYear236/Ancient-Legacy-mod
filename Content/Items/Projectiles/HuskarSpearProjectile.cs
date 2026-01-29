@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Systems;
+using testMod1.Content.Buffs;
 using testMod1.Content.Items.Weapons;
 
 namespace testMod1.Content.Items.Projectiles
@@ -54,8 +56,34 @@ namespace testMod1.Content.Items.Projectiles
             target.AddBuff(ModContent.BuffType<HuskarSpearProjectileBuff>(), 300);
 
             var globalNPC = target.GetGlobalNPC<BurnGlobalNPC>();
-            globalNPC.burnDamage = HuskarSpear.itemDamage;
+            globalNPC.burnDamage = 10;
+            Explode();
 
+        }
+
+
+        public override bool OnTileCollide(Vector2 oldVelocity)
+        {
+            Explode();
+            return false;
+        }
+
+        private void Explode()
+        {
+            Projectile.Kill();
+            SoundEngine.PlaySound(SoundID.Item14, Projectile.position);
+
+            for (int i = 0; i < 15; i++)
+            {
+                Dust.NewDustPerfect(
+                    Projectile.Center,
+                    DustID.SolarFlare,
+                    Main.rand.NextVector2CircularEdge(3f, 3f),
+                    0,
+                    new Color(204, 0, 0),
+                    1.3f
+                ).noGravity = true;
+            }
         }
     }
 }

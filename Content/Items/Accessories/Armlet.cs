@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Content.Buffs;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -49,16 +50,16 @@ namespace testMod1.Content.Items.Accessories
             player.AddBuff(ModContent.BuffType<ArmletBuff>(), 2);
 
             float damageBonus = 0.20f;
-            float defenseBonus = 10f;
+            float defenseBonus = 5f;
 
             int originalMaxLife = player.statLifeMax;
 
             lifeDrainTimer++;
             if (lifeDrainTimer >= 50)
             {
-                if (player.statLife > 15)
+                if (player.statLife > 20)
                 {
-                    player.statLife -= 1;
+                    player.statLife -= 4;
                 }
                 lifeDrainTimer = 0;
             }

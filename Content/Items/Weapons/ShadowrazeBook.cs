@@ -23,7 +23,7 @@ namespace testMod1.Content.Items.Weapons
             Item.noMelee = true;
             Item.knockBack = 6;
             Item.value = Item.buyPrice(0, 1, 0, 0);
-            Item.rare = ItemRarityID.Green;
+            Item.rare = ItemRarityID.Red;
             Item.UseSound = SoundID.Item45;
             Item.autoReuse = true;
             Item.mana = 20;

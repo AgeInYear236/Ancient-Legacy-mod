@@ -13,15 +13,14 @@ namespace testMod1.Content.Items.Weapons
 {
     public class HuskarSpear : ModItem
     {
-        public static int itemDamage = 20;
         public override void SetDefaults()
         {
-            Item.damage = itemDamage;
+            Item.damage = 20;
             Item.DamageType = DamageClass.Melee;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 30;
-            Item.useAnimation = 30;
+            Item.useTime = 45;
+            Item.useAnimation = 45;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 6;
             Item.value = Item.buyPrice(0, 10, 0, 0);
@@ -58,11 +57,11 @@ namespace testMod1.Content.Items.Weapons
 
             missingHealthPercent = MathHelper.Clamp(missingHealthPercent, 0f, 1f);
 
-            Item.damage += (int)(missingHealthPercent * 0.5);
+            Item.damage += (int)(missingHealthPercent * 0.9f);
 
             if (player.statLife > 50)
             {
-                player.statLife -= 3;
+                player.statLife -= 8;
             }
             return base.UseItem(player);
         }

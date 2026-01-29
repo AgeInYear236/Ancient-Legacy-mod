@@ -47,7 +47,7 @@ namespace testMod1.Content.Items.Weapons
                 Vector2 dirToMouse = (Main.MouseWorld - player.MountedCenter).SafeNormalize(Vector2.UnitX);
                 Terraria.Audio.SoundEngine.PlaySound(SoundID.Item12);
 
-                player.GetModPlayer<BasicModPlayer>().LaunchOrbs(dirToMouse);
+                player.GetModPlayer<modPlayer1>().LaunchOrbs(dirToMouse);
                 player.statMana -= 40;
                 return true;
             }
