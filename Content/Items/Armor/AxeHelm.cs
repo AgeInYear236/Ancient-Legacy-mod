@@ -55,7 +55,7 @@ namespace testMod1.Content.Items.Armor
         // UpdateArmorSet allows you to give set bonuses to the armor.
         public override void UpdateArmorSet(Player player)
         {
-            BasicModPlayer axePlayer = player.GetModPlayer<BasicModPlayer>();
+            modPlayer1 axePlayer = player.GetModPlayer<modPlayer1>();
             player.setBonus = Language.GetTextValue("Mods.testMod1.Items.ItemSetBonus.AxeHelm");
             axePlayer.isAxed = true;
 

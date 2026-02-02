@@ -14,7 +14,7 @@ namespace testMod1.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-
+            Item.material = true;
             Item.width = 32;
             Item.height = 32;
             Item.accessory = true;
@@ -24,8 +24,8 @@ namespace testMod1.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             //player.GetModPlayer<modPlayer1>().hasZoomAccessory = true;
-            player.GetAttackSpeed(DamageClass.Melee) += 1.75f;
-            player.GetAttackSpeed(DamageClass.Ranged) += 1.75f;
+            player.GetAttackSpeed(DamageClass.Melee) += 1.2f;
+            player.GetAttackSpeed(DamageClass.Ranged) += 1.2f;
         }
     }
 }

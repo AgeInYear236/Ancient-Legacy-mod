@@ -42,10 +42,6 @@ namespace testMod1.Content.Items.Weapons
 
                 string critText = $"{(int)(extraCrit * 100)}% CRIT!";
                 CombatText.NewText(player.getRect(), Color.OrangeRed, critText, true);
-                for (int i = 0; i < 10; i++)
-                {
-                    Dust.NewDust(target.position, target.width, target.height, DustID.FlameBurst, 0, -2, 0, Color.OrangeRed);
-                }
 
             }
             else
@@ -61,11 +57,6 @@ namespace testMod1.Content.Items.Weapons
 
                 string healText = $"{(int)(healAmount)} HP!";
                 CombatText.NewText(player.getRect(), Color.Red, healText, true);
-
-                for (int i = 0; i < 10; i++)
-                {
-                    Dust.NewDust(target.position, target.width, target.height, DustID.HeartCrystal, 0, -2, 0, Color.Red);
-                }
             }
 
         }

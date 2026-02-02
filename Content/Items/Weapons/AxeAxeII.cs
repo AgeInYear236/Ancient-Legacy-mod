@@ -24,43 +24,36 @@ namespace testMod1.Content.Items.Weapons
             Item.knockBack = 6;
             Item.value = 10000;
             Item.rare = ItemRarityID.LightPurple;
-            Item.UseSound = SoundID.Item1; // Play axe sound
+            Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
 
-            // Axe Power
-            Item.axe = 40; // 20 * 5 = 100% axe power. 15 = 75% power.
+            Item.axe = 40;
         }
 
-        // 1. Tell the game this item can use an "Alt Function" (Right Click)
         public override bool AltFunctionUse(Player player)
         {
-            Main.NewText("Alt used");
             return true;
         }
 
-        // 2. Change how the item behaves depending on which button is clicked
         public override bool CanUseItem(Player player)
         {
             if (player.altFunctionUse == 2)
             {
-                // RMB (Special Attack) Stats
-                // Use the same swing style and power, but maybe different timing
                 Item.useStyle = ItemUseStyleID.Swing;
-                Item.useTime = 10; // Slower for the special attack
+                Item.useTime = 10;
                 Item.useAnimation = 10;
-                Item.damage = 1; // Base damage doesn't matter much as we override the hit logic
+                Item.damage = 1;
                 Item.axe = 0;
             }
             else
             {
-                // LMB (Standard Axe) Stats
                 Item.height = 100;
                 Item.width = 100;
                 Item.useStyle = ItemUseStyleID.Swing;
                 Item.useTime = 100;
                 Item.useAnimation = 100;
                 Item.damage = 40;
-                Item.UseSound = SoundID.Item1; // Play axe sound
+                Item.UseSound = SoundID.Item1;
             }
             return base.CanUseItem(player);
         }

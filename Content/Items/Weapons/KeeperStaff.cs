@@ -53,7 +53,7 @@ namespace testMod1.Content.Items.Weapons
             }
             else
             {
-                BasicModPlayer keeper = player.GetModPlayer<BasicModPlayer>();
+                modPlayer1 keeper = player.GetModPlayer<modPlayer1>();
                 if (keeper.orbOffsets.Count < 20 && player.statMana >= 10)
                 {
                     Terraria.Audio.SoundEngine.PlaySound(SoundID.Item8);

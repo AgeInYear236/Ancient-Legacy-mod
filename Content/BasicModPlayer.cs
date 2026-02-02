@@ -23,27 +23,6 @@ namespace testMod1.Content
 {
     public class BasicModPlayer : ModPlayer   
     {
-        // Axe Armor
-        public int previousHealth;
-        public bool isAxed=false;
-        public bool hasHitWithAxeAxeThisUse = false;
-        int c = 0;
-
-        // Magic Staff projectiles
-        public List<Vector2> orbOffsets = new List<Vector2>();
-
-        // Blink stuff
-        public int blinkDashCooldown = 0;
-        public const int MaxBlinkDashCooldown = 10;
-
-        // Rogue stuff
-        public int rogueDashCooldown = 0;
-        public const int MaxRogueDashCooldown = 10;
-
-        // Huskar blood
-        public bool isBlooded = false;
-        public float missingHealthPercent = 0f;
-
         public bool extraSlotUnlocked = false;
 
         public override void SaveData(TagCompound tag)
@@ -68,6 +47,31 @@ namespace testMod1.Content
                 {
                     Armlet.isActive = false;
                 }
+            }
+
+            if (testMod1.ta1Keybind.JustPressed)
+            {
+                TAShield.isActive1 = true;
+            }
+            if (testMod1.ta1Keybind.JustReleased)
+            {
+                TAShield.isActive1 = false;
+            }
+
+            // ! ! !
+            if (testMod1.ta2Keybind.JustPressed)  {
+                TAShield.isActive2 = true;
+            }
+            if (testMod1.ta2Keybind.JustReleased) {
+                    TAShield.isActive2 = false;
+            }
+            if (testMod1.bmKeybind.JustPressed)
+            {
+                BladeMail.isActive = true;
+            }
+            if (testMod1.bmKeybind.JustReleased)
+            {
+                BladeMail.isActive = false;
             }
         }
     }

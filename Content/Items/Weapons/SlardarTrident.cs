@@ -33,7 +33,10 @@ namespace testMod1.Content.Items.Weapons
 
         public override void ModifyHitNPC(Player player, NPC target, ref NPC.HitModifiers modifiers)
         {
-            if(attackNumber == 4 && !player.HasBuff(ModContent.BuffType<MagnusCooldown>()))
+            var modPlayer = player.GetModPlayer<modPlayer1>();
+            modPlayer.bachAccEquipped = false;
+            Main.NewText("Bash cant proc");
+            if(attackNumber == 4 && !player.HasBuff(ModContent.BuffType<MagnusCooldown>()) && !modPlayer.bachAccEquipped)
             {
                 attackNumber = 0;
                 target.AddBuff(ModContent.BuffType<StunBuff>(), 60);

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using MonoMod.Core.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,11 +29,11 @@ namespace testMod1.Content
 
         // Blink stuff
         public int blinkDashCooldown = 0;
-        public const int MaxBlinkDashCooldown = 10;
+        public const int MaxBlinkDashCooldown = 600;
 
         // Rogue stuff
         public int rogueDashCooldown = 0;
-        public const int MaxRogueDashCooldown = 10;
+        public const int MaxRogueDashCooldown = 600;
 
         // Huskar blood
         public bool isBlooded = false;
@@ -46,6 +47,9 @@ namespace testMod1.Content
         //Bach
         public bool bachAccEquipped = false;
 
+        //BM
+        public bool isBMed = false;
+
         public override void ResetEffects()
         {
             bachAccEquipped = false;
@@ -53,13 +57,20 @@ namespace testMod1.Content
 
         public override void OnHitByNPC(NPC npc, Player.HurtInfo hurtInfo) // Analize if hit, and apply thorns attack
         {
-            if (!Player.dead && hurtInfo.Damage > 0 && isAxed)
+            if (!Player.dead && hurtInfo.Damage > 0 && (isAxed || isBMed))
             {
                 int thornsDamage = (int)(hurtInfo.Damage * 0.3f);
                 thornsDamage = Math.Max(thornsDamage, 1);
 
                 npc.SimpleStrikeNPC(thornsDamage, 0);
+            }
 
+            if(isBMed && Player.HasBuff<BMBuff>())
+            {
+                int thornsDamage = (int)(hurtInfo.Damage * 0.9f);
+                thornsDamage = Math.Max(thornsDamage, 1);
+
+                npc.SimpleStrikeNPC((int)(thornsDamage + (npc.defense * 0.5)), 0);
             }
         }
 

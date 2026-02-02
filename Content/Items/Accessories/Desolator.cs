@@ -12,9 +12,10 @@ namespace testMod1.Content.Items.Accessories
 {
     public class Desolator : ModItem
     {
+        public int ar = 1;
         public override void SetDefaults()
         {
-
+            Item.material = true;
             Item.width = 32;
             Item.height = 32;
             Item.accessory = true;
@@ -24,7 +25,7 @@ namespace testMod1.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetModPlayer<DesolatorPlayer>().hasDesolator = true;
-            player.GetModPlayer<DesolatorPlayer>().armorReduction = 2;
+            player.GetModPlayer<DesolatorPlayer>().armorReduction = ar;
         }
 
         public override bool CanEquipAccessory(Player player, int slot, bool modded)
