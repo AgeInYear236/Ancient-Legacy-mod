@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Items.Projectiles;
 
 namespace testMod1.Content.Items.Weapons
@@ -15,7 +16,7 @@ namespace testMod1.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 37;
+            Item.damage = 7;
             Item.DamageType = DamageClass.Magic;
             Item.width = 40;
             Item.height = 40;
@@ -24,7 +25,7 @@ namespace testMod1.Content.Items.Weapons
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2;
             Item.value = Item.buyPrice(gold: 1);
-            Item.rare = ItemRarityID.Yellow;
+            Item.rare = ModContent.GetInstance<MagicRarity>().Type;
             Item.autoReuse = true;
             Item.noMelee = true;
             Item.channel = true;
@@ -65,7 +66,6 @@ namespace testMod1.Content.Items.Weapons
                     ) * radius;
                     keeper.orbOffsets.Add(offset);
                     player.statMana -= 20;
-                    Main.NewText($"{keeper.orbOffsets.Count}");
                 }
                 return true;
             }

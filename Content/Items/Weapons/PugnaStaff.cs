@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Items.Projectiles;
 
 namespace testMod1.Content.Items.Weapons
@@ -15,16 +16,17 @@ namespace testMod1.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 30;
+            Item.damage = 52;
             Item.DamageType = DamageClass.Magic;
-            Item.mana = 15;
+            Item.mana = 27;
             Item.width = 40;
             Item.height = 40;
             Item.useTime = 25;
             Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.HoldUp;
             Item.noMelee = true;
-            Item.rare = ItemRarityID.Lime;
+            Item.value = Item.buyPrice(gold: 5);
+            Item.rare = ModContent.GetInstance<MagicRarity2>().Type;
             Item.UseSound = SoundID.Item20;
             Item.shoot = ModContent.ProjectileType<PugnaBlastProjectile>();
             Item.shootSpeed = 12f;

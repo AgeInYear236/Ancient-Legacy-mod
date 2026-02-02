@@ -32,7 +32,6 @@ namespace testMod1.Content.NPCs
             NPCID.Sets.AttackTime[Type] = 60; // The amount of time it takes for the NPC's attack animation to be over once it starts.
             NPCID.Sets.AttackAverageChance[Type] = 30;
             NPCID.Sets.HatOffsetY[Type] = 4; // For when a party is active, the party hat spawns at a Y offset.
-            NPCID.Sets.ShimmerTownTransform[Type] = true; // This set says that the Town NPC has a Shimmered form. Otherwise, the Town NPC will become transparent when touching Shimmer like other enemies.
 
             NPCID.Sets.ActsLikeTownNPC[Type] = true;
 
@@ -120,7 +119,7 @@ namespace testMod1.Content.NPCs
                 }
                 if (rewardCounter > 0)
                 {
-                    Main.LocalPlayer.QuickSpawnItem(NPC.GetSource_Loot(), ModContent.ItemType<GoldBag>(), rewardCounter);
+                    Main.LocalPlayer.QuickSpawnItem(NPC.GetSource_Loot(), ModContent.ItemType<GoldBag>(), rewardCounter * 10);
                 }
                 else
                 {
@@ -142,6 +141,8 @@ namespace testMod1.Content.NPCs
             chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption1"));
             chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption2"));
             chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption3"));
+            chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption3"));
+
 
 
             return chat.Get();

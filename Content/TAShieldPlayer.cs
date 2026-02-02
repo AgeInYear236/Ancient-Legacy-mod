@@ -46,7 +46,6 @@ namespace testMod1.Content
             if (shieldCharges <= 0)
             {
                 Player.ClearBuff(ModContent.BuffType<Buffs.TA1Buff>());
-                Main.NewText("Break!");
             }
         }
 

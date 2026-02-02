@@ -17,7 +17,7 @@ namespace testMod1.Content.Items.Misc
 
         public override void SetStaticDefaults()
         {
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
+            Item.ResearchUnlockCount = 99;
         }
 
         public override void SetDefaults()
@@ -30,7 +30,7 @@ namespace testMod1.Content.Items.Misc
             Item.useAnimation = 15;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.value = 0;
-            Item.rare = ItemRarityID.Orange;
+            Item.rare = ItemRarityID.Quest;
             Item.createTile = ModContent.TileType<PatrolBannerTile>();
             Item.scale = 0.7f;
         }

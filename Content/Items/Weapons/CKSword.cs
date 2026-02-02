@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 
 namespace testMod1.Content.Items.Weapons
 {
@@ -21,17 +22,17 @@ namespace testMod1.Content.Items.Weapons
             Item.useAnimation = 40;
             Item.DamageType = DamageClass.Melee;
             Item.knockBack = 4f;
-            Item.value = Item.buyPrice(gold: 10);
-            Item.rare = ItemRarityID.LightRed;
+            Item.value = Item.buyPrice(gold: 5);
+            Item.rare = ModContent.GetInstance<MeleeRarity3>().Type;
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
 
-            Item.damage = 20;
+            Item.damage = 50;
         }
 
         public override void ModifyHitNPC(Player player, NPC target, ref NPC.HitModifiers modifiers)
         {
-            modifiers.SourceDamage.Flat += Main.rand.Next(0, 31);
+            modifiers.SourceDamage.Flat += Main.rand.Next(-21, 31);
 
             if (Main.rand.NextFloat() < 0.15f)
             {

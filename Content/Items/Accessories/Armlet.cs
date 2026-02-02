@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Buffs;
 
 namespace testMod1.Content.Items.Accessories
@@ -23,7 +24,7 @@ namespace testMod1.Content.Items.Accessories
             Item.width = 24;
             Item.height = 24;
             Item.accessory = true;
-            Item.rare = ItemRarityID.LightRed;
+            Item.rare = ModContent.GetInstance<AccRarityStats>().Type;
             Item.value = 10000;
         }
 

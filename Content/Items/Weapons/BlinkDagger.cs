@@ -8,13 +8,14 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 
 namespace testMod1.Content.Items.Weapons
 {
     public class BlinkDagger : ModItem
     {
         public override void SetDefaults() {
-            Item.damage = 25;
+            Item.damage = 20;
             Item.DamageType = DamageClass.Melee;
             Item.width = 40;
             Item.height = 40;
@@ -22,8 +23,8 @@ namespace testMod1.Content.Items.Weapons
             Item.useAnimation = 10;
             Item.useStyle = ItemUseStyleID.Thrust;
             Item.knockBack = 1;
-            Item.value = 10000;
-            Item.rare = ItemRarityID.Purple;
+            Item.value = Item.buyPrice(gold: 3); ;
+            Item.rare = ModContent.GetInstance<MeleeRarity2>().Type;
             Item.autoReuse = true;
             Item.UseSound = SoundID.Item1;
         }

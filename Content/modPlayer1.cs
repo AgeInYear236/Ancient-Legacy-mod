@@ -88,7 +88,6 @@ namespace testMod1.Content
         {
             if (blinkDashCooldown > 0)
             {
-                Main.NewText(blinkDashCooldown);
                 blinkDashCooldown--;
             }
 
@@ -174,8 +173,8 @@ namespace testMod1.Content
                 if (Main.rand.NextFloat() > 0.92f)
                 {
                     target.AddBuff(ModContent.BuffType<StunBuff>(), 60);
+                    CombatText.NewText(Player.getRect(), Color.DarkGray, "Bash!", true);
                     Player.AddBuff(ModContent.BuffType<MagnusCooldown>(), 150);
-                    Main.NewText("Bashed!");
                 }
             }
         }

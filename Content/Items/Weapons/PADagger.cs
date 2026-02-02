@@ -8,6 +8,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Items.Projectiles;
 
 namespace testMod1.Content.Items.Weapons
@@ -16,7 +17,7 @@ namespace testMod1.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 15;
+            Item.damage = 10;
             Item.DamageType = DamageClass.Melee;
             Item.width = 40;
             Item.height = 40;
@@ -24,8 +25,8 @@ namespace testMod1.Content.Items.Weapons
             Item.useAnimation = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 2f;
-            Item.value = Item.buyPrice(gold: 10);
-            Item.rare = ItemRarityID.LightRed;
+            Item.value = Item.buyPrice(gold: 5);
+            Item.rare = ModContent.GetInstance<MeleeRarity2>().Type;
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
         }

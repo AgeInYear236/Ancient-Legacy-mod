@@ -24,7 +24,7 @@ namespace testMod1.Content.Items.Weapons
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 6;
             Item.value = Item.buyPrice(0, 10, 0, 0);
-            Item.rare = ItemRarityID.Red;
+            Item.rare = ItemRarityID.Expert;
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
 

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Items.Projectiles;
 
 namespace testMod1.Content.Items.Weapons
@@ -26,7 +27,7 @@ namespace testMod1.Content.Items.Weapons
             Item.noMelee = true;
             Item.knockBack = 3f;
             Item.value = Item.buyPrice(gold: 1);
-            Item.rare = ItemRarityID.Blue;
+            Item.rare = ModContent.GetInstance<MagicRarity2>().Type;
             Item.UseSound = SoundID.Item20;
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<ChainFrostProjectile>();

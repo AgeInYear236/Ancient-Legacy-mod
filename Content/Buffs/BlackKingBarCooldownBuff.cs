@@ -8,13 +8,12 @@ using Terraria.ModLoader;
 
 namespace testMod1.Content.Buffs
 {
-    public class ShallowGraveCooldownBuff : ModBuff
+    public class BlackKingBarCooldownBuff : ModBuff
     {
         public override void SetStaticDefaults()
         {
+            Main.debuff[Type] = false;
             Main.buffNoSave[Type] = false;
-            Main.debuff[Type] = true;
-            Main.pvpBuff[Type] = true;
         }
     }
 }

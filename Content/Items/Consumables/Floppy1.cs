@@ -19,7 +19,7 @@ namespace testMod1.Content.Items.Consumables
             Item.useTime = 30;
             Item.useAnimation = 30;
             Item.useStyle = ItemUseStyleID.HoldUp;
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.Expert;
             Item.consumable = true;
             Item.expert = true;
         }

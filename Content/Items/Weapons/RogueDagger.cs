@@ -8,6 +8,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Items.Projectiles;
 
 namespace testMod1.Content.Items.Weapons
@@ -17,9 +18,10 @@ namespace testMod1.Content.Items.Weapons
         public override void SetDefaults()
         {
             Item.CloneDefaults(ItemID.Terragrim);
-            Item.damage = 42;
+            Item.damage = 20;
             Item.noUseGraphic = true;
             Item.useTurn = true;
+            Item.rare = ModContent.GetInstance<MeleeRarity>().Type;
 
 
             Item.scale *= 0.8f;

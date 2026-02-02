@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Buffs;
 using testMod1.Content.Players;
 
@@ -18,7 +19,7 @@ namespace testMod1.Content.Items.Accessories
             Item.width = 28;
             Item.height = 28;
             Item.accessory = true;
-            Item.rare = ItemRarityID.Orange;
+            Item.rare = ModContent.GetInstance<AccRarityAura>().Type;
             Item.value = Item.buyPrice(gold: 2);
         }
 

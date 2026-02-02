@@ -3,6 +3,7 @@ using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 
 namespace testMod1.Content.Items.Weapons
 {
@@ -17,16 +18,15 @@ namespace testMod1.Content.Items.Weapons
             Item.DamageType = DamageClass.Magic;
             Item.width = 28;
             Item.height = 30;
-            Item.useTime = 25;
-            Item.useAnimation = 25;
+            Item.useTime = 40;
+            Item.useAnimation = 40;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true;
-            Item.knockBack = 6;
-            Item.value = Item.buyPrice(0, 1, 0, 0);
-            Item.rare = ItemRarityID.Red;
+            Item.value = Item.buyPrice(gold: 3);
+            Item.rare = ModContent.GetInstance<MagicRarity2>().Type;
             Item.UseSound = SoundID.Item45;
             Item.autoReuse = true;
-            Item.mana = 20;
+            Item.mana = 30;
             Item.scale = 0.6f;
 
             Item.shoot = ModContent.ProjectileType<Projectiles.ShadowrazeProjectile>();

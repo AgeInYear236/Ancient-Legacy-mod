@@ -1,6 +1,7 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 
 namespace testMod1.Content.Items.Weapons
 {
@@ -14,13 +15,13 @@ namespace testMod1.Content.Items.Weapons
             Item.knockBack = 2f;
             Item.width = 30;
             Item.height = 10;
-            Item.damage = 45;
+            Item.damage = 88;
             Item.noMelee = true;
             Item.noUseGraphic = true;
             Item.shoot = ModContent.ProjectileType<Projectiles.BoneHookProjectile>();
             Item.shootSpeed = 15f;
             Item.UseSound = SoundID.Item1;
-            Item.rare = ItemRarityID.White;
+            Item.rare = ModContent.GetInstance<MeleeRarity2>().Type;
             Item.value = Item.sellPrice(0, 1, 50, 0);
             Item.DamageType = DamageClass.Melee;
         }

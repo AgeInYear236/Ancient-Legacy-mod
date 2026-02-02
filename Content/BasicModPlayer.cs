@@ -63,7 +63,7 @@ namespace testMod1.Content
                 TAShield.isActive2 = true;
             }
             if (testMod1.ta2Keybind.JustReleased) {
-                    TAShield.isActive2 = false;
+                TAShield.isActive2 = false;
             }
             if (testMod1.bmKeybind.JustPressed)
             {
@@ -72,6 +72,15 @@ namespace testMod1.Content
             if (testMod1.bmKeybind.JustReleased)
             {
                 BladeMail.isActive = false;
+            }
+
+            if (testMod1.bkbKeybind.JustPressed)
+            {
+                BlackKingBar.isActive = true;
+            }
+            if (testMod1.bkbKeybind.JustReleased)
+            {
+                BlackKingBar.isActive = false;
             }
         }
     }

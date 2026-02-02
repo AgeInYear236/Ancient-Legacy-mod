@@ -8,6 +8,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using testMod1.Common.Rarity;
 using testMod1.Content.Items.Projectiles;
 
 namespace testMod1.Content.Items.Weapons
@@ -16,7 +17,7 @@ namespace testMod1.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 10;
+            Item.damage = 15;
             Item.crit = 30;
             Item.knockBack = 1;
 
@@ -31,8 +32,8 @@ namespace testMod1.Content.Items.Weapons
             Item.shoot = ModContent.ProjectileType<SniperProjectile>();
 
             Item.noMelee = true;
-            Item.value = 10000;
-            Item.rare = ItemRarityID.Yellow;
+            Item.value = Item.buyPrice(gold: 10);
+            Item.rare = ModContent.GetInstance<RangedRarity3>().Type;
             Item.UseSound = SoundID.Item45;
             Item.autoReuse = true;
             Item.shootSpeed = 16f;
