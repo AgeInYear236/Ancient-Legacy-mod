@@ -56,7 +56,7 @@ namespace testMod1.Content.Items.Projectiles
             target.AddBuff(ModContent.BuffType<HuskarSpearProjectileBuff>(), 300);
 
             var globalNPC = target.GetGlobalNPC<BurnGlobalNPC>();
-            globalNPC.burnDamage = 10;
+            globalNPC.burnDamage = 66;
             Explode();
 
         }

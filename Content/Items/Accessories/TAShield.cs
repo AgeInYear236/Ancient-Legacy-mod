@@ -9,6 +9,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
 using testMod1.Content.Buffs;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -49,6 +50,19 @@ namespace testMod1.Content.Items.Accessories
                  meldPlayer.ambushTimer = 0;
                  player.AddBuff(ModContent.BuffType<TA2Buff>(), 11 * 60);
             }
+
+        }
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.CobaltShield, 1);
+            recipe.AddIngredient(ModContent.ItemType<PoweredSteelBar>(), 10);
+            recipe.AddIngredient(ModContent.ItemType<MagicEnergy>(), 10);
+            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 40);
+            recipe.AddIngredient(ItemID.SoulofLight, 8);
+            recipe.AddIngredient(ItemID.LightShard, 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.Register();
 
         }
     }

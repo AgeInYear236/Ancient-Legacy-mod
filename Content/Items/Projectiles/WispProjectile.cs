@@ -10,8 +10,6 @@ namespace testMod1.Content.Items.Projectiles
 {
     public class WispProjectile : ModProjectile
     {
-        private float rotationSpeed;
-        private int rotationDirection;
 
         public override void SetStaticDefaults()
         {
@@ -27,8 +25,6 @@ namespace testMod1.Content.Items.Projectiles
             Projectile.penetrate = -1;
             Projectile.netImportant = true;
 
-            rotationSpeed = Main.rand.NextFloat(0.05f, 0.15f);
-            rotationDirection = Main.rand.NextBool() ? 1 : -1;
         }
 
         public override void AI()
@@ -41,7 +37,32 @@ namespace testMod1.Content.Items.Projectiles
                 return;
             }
 
-            Vector2 idlePosition = player.Center + new Vector2(player.direction * -50, -60);
+            bool isEquipped = false;
+            for (int i = 3; i < 10; i++)
+            {
+                if (player.armor[i].type == ModContent.ItemType<WispBottle>())
+                {
+                    isEquipped = true;
+                    break;
+                }
+            }
+
+            if (!isEquipped)
+            {
+                Projectile.Kill();
+                return;
+            }
+
+
+
+            float time = (float)Main.timeForVisualEffects * 0.05f;
+            Vector2 wobble = new Vector2(
+                (float)Math.Sin(time) * 30,
+                (float)Math.Cos(time * 0.7f) * 20
+            );
+
+            Vector2 idlePosition = player.Center + new Vector2(player.direction * -40, -50) + wobble;
+
             Vector2 vectorToIdlePosition = idlePosition - Projectile.Center;
             float distance = vectorToIdlePosition.Length();
 
@@ -50,15 +71,28 @@ namespace testMod1.Content.Items.Projectiles
                 Projectile.Center = player.Center;
             }
 
-            float speed = 8f;
-            float inertia = 20f;
-            vectorToIdlePosition.Normalize();
-            vectorToIdlePosition *= speed;
-            Projectile.velocity = (Projectile.velocity * (inertia - 1f) + vectorToIdlePosition) / inertia;
+            float speedMult = 0.06f;
+            if (distance < 5f)
+            {
+                Projectile.velocity *= 0.9f;
+            }
+            else
+            {
+                Projectile.velocity += vectorToIdlePosition * speedMult;
 
-            Projectile.rotation += rotationSpeed * rotationDirection;
+                float maxSpeed = 7f;
+                if (Projectile.velocity.Length() > maxSpeed)
+                {
+                    Projectile.velocity.Normalize();
+                    Projectile.velocity *= maxSpeed;
+                }
 
-            float pulse = (float)Math.Sin(Main.timeForVisualEffects * 0.1f) * 0.2f;
+                Projectile.velocity *= 0.94f;
+            }
+
+            Projectile.rotation += Projectile.velocity.X * 0.05f;
+
+            float pulse = (float)Math.Sin(Main.timeForVisualEffects * 0.1f) * 0.1f;
             Lighting.AddLight(Projectile.Center, 0.3f + pulse, 0.6f + pulse, 1.0f);
 
             Projectile.ai[1]++;
@@ -66,8 +100,11 @@ namespace testMod1.Content.Items.Projectiles
             {
                 if (player.statLife < player.statLifeMax2)
                 {
-                    player.statLife += 3;
-                    player.HealEffect(3);
+                    int heal = 5;
+                    player.statLife = Math.Min(player.statLife + heal, player.statLifeMax2);
+                    player.HealEffect(heal);
+                    if (Main.netMode != NetmodeID.SinglePlayer)
+                        NetMessage.SendData(MessageID.SpiritHeal, -1, -1, null, player.whoAmI, heal);
                 }
                 Projectile.ai[1] = 0;
             }
@@ -88,11 +125,11 @@ namespace testMod1.Content.Items.Projectiles
             {
                 Vector2 pos = start + Vector2.Normalize(dist) * i;
                 float alpha = 0.4f + (float)Math.Sin(Main.timeForVisualEffects * 0.2f) * 0.2f;
-                Main.EntitySpriteDraw(beamTex, pos - Main.screenPosition, null, Color.Cyan * alpha, beamRot, beamTex.Size() / 2, 0.5f, SpriteEffects.None, 0);
+                Main.EntitySpriteDraw(beamTex, pos - Main.screenPosition, null, Color.Cyan * alpha, beamRot, beamTex.Size() / 2, 0.7f, SpriteEffects.None, 0);
             }
 
             Texture2D tex = ModContent.Request<Texture2D>(Texture).Value;
-            Main.EntitySpriteDraw(tex, Projectile.Center - Main.screenPosition, null, Color.White, Projectile.rotation, tex.Size() / 2, Projectile.scale, SpriteEffects.None, 0);
+            Main.EntitySpriteDraw(tex, Projectile.Center - Main.screenPosition, null, Color.White, Projectile.rotation, tex.Size() / 2, Projectile.scale * 1.5f, SpriteEffects.None, 0);
 
             return false;
         }

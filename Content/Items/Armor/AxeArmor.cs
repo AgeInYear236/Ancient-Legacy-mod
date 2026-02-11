@@ -8,6 +8,7 @@ using Terraria.GameContent.UI;
 using Terraria.ID;
 using Terraria.IO;
 using Terraria.ModLoader;
+using testMod1.Content.Items.Materials;
 
 
 namespace testMod1.Content.Items.Armor
@@ -32,12 +33,11 @@ namespace testMod1.Content.Items.Armor
             }*/
         }
 
-
-
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.HellstoneBar, 15);
+            recipe.AddIngredient(ModContent.ItemType<RawFury>(), 15);
+            recipe.AddIngredient(ItemID.HellstoneBar, 10);
             recipe.AddIngredient(ItemID.TissueSample, 12);
             recipe.AddTile(TileID.Hellforge);
             recipe.Register();

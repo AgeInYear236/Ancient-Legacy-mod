@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
 
@@ -70,7 +71,7 @@ namespace testMod1.Content.Items.Weapons
                 }
                 else
                 {
-                    player.Hurt(PlayerDeathReason.ByCustomReason($"{player.name} cut himself."), 200, 0);
+                    player.Hurt(PlayerDeathReason.ByCustomReason(player.name + Language.GetTextValue("Mods.testMod1.Death.Axe")), 200, 0);
                 }
             }
         }

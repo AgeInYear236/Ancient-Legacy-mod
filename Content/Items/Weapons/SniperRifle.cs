@@ -17,7 +17,7 @@ namespace testMod1.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 15;
+            Item.damage = 45;
             Item.crit = 30;
             Item.knockBack = 1;
 
@@ -65,7 +65,7 @@ namespace testMod1.Content.Items.Weapons
         {
             if (player.altFunctionUse == 2)
             {
-                velocity = velocity.RotatedByRandom(MathHelper.ToRadians(10));
+                velocity = velocity.RotatedByRandom(MathHelper.ToRadians(12));
 
                 damage = (int)(damage * 0.7f);
             }

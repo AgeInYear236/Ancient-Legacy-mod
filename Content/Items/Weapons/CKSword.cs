@@ -27,7 +27,7 @@ namespace testMod1.Content.Items.Weapons
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
 
-            Item.damage = 50;
+            Item.damage = 80;
         }
 
         public override void ModifyHitNPC(Player player, NPC target, ref NPC.HitModifiers modifiers)

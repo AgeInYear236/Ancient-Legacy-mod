@@ -7,6 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -23,6 +24,15 @@ namespace testMod1.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetModPlayer<modPlayer1>().bachAccEquipped = true;
+        }
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.Pwnhammer, 1);
+            recipe.AddIngredient(ModContent.ItemType<PoweredSteelBar>(), 8);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.Register();
+
         }
     }
 }

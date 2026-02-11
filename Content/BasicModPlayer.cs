@@ -82,6 +82,15 @@ namespace testMod1.Content
             {
                 BlackKingBar.isActive = false;
             }
+
+            if (testMod1.chronoKeybind.JustPressed)
+            {
+                Chronosphere.isActive = true;
+            }
+            if (testMod1.chronoKeybind.JustReleased)
+            {
+                Chronosphere.isActive = false;
+            }
         }
     }
 }

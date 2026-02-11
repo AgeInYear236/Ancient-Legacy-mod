@@ -33,8 +33,8 @@ namespace testMod1.Content.Items.Pets
                 .AddIngredient(ItemID.SoulofLight, 5)
                 .AddIngredient(ItemID.GoldBar, 1)
                 .AddIngredient(ItemID.Gel, 10)
-                .AddTile(TileID.WorkBenches)
-                .Register();
+                .AddTile(TileID.WorkBenches);
+                //.Register();
         }
     }
 }

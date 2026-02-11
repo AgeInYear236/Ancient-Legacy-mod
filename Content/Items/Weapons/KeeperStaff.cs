@@ -90,7 +90,7 @@ namespace testMod1.Content.Items.Weapons
             recipe.AddIngredient(ItemID.SoulofLight, 5);
             recipe.AddIngredient(ItemID.PixieDust, 8);
             recipe.AddIngredient(ItemID.LightShard, 1);
-            recipe.AddTile(TileID.Hellforge);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
         }
     }

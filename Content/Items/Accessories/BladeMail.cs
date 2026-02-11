@@ -8,6 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
 using testMod1.Content.Buffs;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -31,8 +32,18 @@ namespace testMod1.Content.Items.Accessories
             if (isActive && !player.HasBuff(ModContent.BuffType<BMCooldownBuff>()))
             {
                 player.AddBuff(ModContent.BuffType<BMBuff>(), 8 * 60);
-                player.AddBuff(ModContent.BuffType<BMCooldownBuff>(), 1 * 60);
+                player.AddBuff(ModContent.BuffType<BMCooldownBuff>(), 20 * 60);
             }
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ModContent.ItemType<Chainmail>(), 5);
+            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 15);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
+
         }
     }
 }

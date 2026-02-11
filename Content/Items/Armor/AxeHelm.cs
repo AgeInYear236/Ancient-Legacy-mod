@@ -9,6 +9,7 @@ using Terraria.ID;
 using Terraria.IO;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using testMod1.Content.Items.Materials;
 
 
 
@@ -52,7 +53,6 @@ namespace testMod1.Content.Items.Armor
         }
 
 
-        // UpdateArmorSet allows you to give set bonuses to the armor.
         public override void UpdateArmorSet(Player player)
         {
             modPlayer1 axePlayer = player.GetModPlayer<modPlayer1>();
@@ -66,8 +66,9 @@ namespace testMod1.Content.Items.Armor
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.HellstoneBar, 10);
-            recipe.AddIngredient(ItemID.TissueSample, 8);
+            recipe.AddIngredient(ModContent.ItemType<RawFury>(), 12);
+            recipe.AddIngredient(ItemID.HellstoneBar, 8);
+            recipe.AddIngredient(ItemID.TissueSample, 10);
             recipe.AddTile(TileID.Hellforge);
             recipe.Register();
         }

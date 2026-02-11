@@ -15,7 +15,7 @@ namespace testMod1.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 20;
+            Item.damage = 66;
             Item.DamageType = DamageClass.Melee;
             Item.width = 40;
             Item.height = 40;

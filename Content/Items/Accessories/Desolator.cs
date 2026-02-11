@@ -8,6 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -39,6 +40,17 @@ namespace testMod1.Content.Items.Accessories
                 }
             }
             return true;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.SharkToothNecklace, 1);
+            recipe.AddIngredient(ModContent.ItemType<RawFury>(), 10);
+            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 15);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
+
         }
     }
 }

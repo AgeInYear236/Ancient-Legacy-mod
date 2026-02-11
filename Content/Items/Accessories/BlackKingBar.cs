@@ -8,6 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
 using testMod1.Content.Buffs;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -20,7 +21,7 @@ namespace testMod1.Content.Items.Accessories
             Item.height = 32;
             Item.accessory = true;
             Item.rare = ModContent.GetInstance<MiscRarity>().Type;
-            Item.value = 10000;
+            Item.value = Item.sellPrice(gold: 2);
             Item.expert = true;
         }
 
@@ -30,6 +31,17 @@ namespace testMod1.Content.Items.Accessories
             {
                 player.AddBuff(ModContent.BuffType<BlackKingBarBuff>(), 7 * 60);
             }
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ModContent.ItemType<PoweredSteelBar>(), 18);
+            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 50);
+            recipe.AddIngredient(3783, 2);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.Register();
+
         }
     }
 

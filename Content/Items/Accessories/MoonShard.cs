@@ -8,6 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -27,6 +28,18 @@ namespace testMod1.Content.Items.Accessories
             //player.GetModPlayer<modPlayer1>().hasZoomAccessory = true;
             player.GetAttackSpeed(DamageClass.Melee) += 0.2f;
             player.GetAttackSpeed(DamageClass.Ranged) += 0.2f;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.FeralClaws, 1);
+            recipe.AddIngredient(ItemID.WarriorEmblem, 1);
+            recipe.AddIngredient(ModContent.ItemType<Moonstone>(), 20);
+            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 50);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.Register();
+
         }
     }
 }

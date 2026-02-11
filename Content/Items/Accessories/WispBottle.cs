@@ -1,8 +1,9 @@
-﻿using Terraria;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
 using testMod1.Common.Rarity;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Accessories
 {
@@ -37,6 +38,14 @@ namespace testMod1.Content.Items.Accessories
                     Projectile.NewProjectile(player.GetSource_Accessory(Item), player.Center, Vector2.Zero, ModContent.ProjectileType<Projectiles.WispProjectile>(), 0, 0f, player.whoAmI);
                 }
             }
+        }
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.Bottle, 1);
+            recipe.AddIngredient(ModContent.ItemType<MagicEnergy>(), 5);
+            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 10);
+            recipe.Register();
         }
     }
 }

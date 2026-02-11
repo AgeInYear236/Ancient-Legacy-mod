@@ -22,7 +22,7 @@ namespace testMod1.Content.Items.Weapons
             Item.shootSpeed = 15f;
             Item.UseSound = SoundID.Item1;
             Item.rare = ModContent.GetInstance<MeleeRarity2>().Type;
-            Item.value = Item.sellPrice(0, 1, 50, 0);
+            Item.value = Item.sellPrice(0, 5, 50, 0);
             Item.DamageType = DamageClass.Melee;
         }
 

@@ -25,7 +25,7 @@ namespace testMod1.Content.Items.Accessories
             Item.height = 24;
             Item.accessory = true;
             Item.rare = ModContent.GetInstance<AccRarityStats>().Type;
-            Item.value = 10000;
+            Item.value = Item.sellPrice(gold: 2);
         }
 
         public override bool PreDrawInInventory(SpriteBatch spriteBatch, Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale)
@@ -56,11 +56,11 @@ namespace testMod1.Content.Items.Accessories
             int originalMaxLife = player.statLifeMax;
 
             lifeDrainTimer++;
-            if (lifeDrainTimer >= 50)
+            if (lifeDrainTimer >= 20)
             {
                 if (player.statLife > 20)
                 {
-                    player.statLife -= 4;
+                    player.statLife -= 8;
                 }
                 lifeDrainTimer = 0;
             }
