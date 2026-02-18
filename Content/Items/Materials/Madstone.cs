@@ -16,7 +16,7 @@ namespace testMod1.Content.Items.Materials
             Item.height = 32;
             Item.maxStack = 999;
             Item.material = true;
-            Item.value = 100;
+            Item.value = 10;
             Item.rare = ModContent.GetInstance<MaterialRarity1>().Type;
 
         }

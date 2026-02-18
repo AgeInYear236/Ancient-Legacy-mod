@@ -1,9 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.DataStructures;
-using Terraria.Audio;
+using testMod1.Content.Items.Materials;
 
 namespace testMod1.Content.Items.Weapons
 {
@@ -97,5 +98,18 @@ namespace testMod1.Content.Items.Weapons
         }
 
         public override bool? UseItem(Player player) => true;
+
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient(ItemID.WandofSparking, 1)
+                .AddIngredient(ItemID.ZapinatorGray, 1)
+                .AddIngredient(ItemID.MagicDagger, 1)
+                .AddIngredient(ItemID.ShadowbeamStaff, 1)
+                .AddIngredient(ItemID.RazorbladeTyphoon, 1)
+                .AddIngredient(ItemID.NebulaArcanum, 1)
+                .AddTile(TileID.LunarCraftingStation)
+                .Register();
+        }
     }
 }

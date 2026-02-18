@@ -5,48 +5,34 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using testMod1.Common.Rarity;
 using testMod1.Content.Buffs;
+using testMod1.Content.Items.Materials;
 using testMod1.Content.Items.Projectiles;
 
-namespace testMod1.Content.Items.Accessories
-{
-    public class Chronosphere : ModItem
+    namespace testMod1.Content.Items.Accessories
     {
-        public static bool isActive = false;
-
-        public override void SetDefaults()
+        public class Chronosphere : ModItem
         {
-            Item.width = 32;
-            Item.height = 32;
-            Item.accessory = true;
-            Item.rare = ModContent.GetInstance<AccRarityAura>().Type;
-            Item.value = Item.sellPrice(gold: 5);
-        }
-
-        public override void UpdateAccessory(Player player, bool hideVisual)
-        {
-            if (isActive && !player.HasBuff(ModContent.BuffType<ChronosphereCooldownBuff>()))
+            public override void SetDefaults()
             {
-                player.AddBuff(ModContent.BuffType<ChronosphereBuff>(), 10 * 60);
+                Item.width = 32;
+                Item.height = 32;
+                Item.accessory = true;
+                Item.rare = ModContent.GetInstance<EndgameRarity>().Type;
+                Item.value = Item.sellPrice(gold: 5);
+            }
+
+            public override void UpdateAccessory(Player player, bool hideVisual)
+            {
+                player.GetModPlayer<BasicModPlayer>().hasChronosphere = true;
+            }
+
+            public override void AddRecipes()
+            {
+                CreateRecipe()
+                    .AddIngredient(ModContent.ItemType<EnchantedPrism>(), 5)
+                    .AddIngredient(ModContent.ItemType<Madstone>(), 99)
+                    .AddTile(TileID.LunarCraftingStation)
+                    .Register();
             }
         }
     }
-
-    public class ChronoPlayer : ModPlayer
-    {
-
-        public override void PostUpdate()
-        {
-            if (Player.HasBuff(ModContent.BuffType<ChronosphereBuff>()))
-            {
-                Player.AddBuff(ModContent.BuffType<ChronosphereCooldownBuff>(), 1 * 60); 
-
-                if (Player.whoAmI == Main.myPlayer)
-                {
-                    Projectile.NewProjectile(Player.GetSource_Accessory(Player.HeldItem), Player.Center, Vector2.Zero, ModContent.ProjectileType<ChronosphereProjectile>(), 0, 0f, Player.whoAmI);
-                }
-
-                Terraria.Audio.SoundEngine.PlaySound(SoundID.Item117, Player.Center);
-            }
-        }
-    }
-}

@@ -1,0 +1,868 @@
+// Content.SpecialSlotContext: A
+
+Items: {
+	ItemSetBonus: {
+		AxeHelm:
+			'''
+			Max speed capped [[c/FF0000:May sometimes break movement]]
+			You gain Thorns effect with 30% efficiency
+			Being hit can damage enemies nearby 
+			'''
+		AbaHead:
+			'''
+			Increases maximum health by 100
+			Reduces mana cost by 80%, attacks cost 10 HP instead
+			Your attacks can launch healing projectile
+			Inspired by: [c/0000FF:SHUJGAR]
+			'''
+		FrogHead:
+			'''
+			Melee attacks can summon note, that empowers you with
+			      3 random buffs: speed, damage, attack speed
+			      Collecting 3 buffs at once summons little friend!
+			'''
+	}
+
+	AxeArmor: {
+		DisplayName: Axe Armor
+		Tooltip:
+			'''
+			"Legendary warrior's chestplate"
+			Part of the Axe Set
+			'''
+	}
+
+	AxeBoots: {
+		DisplayName: Axe Boots
+		Tooltip:
+			'''
+			Increases maximum health by 10
+			Part of the Axe Set
+			'''
+	}
+
+	AxeHelm: {
+		DisplayName: Axe Helm
+		Tooltip:
+			'''
+			Enemies are more likely to attack you
+			Part of the Axe Set
+			'''
+	}
+
+	AxeAxe: {
+		DisplayName: Axe's Axe
+		Tooltip:
+			'''
+			Axe. Attacks!
+			Press RMB to execute enemy with < 20% HP
+			'''
+	}
+
+	AxeAxeII: {
+		DisplayName: Axe's Powered Axe
+		Tooltip:
+			'''
+			Axe. ATTACKS!
+			Press RMB to execute enemy with < 35% HP
+			'''
+	}
+
+	AxeTerraAxe: {
+		DisplayName: Axe's Terra Axe
+		Tooltip:
+			'''
+			AXE! ATTACKS!
+			Press RMB to execute enemy with < 40% HP
+			'''
+	}
+
+	KeeperStaff: {
+		DisplayName: Keeper Staff
+		Tooltip:
+			'''
+			Attack to summon lights around you
+			Press RMB for light to strike forward
+			"Let the light guide you!"
+			'''
+	}
+
+	LightPetItem: {
+		DisplayName: Shiny Coin
+		Tooltip: Summon lost light to follow you
+	}
+
+	BlinkDagger: {
+		DisplayName: Blink Dagger
+		Tooltip: Press RMB to blink to your cursor. Cooldown: 6 sec
+	}
+
+	GoldBag: {
+		DisplayName: Gold Bag
+		Tooltip: Ooooh! Shiny!
+	}
+
+	PatrolBannerItem: {
+		DisplayName: Patrol Banner
+		Tooltip: Stash Trader might be interested in it!
+	}
+
+	RogueDagger: {
+		DisplayName: Rogue Dagger
+		Tooltip:
+			'''
+			Perform swift attacks, cutting enemies in half
+			Press RMB to dash to your cursor. Cooldown: 6 sec
+			'''
+	}
+
+	Tango: {
+		DisplayName: Tango
+		Tooltip:
+			'''
+			Restores 75 HP over 4 seconds
+			Those tasty little beans!
+			'''
+	}
+
+	Mango: {
+		DisplayName: Enchanted Mango
+		Tooltip:
+			'''
+			Restores 50 mana over 4 seconds
+			Best fruit ever!
+			'''
+	}
+
+	HuskarBlood: {
+		DisplayName: Huskar's Blood
+		Tooltip:
+			'''
+			Taking damage increases your battle capacities
+			Increase all DMG and attack speed by 30% of missing health percent
+			"I will cover the world in blood..."
+			'''
+	}
+
+	Armlet: {
+		DisplayName: Armlet of Mordiggan
+		Tooltip:
+			'''
+			Slowly drains your life until 50 HP
+			Instead, gives you bonus 21 damage and 5 defence
+			Effect doubles if lower, than half health
+			Can be toggled On and Off. Check keybinds
+			'''
+	}
+
+	RadianceAcc: {
+		DisplayName: Radiance
+		Tooltip:
+			'''
+			Aura accessory
+			Burn nearby enemies, dealing consistent damage
+			'''
+	}
+
+	HuskarSpear: {
+		DisplayName: Huskar Spear
+		Tooltip:
+			'''
+			Each attack damages you by 5 HP.
+			Every attack is empowered by percent of your missing HP, up to 50%
+			'''
+	}
+
+	ShadowrazeBook: {
+		DisplayName: Shadowraze Spell Tome
+		Tooltip: Perform 3 magic attacks, each further, than previous
+	}
+
+	CKSword: {
+		DisplayName: Chaos Sword
+		Tooltip:
+			'''
+			Basic attack damage is randomed.
+			Each attack has 15% chance for crit and 15% chance for lifesteal.
+			"Let the random Gods decide your fate!"
+			'''
+	}
+
+	MagnusMallet: {
+		DisplayName: Magnus' Mallet
+		Tooltip:
+			'''
+			Press RMB to pull all nearby enemies in front of you
+			They are stunned for 2 sec
+			'''
+	}
+
+	ChainFrostTome: {
+		DisplayName: Chain Frost Tome
+		Tooltip:
+			'''
+			Launches a projectile, that bounces from enemies it hit
+			Maximum 5 bounces
+			'''
+	}
+
+	PugnaStaff: {
+		DisplayName: Pugna Staff
+		Tooltip: Holding RMB drains your life and transfers it to ally near cursor
+	}
+
+	GhostScepter: {
+		DisplayName: Ghost Scepter
+		Tooltip:
+			'''
+			Aura accessory
+			All non-magic damage is reduced by 50%.
+			All magic damage is increased by 50%.
+			Nearby enemies are strongly slowed
+			'''
+	}
+
+	AghsShard: {
+		DisplayName: Aghanim Shard
+		Tooltip: Unlocks new accessory slot for aura items
+	}
+
+	PADagger: {
+		DisplayName: Phantom Assassin Dagger
+		Tooltip:
+			'''
+			Perform small, yet killing attacks
+			Press RMB to blink to nearby enemy and perform hit on it
+			"It tickles.. AAAAA!"
+			'''
+	}
+
+	Desolator: {
+		DisplayName: Desolator
+		Tooltip: Each attack reduces target's armor by 1 up to 0
+	}
+
+	Desolator2: {
+		DisplayName: Stygian Desolator
+		Tooltip: Each attack reduces target's armor by 3 up to 0
+	}
+
+	MoonShard: {
+		DisplayName: Moon Shard
+		Tooltip:
+			'''
+			Increase attack speed by 20%
+			"Shattered moon piece.."
+			'''
+	}
+
+	MKBar: {
+		DisplayName: Monkey King Bar
+		Tooltip: Performing 4 consecutive attacks enhance your weapon
+	}
+
+	SlardarTrident: {
+		DisplayName: Slardar Trident
+		Tooltip: Performing 4 consecutive attacks stun enemy. Can occur once in 5 sec
+	}
+
+	SkullBasher: {
+		DisplayName: Skull Basher
+		Tooltip: Your melee attacks have 7% chance to stun enemy. Can occur once in 2.5 sec
+	}
+
+	TAShield: {
+		DisplayName: Templar Shield
+		Tooltip:
+			'''
+			Reduces maximum health by 100
+			Press Refraction Ability key to surround you with protective shield, negating 5 damage instances
+			Press Meld Ability key to become stealty and invisible. During ability effect your damage increases constantly
+			'''
+	}
+
+	BladeMail: {
+		DisplayName: Blade Mail
+		Tooltip:
+			'''
+			Defence +4
+			Passively deals 30% damage back to enemy
+			Press Blade Mail Ability Key to deal 90% damage back. This damage ignores armor
+			'''
+	}
+
+	SniperRifle: {
+		DisplayName: Sniper Rifle
+		Tooltip:
+			'''
+			Press RMB to rapidly fire 20 shots. You can't move during this attack
+			"Quak..quak!.."
+			'''
+	}
+
+	BoneHook: {
+		DisplayName: Bone Hook
+		Tooltip:
+			'''
+			Throws hook onto enemies. First enemy hit is pulled towards you
+			"Someone need a butcher?"
+			'''
+	}
+
+	ShallowGrave: {
+		DisplayName: Shallow Grave
+		Tooltip:
+			'''
+			If you are about to die, cancel your death and gives immunity for 5 seconds
+			"Legends never die!"
+			'''
+	}
+
+	BlackKingBar: {
+		DisplayName: Black King Bar
+		Tooltip:
+			'''
+			Press BKB Ability key to clean all debuffs, gain speed boost and reduce incoming damage by 60% for 6 sec
+			Inspired by: [c/0000FF:tear_vyps: Ne ez bkbe]
+			'''
+	}
+
+	WispBottle: {
+		DisplayName: Wisp Bottle
+		Tooltip:
+			'''
+			Summons friendly wisp to follow you and heal
+			"*whoosh*, "*thiu*""
+			Inspired by: [c/0000FF:MrTorex]
+			'''
+	}
+
+	DrowRangerBow: {
+		DisplayName: Drow Bow
+		Tooltip: Turns wooden arrows into frozen, that slow enemies
+	}
+
+	HoodwinkLauncher: {
+		DisplayName: Hoodwink Launcher
+		Tooltip:
+			'''
+			Uses acorns as projectiles
+			Don't show it to PETA!
+			'''
+	}
+
+	WindrangerBow: {
+		DisplayName: Windranger Bow
+		Tooltip: Press RMB to charge empowered shot, that deals large amount of damage
+	}
+
+	SunStrikeTome: {
+		DisplayName: Sun Strike Tome
+		Tooltip: Cast powerfull solar rays from the sky
+	}
+
+	Chronosphere: {
+		DisplayName: Chronosphere
+		Tooltip:
+			'''
+			Aura accessory
+			Summons a magic sphere, that slows all enemies and projectiles in it
+			"Time here flows differently..."
+			'''
+	}
+
+	FrogArmor: {
+		DisplayName: Frog Armor
+		Tooltip: Increases melee speed by 12%
+	}
+
+	FrogHead: {
+		DisplayName: Frog Head
+		Tooltip: Increases melee damage by 10% and crit chance by 5%
+	}
+
+	FrogLegs: {
+		DisplayName: Frog Legs
+		Tooltip:
+			'''
+			Increases melee damage by 5%
+			Increases speed and jump height
+			"*Ribbit*, *ribbit*, jump"
+			'''
+	}
+
+	AncientMoss: {
+		DisplayName: Ancient Moss
+		Tooltip: Euu, it stinks...
+	}
+
+	PoweredSteelBar: {
+		DisplayName: Powered Steel Bar
+		Tooltip: Pulsates with power
+	}
+
+	RawFury: {
+		DisplayName: Raw Fury
+		Tooltip: Holding it enrages you
+	}
+
+	AghanimScepter: {
+		DisplayName: Aghanim Scepter
+		Tooltip: Doomed by a great magician
+	}
+
+	Madstone: {
+		DisplayName: Madstone
+		Tooltip: Used in accessories crafts
+	}
+
+	MagicEnergy: {
+		DisplayName: Magic Energy
+		Tooltip: You can hear pixies screaming inside
+	}
+
+	IceShell: {
+		DisplayName: Ice Shell
+		Tooltip: Rock solid, ice cold
+	}
+
+	Chainmail: {
+		DisplayName: Chainmail
+		Tooltip: Defense +4
+	}
+
+	Moonstone: {
+		DisplayName: Moonstone
+		Tooltip: Shattered moon piece
+	}
+
+	AbaArmor: {
+		DisplayName: Aba Armor
+		Tooltip:
+			'''
+			Increases maximum health by 50
+			Reduces incoming damage by 10%
+			Increases magic damage by 20%
+			'''
+	}
+
+	AbaHead: {
+		DisplayName: Aba Head
+		Tooltip: Increases magic speed by 10% and crit chance by 12%
+	}
+
+	AbaLegs: {
+		DisplayName: Aba Legs
+		Tooltip:
+			'''
+			Increases move speed by 15%
+			Increases magic damage by 10%
+			Allows dodges
+			'''
+	}
+
+	Timelapse: {
+		// DisplayName: Timelapse Clock
+		/* Tooltip:
+			'''
+			Rewind the time, putting you ai the position you were 5 seconds ago
+			Restores all stats to their value in that time
+			''' */
+	}
+
+	EnchantedPrism: {
+		// DisplayName: Enchanted Prism
+		// Tooltip: The light bounces inside...
+	}
+
+	AbaCape: {
+		// DisplayName: Abaddon Cape
+		/* Tooltip:
+			'''
+			Part of Abaddon set
+			What a nice cape, mate!
+			''' */
+	}
+
+	PoisonAttack: {
+		// DisplayName: Poison Attack
+		/* Tooltip:
+			'''
+			Your attacks deal periodic damage and slow enemy
+			Stacks 10 times
+			''' */
+	}
+
+	GyroStaff: {
+		// DisplayName: Gyro Staff
+		/* Tooltip:
+			'''
+			Summons gyrocopter to fight for you!
+			Inspired by: [c/0000FF:Anigleb]
+
+			''' */
+	}
+
+	Aegis: {
+		// DisplayName: Aegis of the Immortal
+		// Tooltip: You are immortal
+	}
+
+	Bulwark: {
+		// DisplayName: Bulwark
+		/* Tooltip:
+			'''
+			Increase summon damage by 10%
+			Increase max minion count by 1
+			Defense +10
+			Each active minion gives you +2 defense
+			''' */
+	}
+
+	MarsSpear: {
+		// DisplayName: Mars Spear
+		// Tooltip: Summons spartan warrior to fight for you!
+	}
+
+	Eul: {
+		// DisplayName: Eul Scepter
+		/* Tooltip:
+			'''
+			Creates mighty air vortex, that pushes you in the sky!
+			Only 2 vortexes can exist at once
+			''' */
+	}
+
+	TheLog: {
+		// DisplayName: The Log
+		// Tooltip: Press RMB to unleash powerful stomp on the ground
+	}
+
+	Fireball: {
+		// DisplayName: Fireball
+		// Tooltip: Nice little ball, I bet it is tasty!
+	}
+
+	SnapfireShotgun: {
+		// DisplayName: Snapfire Shotgun
+		/* Tooltip:
+			'''
+			Shoots three fireballs, that leave fiery area
+			Uses 
+			Inspired by: [c/FF0000:Ultrapomoika]
+			''' */
+	}
+
+	ScytheOfVyse: {
+		// DisplayName: Scythe Of Vyse
+		/* Tooltip:
+			'''
+			Now you wield greatest weapon ever created
+			Be careful, it's magic can be unpredicted...
+			''' */
+	}
+
+	ShardOfEternity: {
+		// DisplayName: Shard Of Eternity
+		// Tooltip: Greatest element ever existed!
+	}
+
+	BlackHole: {
+		// Tooltip: ""
+		// DisplayName: Black Hole
+	}
+
+	Multicast: {
+		// DisplayName: Multicast
+		// Tooltip: ""
+	}
+
+	TechiesMine: {
+		// DisplayName: Techies Mine
+		// Tooltip: ""
+	}
+
+	LightningStrike: {
+		// DisplayName: Lightning Strike
+		// Tooltip: ""
+	}
+
+	ShardOfDesolation: {
+		// DisplayName: Shard Of Desolation
+		// Tooltip: ""
+	}
+}
+
+Currency.GoldBagCurrency: Gold Bag
+
+Projectiles: {
+	MagicProjectile.DisplayName: Magic Projectile
+	AxeArmorProjectile.DisplayName: Axe Armor Projectile
+	KeeperStaffProjectile.DisplayName: Keeper Staff Projectile
+	KeeperStaffProjectile2.DisplayName: Keeper Staff Projectile2
+	LightPetProjectile.DisplayName: Light Pet Projectile
+	RogueDaggerSlash.DisplayName: Rogue Dagger Slash
+	HuskarSpearProjectile.DisplayName: Huskar Spear Projectile
+	ShadowrazeProjectile.DisplayName: Shadowraze Projectile
+	MagnusPullProjectile.DisplayName: Magnus Pull Projectile
+	ChainFrostProjectile.DisplayName: Chain Frost Projectile
+	PugnaBlastProjectile.DisplayName: Pugna Blast Projectile
+	PugnaLifeDrainProjectile.DisplayName: Pugna Life Drain Projectile
+	PABlinkProjectile.DisplayName: P A Blink Projectile
+	SniperProjectile.DisplayName: Sniper Projectile
+	BoneHookProjectile.DisplayName: Bone Hook Projectile
+	WispProjectile.DisplayName: Wisp Projectile
+	AcornProjectile.DisplayName: Acorn Projectile
+	SunStrikeProjectile.DisplayName: Sun Strike Projectile
+	ChronosphereProjectile.DisplayName: Chronosphere Projectile
+	Note1.DisplayName: Note1
+	Note2.DisplayName: Note2
+	Note3.DisplayName: Note3
+	FrogMinion.DisplayName: Frog Minion
+	AbaArmorProjectile.DisplayName: Aba Armor Projectile
+	// GyroSummon.DisplayName: Gyro Summon
+	// MarsSummon.DisplayName: Mars Summon
+	// AirWall.DisplayName: Air Wall
+	// TheLogSpear.DisplayName: The Log Spear
+	// EchoSlam.DisplayName: Echo Slam
+	// FireballProjectile.DisplayName: Fireball Projectile
+	// FireZoneProjectile.DisplayName: Fire Zone Projectile
+	// TechiesMineProjectile.DisplayName: Techies Mine Projectile
+	// ThunderStrikeProjectile.DisplayName: Thunder Strike Projectile
+	// BlackHoleProjectile.DisplayName: Black Hole Projectile
+}
+
+Buffs: {
+	LightPetBuff: {
+		DisplayName: Guiding light
+		Description: Lost light guides your way!
+	}
+
+	TangoHealBuff: {
+		DisplayName: Tasty Tango
+		Description: Restoring HP over time
+	}
+
+	MangoHealBuff: {
+		DisplayName: Tasty Mango
+		Description: Restoring mana over time
+	}
+
+	ArmletBuff: {
+		DisplayName: Blood sacrifice
+		Description: Slowly drains your hp and giving damage and defense
+	}
+
+	HuskarSpearProjectileBuff: {
+		DisplayName: Huskar Spear Effect
+		Description: This description is meant to never be used
+	}
+
+	MagnusPullProjectileBuff: {
+		DisplayName: Magnus Pull
+		Description: This description is meant to never be used
+	}
+
+	StunBuff: {
+		DisplayName: Stun Buff
+		Description: You are stunned!
+	}
+
+	MagnusCooldown: {
+		DisplayName: Stun Cooldown
+		Description: You can't stun enemies
+	}
+
+	GhostScepterBuff: {
+		DisplayName: Ghost Scepter Effect
+		Description: You emit ghost aura!
+	}
+
+	RadianceBuff: {
+		DisplayName: Radiance Effect
+		Description: You emit burn aura!
+	}
+
+	NoBloody: {
+		DisplayName: No Bloody
+		Description: You can't perform crits
+	}
+
+	JinguMasteryBuff: {
+		DisplayName: Jingu Mastery
+		Description: Weapon enhanced!
+	}
+
+	TA1Buff: {
+		DisplayName: Refraction
+		Description: You are surrounded by shield, that blocks attacks
+	}
+
+	TA2Buff: {
+		DisplayName: Meld
+		Description: You are prepared to ambush enemy!
+	}
+
+	BMBuff: {
+		DisplayName: Blade Mail
+		Description: You are spiky one!
+	}
+
+	TA1CooldownBuff: {
+		DisplayName: Refraction Cooldown
+		Description: Can't use Refraction now
+	}
+
+	TA2CooldownBuff: {
+		DisplayName: Meld Cooldown
+		Description: Can't use Meld now
+	}
+
+	BMCooldownBuff: {
+		DisplayName: Blade Mail Cooldown
+		Description: Can't use Blade Mail now
+	}
+
+	ShallowGraveBuff: {
+		DisplayName: Shallow Grave
+		Description: You can't die
+	}
+
+	ShallowGraveCooldownBuff: {
+		DisplayName: Shallow Grave Cooldown
+		Description: Shallow grave can't proc now
+	}
+
+	BlackKingBarBuff: {
+		DisplayName: Black King Bar
+		Description: Debuffs purged, speed increased and incoming damage reduced
+	}
+
+	BlackKingBarCooldownBuff: {
+		DisplayName: Black King Bar Cooldown
+		Description: Black King Bar on cooldown!
+	}
+
+	ChronosphereBuff: {
+		DisplayName: Chronosphere
+		Description: You are surrounded by magic sphere
+	}
+
+	ChronosphereCooldownBuff: {
+		DisplayName: Chronosphere Cooldown
+		Description: Can't use Chronosphere now
+	}
+
+	NoteDamageBuff: {
+		DisplayName: Damage Note
+		Description: Damage enhanced!
+	}
+
+	NoteMoveBuff: {
+		DisplayName: Move Note
+		Description: Speed enhanced!
+	}
+
+	NoteSpeedBuff: {
+		DisplayName: Speed Note
+		Description: Attack speed enhanced!
+	}
+
+	FrogMinionBuff: {
+		DisplayName: Frog Minion
+		Description: Little cute guy follows you around!
+	}
+
+	TimelapseCooldownBuff: {
+		// DisplayName: Timelapse Cooldown Buff
+		// Description: Time can't be rewinded now
+	}
+
+	PoisonAttackBuff: {
+		// DisplayName: Poison Attack
+		// Description: No
+	}
+
+	GyroSummonBuff: {
+		// DisplayName: Gyro Summon
+		// Description: Friendly gyrocopter assists you!
+	}
+
+	AegisBuff: {
+		// DisplayName: Aegis of the Immortal
+		// Description: Death is overrated. At least now...
+	}
+
+	AegisCooldownBuff: {
+		// DisplayName: Aegis Cooldown
+		// Description: Can't respawn now
+	}
+
+	MarsSummonBuff: {
+		// DisplayName: Mars Summon
+		// Description: Friendly spartan warrior assists you!
+	}
+}
+
+NPCs: {
+	StashTrader: {
+		DisplayName: Stash Trader
+		// Name: Shopkeeper
+
+		TownNPCMood: {
+			Content: I am content.
+			NoHome: I hate not having a stash place!
+			FarFromHome: I am too far from home.
+			DislikeCrowded: I dislike crowds.
+			HateCrowded: I hate this people!!
+			LikeBiome: I like {BiomeName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LikeNPC: I like {NPCName}.
+			HateNPC: I hate {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+			// LoveSpace: I love having so much space.
+		}
+
+		ChatOption1: Greetings, traveler! Nice day, huh? Do you have.. [c/FFFF00:GOLD]?
+		ChatOption2: Nice day to earn some [c/FFFF00:GOLD] and give it to me, huh?
+		ChatOption3: I only want two things in life - more sales, more [c/FFFF00:GOLD]!
+		ChatOption4: Sorry, can't help you now. Unless you are wealthy enought.
+		// HelpOption1: Some REALLY mighty artifacts are not obtained with simple methods.
+		// HelpOption2: Legends tell about magic liquid, used for the most powerful weaponry.
+		// HelpOption3: You have a nice stone on you! I bet you can do something with it.
+		// HelpOption11: Some REALLY mighty artifacts are not obtained with simple methods.
+		// HelpOption21: Please, hide this thing. Dark energy is about to leave it.
+		// HelpOption31: If I were you, I would drop this thing away. Really.
+		// RewardOption1: Nicely done! Here is your reward!
+		// MiscOption1: Try harder! You better find more banners!
+		// Button2: Patrol rewards
+		// Best: This mysterious supplier always knows where to find the best gear. They say his backpack is bottomless, and his camouflage allows him to hide from even the most discerning eyes.
+	}
+}
+
+Tiles: {
+	PatrolBanner.MapEntry: Patrol Banner
+	PatrolBannerTile.MapEntry: Patrol Banner Tile
+	MapObject.Furniture: Patrol Banner
+}
+
+MapObject.PatrolBanner: Patrol Banner
+
+Keybinds: {
+	"Toggle Armlet.DisplayName": Toggle  Armlet
+	"Activate Refraction.DisplayName": Activate  Refraction
+	"Activate Meld.DisplayName": Activate  Meld
+	"Activate Blade Mail.DisplayName": Activate  Blade  Mail
+	"Activate Black King Bar.DisplayName": Activate  Black  King  Bar
+	"Activate Chronosphere.DisplayName": Activate  Chronosphere
+	// "Use Time Lapse.DisplayName": Use  Time  Lapse
+}
+
+ChatMessages.ShopEntry: The shop has been updated!
+
+Death: {
+	Axe: " was slain in half by his own weapon!"
+	Aba: " used strong magic powers, that devoured his soul"
+	// Hex: " was hexed to dust"
+}

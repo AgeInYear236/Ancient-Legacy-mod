@@ -14,9 +14,8 @@ namespace testMod1.Content.Items.Weapons
 {
     public class WindrangerBow : ModItem
     {
-        // Переменные для отслеживания состояния зарядки
         public int chargeTimer = 0;
-        public const int MaxCharge = 120; // 2 секунды
+        public const int MaxCharge = 120;
 
         public override void SetDefaults()
         {
@@ -30,7 +29,7 @@ namespace testMod1.Content.Items.Weapons
             Item.noMelee = true;
             Item.knockBack = 4f;
             Item.value = Item.buyPrice(gold: 5);
-            Item.rare = ModContent.GetInstance<MagicRarity3>().Type;
+            Item.rare = ModContent.GetInstance<RangedRarity3>().Type;
             Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
             Item.shoot = ProjectileID.WoodenArrowFriendly;

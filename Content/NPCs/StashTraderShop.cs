@@ -6,6 +6,7 @@ using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using testMod1.Content.Items.Consumables;
 using testMod1.Content.Items.Weapons;
+using testMod1.Content.Items.Summons;
 
 namespace testMod1.Content.NPCs
 {
@@ -40,6 +41,10 @@ namespace testMod1.Content.NPCs
             var drow = new Item(ModContent.ItemType<DrowRangerBow>()) { shopCustomPrice = 2000, shopSpecialCurrency = testMod1.goldCurrencyId };
             var wr = new Item(ModContent.ItemType<WindrangerBow>()) { shopCustomPrice = 5000, shopSpecialCurrency = testMod1.goldCurrencyId };
             var ss = new Item(ModContent.ItemType<SunStrikeTome>()) { shopCustomPrice = 7000, shopSpecialCurrency = testMod1.goldCurrencyId };
+            var snap = new Item(ModContent.ItemType<SnapfireShotgun>()) { shopCustomPrice = 3500, shopSpecialCurrency = testMod1.goldCurrencyId };
+            var mars = new Item(ModContent.ItemType<MarsSpear>()) { shopCustomPrice = 3500, shopSpecialCurrency = testMod1.goldCurrencyId };
+            var ls = new Item(ModContent.ItemType<LightningStrike>()) { shopCustomPrice = 7200, shopSpecialCurrency = testMod1.goldCurrencyId };
+            var mine = new Item(ModContent.ItemType<TechiesMine>()) { shopCustomPrice = 7000, shopSpecialCurrency = testMod1.goldCurrencyId };
 
 
             shop.Add(tango);
@@ -57,6 +62,7 @@ namespace testMod1.Content.NPCs
             shop.Add(rogue, Condition.Hardmode);
             shop.Add(lichbook, Condition.Hardmode);
             shop.Add(drow, Condition.Hardmode);
+            shop.Add(snap, Condition.Hardmode);
 
             shop.Add(sf, Condition.DownedQueenSlime);
 
@@ -68,12 +74,15 @@ namespace testMod1.Content.NPCs
             shop.Add(wr, Condition.DownedPlantera);
 
             shop.Add(hook, Condition.DownedDukeFishron);
+            shop.Add(mine, Condition.DownedDukeFishron);
 
             shop.Add(axe3, Condition.DownedGolem);
             shop.Add(slardar, Condition.DownedGolem);
             shop.Add(sniper, Condition.DownedGolem);
+            shop.Add(mars, Condition.DownedGolem);
 
             shop.Add(ss, Condition.DownedSolarPillar);
+            shop.Add(ls, Condition.DownedStardustPillar);
 
         }
     }

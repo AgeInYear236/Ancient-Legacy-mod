@@ -27,10 +27,7 @@ namespace testMod1.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            if (isActive && !player.HasBuff(ModContent.BuffType<BlackKingBarCooldownBuff>()))
-            {
-                player.AddBuff(ModContent.BuffType<BlackKingBarBuff>(), 7 * 60);
-            }
+            player.GetModPlayer<BasicModPlayer>().hasBKB = true;
         }
 
         public override void AddRecipes()
@@ -38,51 +35,10 @@ namespace testMod1.Content.Items.Accessories
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<PoweredSteelBar>(), 18);
             recipe.AddIngredient(ModContent.ItemType<Madstone>(), 50);
-            recipe.AddIngredient(3783, 2);
+            recipe.AddIngredient(ItemID.AncientBattleArmorMaterial, 2);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 
-        }
-    }
-
-    public class BKBPlayer : ModPlayer
-    {
-        public override void PreUpdate()
-        {
-            if (Player.HasBuff(ModContent.BuffType<BlackKingBarBuff>()))
-            {
-                for (int i = 0; i < Player.MaxBuffs; i++)
-                {
-                    int currentBuffType = Player.buffType[i];
-
-                    if (currentBuffType > 0 && Main.debuff[currentBuffType])
-                    {
-                        if (currentBuffType != ModContent.BuffType<BlackKingBarCooldownBuff>() &&
-                            !BuffID.Sets.NurseCannotRemoveDebuff[currentBuffType])
-                        {
-                            Player.DelBuff(i);
-                            i--;
-                        }
-                    }
-                }
-
-                if (Player.buffTime[Player.FindBuffIndex(ModContent.BuffType<BlackKingBarBuff>())] == 420)
-                {
-
-                    if (!Player.HasBuff(ModContent.BuffType<BlackKingBarCooldownBuff>()))
-                    {
-                        Player.AddBuff(ModContent.BuffType<BlackKingBarCooldownBuff>(), 90 * 60);
-                    }
-
-                    Terraria.Audio.SoundEngine.PlaySound(SoundID.Item4, Player.Center);
-                    for (int i = 0; i < 30; i++)
-                    {
-                        Dust d = Dust.NewDustDirect(Player.position, Player.width, Player.height, DustID.GoldCoin, 0f, 0f, 100, default, 2f);
-                        d.noGravity = true;
-                        d.velocity *= 3f;
-                    }
-                }
-            }
         }
     }
 }

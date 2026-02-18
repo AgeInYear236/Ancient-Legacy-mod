@@ -66,7 +66,6 @@ namespace testMod1.Content
 
             Player.AddBuff(ModContent.BuffType<TA2CooldownBuff>(), 30 * 60);
 
-            TAShield.isActive2 = false;
         }
     }
 }

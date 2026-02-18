@@ -16,7 +16,6 @@ namespace testMod1.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-            Item.material = true;
             Item.width = 32;
             Item.height = 32;
             Item.accessory = true;

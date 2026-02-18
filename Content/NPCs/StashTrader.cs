@@ -22,38 +22,81 @@ namespace testMod1.Content.NPCs
 
         public override void SetStaticDefaults()
         {
-            Main.npcFrameCount[Type] = 25; // The amount of frames the NPC has
-
-            NPCID.Sets.ExtraFramesCount[Type] = 9; // Generally for Town NPCs, but this is how the NPC does extra things such as sitting in a chair and talking to other NPCs.
-            NPCID.Sets.AttackFrameCount[Type] = 4;
-            NPCID.Sets.DangerDetectRange[Type] = 700; // The amount of pixels away from the center of the npc that it tries to attack enemies.
-            NPCID.Sets.PrettySafe[Type] = 300;
-            NPCID.Sets.AttackType[Type] = 1; // Shoots a weapon.
-            NPCID.Sets.AttackTime[Type] = 60; // The amount of time it takes for the NPC's attack animation to be over once it starts.
-            NPCID.Sets.AttackAverageChance[Type] = 30;
-            NPCID.Sets.HatOffsetY[Type] = 4; // For when a party is active, the party hat spawns at a Y offset.
-
-            NPCID.Sets.ActsLikeTownNPC[Type] = true;
-
-            NPCID.Sets.NoTownNPCHappiness[Type] = true;
-
-            NPCID.Sets.SpawnsWithCustomName[Type] = true;
+            Main.npcFrameCount[NPC.type] = 25;
+            NPCID.Sets.ExtraFramesCount[NPC.type] = 9;
+            NPCID.Sets.AttackFrameCount[NPC.type] = 4;
+            NPCID.Sets.DangerDetectRange[NPC.type] = 700; 
+            NPCID.Sets.AttackType[NPC.type] = 0;
 
             NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
             {
-                Velocity = 1f,
-                Direction = 1
+                Velocity = 1f, 
+                Direction = -1 
             };
-
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
-            
+
+            ContentSamples.NpcBestiaryRarityStars[Type] = 3; 
         }
 
         public override void FindFrame(int frameHeight)
         {
+            NPC.spriteDirection = NPC.direction;
 
+            bool talkingToPlayer = Main.player[Main.myPlayer].talkNPC == NPC.whoAmI;
+
+            bool talkingToNPC = NPC.ai[0] == 5f;
+
+
+            if (NPC.velocity.Y != 0f)
+            {
+                NPC.frame.Y = 16 * frameHeight;
+            }
+/*
+            else if (NPC.ai[1] > 0f)
+            {
+                NPC.frameCounter += 1.0;
+                if (NPC.frameCounter >= 5.0)
+                {
+                    NPC.frameCounter = 0.0;
+                    NPC.frame.Y += frameHeight;
+
+                    if (NPC.frame.Y < 21 * frameHeight || NPC.frame.Y > 25 * frameHeight)
+                    {
+                        NPC.frame.Y = 21 * frameHeight;
+                    }
+                }
+            }*/
+
+            else if (NPC.velocity.X != 0f)
+            {
+                NPC.frameCounter += Math.Abs(NPC.velocity.X) * 1.2f;
+                if (NPC.frameCounter >= 6.0)
+                {
+                    NPC.frameCounter = 0.0;
+                    NPC.frame.Y += frameHeight;
+                    if (NPC.frame.Y < 1 * frameHeight || NPC.frame.Y > 15 * frameHeight)
+                    {
+                        NPC.frame.Y = 1 * frameHeight;
+                    }
+                }
+            }
+
+            else if (NPC.ai[0] == 1f)
+            {
+                NPC.frame.Y = 17 * frameHeight;
+            }
+
+            else if (talkingToPlayer || talkingToNPC)
+            {
+                NPC.frame.Y = 20 * frameHeight;
+            }
+
+            else
+            {
+                NPC.frame.Y = 0;
+                NPC.frameCounter = 0.0;
+            }
         }
-
 
         public override void SetDefaults()
         {
@@ -87,16 +130,26 @@ namespace testMod1.Content.NPCs
             return false;
         }
 
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
+        BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+
+        //new FlavorTextBestiaryInfoElement("Этот таинственный поставщик всегда знает, где достать лучшее снаряжение. Говорят, его рюкзак бездонен, а камуфляж позволяет скрываться даже от самых зорких глаз.")
+        new FlavorTextBestiaryInfoElement("Mods.testMod1.NPCs.StashTrader.Best")
+    });
+        }
+
         public override List<string> SetNPCNameList()
         {
             return new List<string>() {
-                    "Shopkeeper"
+                    Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.Name")
                 };
         }
 
         public override void SetChatButtons(ref string button, ref string button2) { 
             button = Language.GetTextValue("LegacyInterface.28");
-            button2 = "Patrol rewards";
+            button2 = Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.Button2");
         }
 
         public override void OnChatButtonClicked(bool firstButton, ref string shop)
@@ -112,18 +165,18 @@ namespace testMod1.Content.NPCs
                 {
                     if (item != null && !item.IsAir && item.type == ModContent.ItemType<PatrolBannerItem>())
                     {
-                        Main.npcChatText = "Nicely done! Here are your patrol rewards!";
+                        Main.npcChatText = Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.RewardOption1");
                         rewardCounter += 1;
                         Main.LocalPlayer.ConsumeItem(ModContent.ItemType<PatrolBannerItem>());
                     }
                 }
                 if (rewardCounter > 0)
                 {
-                    Main.LocalPlayer.QuickSpawnItem(NPC.GetSource_Loot(), ModContent.ItemType<GoldBag>(), rewardCounter * 10);
+                    Main.LocalPlayer.QuickSpawnItem(NPC.GetSource_Loot(), ModContent.ItemType<GoldBag>(), rewardCounter * 10 * (int)(1 + Main.rand.NextFloat()));
                 }
                 else
                 {
-                    Main.npcChatText = "You better find more banners!";
+                    Main.npcChatText = Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.MiscOption1");
                 }
 
             }
@@ -138,12 +191,35 @@ namespace testMod1.Content.NPCs
         {
             WeightedRandom<string> chat = new WeightedRandom<string>();
 
+
+            for (int i = 0; i < Main.maxPlayers; i++)
+            {
+                Player player = Main.player[i];
+
+                if (player.active)
+                {
+                    if (player.HasItem(ModContent.ItemType<ShardOfEternity>()))
+                    {
+                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption1"));
+                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption2"));
+                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption3"));
+                        return chat.Get();
+                    }
+                    if (player.HasItem(ModContent.ItemType<ShardOfDesolation>()))
+                    {
+                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption11"));
+                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption21"));
+                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption31"));
+                        return chat.Get();
+                    }
+                }
+            }
+
+
+
             chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption1"));
             chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption2"));
             chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption3"));
-            chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption3"));
-
-
 
             return chat.Get();
         }
