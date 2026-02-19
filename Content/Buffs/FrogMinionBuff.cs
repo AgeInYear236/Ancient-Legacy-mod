@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Buffs
+namespace AncientLegacyMod.Content.Buffs
 {
     public class FrogMinionBuff : ModBuff
     {

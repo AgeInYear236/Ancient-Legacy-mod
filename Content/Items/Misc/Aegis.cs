@@ -7,9 +7,9 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Buffs;
+using AncientLegacyMod.Content.Buffs;
 
-namespace testMod1.Content.Items.Misc
+namespace AncientLegacyMod.Content.Items.Misc
 {
     public class Aegis : ModItem
     {

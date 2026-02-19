@@ -5,7 +5,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class BoneHookProjectile : ModProjectile
     {
@@ -61,7 +61,7 @@ namespace testMod1.Content.Items.Projectiles
 
         public override bool PreDraw(ref Color lightColor)
         {
-            Texture2D chainTexture = ModContent.Request<Texture2D>("testMod1/Content/Items/Misc/BoneHook_Chain").Value;
+            Texture2D chainTexture = ModContent.Request<Texture2D>("AncientLegacyMod/Content/Items/Misc/BoneHook_Chain").Value;
 
             Vector2 playerCenter = Main.player[Projectile.owner].MountedCenter;
             Vector2 center = Projectile.Center;

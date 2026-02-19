@@ -8,15 +8,15 @@ using Terraria;
 using Terraria.GameContent.UI;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Misc;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class GoldCurrencySystem : CustomCurrencySingleCoin
     {
         public GoldCurrencySystem(int coinItemID, long currencyCap) : base(coinItemID, currencyCap)
         {
-            CurrencyTextKey = Language.GetTextValue("Mods.testMod1.Currency.GoldBagCurrency");
+            CurrencyTextKey = Language.GetTextValue("Mods.AncientLegacyMod.Currency.GoldBagCurrency");
             CurrencyTextColor = Color.Yellow;
         }
 

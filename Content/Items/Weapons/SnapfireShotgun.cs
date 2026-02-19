@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Items.Materials;
-using testMod1.Content.Items.Misc;
-using testMod1.Content.Items.Projectiles;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Projectiles;
 
-namespace testMod1.Content.Items.Weapons
+namespace AncientLegacyMod.Content.Items.Weapons
 {
     public class SnapfireShotgun : ModItem
     {

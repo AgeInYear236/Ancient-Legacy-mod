@@ -13,11 +13,11 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace testMod1.Content.Tiles
+namespace AncientLegacyMod.Content.Tiles
 {
     public class PatrolBannerTile : ModTile
     {
-        public override string Texture => "testMod1/Content/Tiles/PatrolBannerTile";
+        public override string Texture => "AncientLegacyMod/Content/Tiles/PatrolBannerTile";
 
         public override void SetStaticDefaults()
         {
@@ -38,7 +38,7 @@ namespace testMod1.Content.Tiles
 
             TileObjectData.addTile(Type);
 
-            AddMapEntry(new Color(255, 142, 111), Language.GetText("Mods.testMod1.Tiles.PatrolBannerTile.MapEntry")); 
+            AddMapEntry(new Color(255, 142, 111), Language.GetText("Mods.AncientLegacyMod.Tiles.PatrolBannerTile.MapEntry")); 
 
             DustType = DustID.WoodFurniture;
         }

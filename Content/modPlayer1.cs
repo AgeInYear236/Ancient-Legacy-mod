@@ -9,12 +9,12 @@ using Terraria;
 using Terraria.Graphics;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Buffs;
-using testMod1.Content.Items.Armor;
-using testMod1.Content.Items.Projectiles;
-using testMod1.Content.Items.Weapons;
+using AncientLegacyMod.Content.Buffs;
+using AncientLegacyMod.Content.Items.Armor;
+using AncientLegacyMod.Content.Items.Projectiles;
+using AncientLegacyMod.Content.Items.Weapons;
 
-namespace testMod1.Content
+namespace AncientLegacyMod.Content
 {
     public class modPlayer1 : ModPlayer
     {

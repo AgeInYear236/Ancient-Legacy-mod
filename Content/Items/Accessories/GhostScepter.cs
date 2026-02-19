@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Buffs;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Buffs;
 
-namespace testMod1.Content.Items.Accessories
+namespace AncientLegacyMod.Content.Items.Accessories
 {
     public class GhostScepter : ModItem
     {

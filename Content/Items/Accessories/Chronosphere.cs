@@ -3,12 +3,12 @@ using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Buffs;
-using testMod1.Content.Items.Materials;
-using testMod1.Content.Items.Projectiles;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Buffs;
+using AncientLegacyMod.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Projectiles;
 
-    namespace testMod1.Content.Items.Accessories
+    namespace AncientLegacyMod.Content.Items.Accessories
     {
         public class Chronosphere : ModItem
         {

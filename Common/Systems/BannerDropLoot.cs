@@ -2,10 +2,10 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Misc;
-using testMod1.Common.Systems;
+using AncientLegacyMod.Content.Items.Misc;
+using AncientLegacyMod.Common.Systems;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class BannerDropLoot : GlobalNPC
     {

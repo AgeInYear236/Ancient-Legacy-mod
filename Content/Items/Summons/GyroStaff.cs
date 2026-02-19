@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Buffs;
-using testMod1.Content.Items.Summons;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Buffs;
+using AncientLegacyMod.Content.Items.Summons;
 
-namespace testMod1.Content.Items.Summons
+namespace AncientLegacyMod.Content.Items.Summons
 {
     public class GyroStaff : ModItem
     {

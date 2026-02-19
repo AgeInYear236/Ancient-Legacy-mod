@@ -4,7 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Players
+namespace AncientLegacyMod.Content.Players
 {
     public class RadiancePlayer : ModPlayer
     {

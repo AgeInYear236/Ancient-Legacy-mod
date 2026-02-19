@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Buffs;
+using AncientLegacyMod.Content.Buffs;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class MagnusPullProjectile : ModProjectile
     {

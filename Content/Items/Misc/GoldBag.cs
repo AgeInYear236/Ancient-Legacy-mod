@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Misc
+namespace AncientLegacyMod.Content.Items.Misc
 {
     public class GoldBag : ModItem
     {

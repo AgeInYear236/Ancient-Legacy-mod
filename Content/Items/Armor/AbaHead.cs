@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Armor
+namespace AncientLegacyMod.Content.Items.Armor
 {
     [AutoloadEquip(EquipType.Head)]
     public class AbaHead : ModItem
@@ -37,7 +37,7 @@ namespace testMod1.Content.Items.Armor
             //player.setBonus = "Запретное Искусство: +100 макс. ХП\n" +
                              // "Расход маны снижен на 80%, но атаки тратят ХП\n" +
                               //"10% шанс выпустить снаряд Аба, восстанавливающий здоровье";
-            player.setBonus = Language.GetTextValue("Mods.testMod1.Items.ItemSetBonus.AbaHead");
+            player.setBonus = Language.GetTextValue("Mods.AncientLegacyMod.Items.ItemSetBonus.AbaHead");
 
 
             player.statLifeMax2 += 100;
@@ -52,7 +52,7 @@ namespace testMod1.Content.Items.Armor
                     player.statLife -= healthCost;
                     if (player.statLife <= 0)
                     {
-                        player.KillMe(PlayerDeathReason.ByCustomReason(player.name + Language.GetTextValue("Mods.testMod1.Death.Aba")), healthCost, 0);
+                        player.KillMe(PlayerDeathReason.ByCustomReason(player.name + Language.GetTextValue("Mods.AncientLegacyMod.Death.Aba")), healthCost, 0);
                         return;
                     }
 

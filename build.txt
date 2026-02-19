@@ -1,3 +1,4 @@
-displayName = Ancient Legacy v0.1
+displayName = Ancient Legacy [EN/RU]
 author = AgeInYear
-version = 0.1
+homepage = https://discord.gg/CG8GaXRm6P
+version = 0.1.5

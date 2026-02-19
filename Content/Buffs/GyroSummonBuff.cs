@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Summons;
+using AncientLegacyMod.Content.Items.Summons;
 
-namespace testMod1.Content.Buffs
+namespace AncientLegacyMod.Content.Buffs
 {
     public class GyroSummonBuff : ModBuff
     {

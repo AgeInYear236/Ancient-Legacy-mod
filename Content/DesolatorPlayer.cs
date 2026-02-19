@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content
+namespace AncientLegacyMod.Content
 {
     public class DesolatorPlayer : ModPlayer
     {

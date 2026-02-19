@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Buffs
+namespace AncientLegacyMod.Content.Buffs
 {
     public class TA1Buff : ModBuff
     {

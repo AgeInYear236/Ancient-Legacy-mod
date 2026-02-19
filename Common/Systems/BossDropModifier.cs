@@ -2,13 +2,13 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
-using testMod1.Content.Items.Weapons;
-using testMod1.Content.Items.Accessories;
-using testMod1.Content.Items.Misc;
-using testMod1.Content.Items.Consumables;
-using testMod1.Content.Items.Summons;
+using AncientLegacyMod.Content.Items.Weapons;
+using AncientLegacyMod.Content.Items.Accessories;
+using AncientLegacyMod.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Consumables;
+using AncientLegacyMod.Content.Items.Summons;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class BossDropModifier : GlobalNPC
     {

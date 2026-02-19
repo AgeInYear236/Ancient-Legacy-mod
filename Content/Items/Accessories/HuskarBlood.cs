@@ -9,9 +9,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Map;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
+using AncientLegacyMod.Common.Rarity;
 
-namespace testMod1.Content.Items.Accessories
+namespace AncientLegacyMod.Content.Items.Accessories
 {
     public class HuskarBlood : ModItem
     {

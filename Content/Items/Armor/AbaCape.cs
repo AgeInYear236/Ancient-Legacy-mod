@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace testMod1.Content.Items.Armor
+namespace AncientLegacyMod.Content.Items.Armor
 {
     [AutoloadEquip(EquipType.Back)]
     public class AbaCape : ModItem

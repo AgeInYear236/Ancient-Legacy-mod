@@ -1,1 +1,50 @@
-This description will show up on the steam page, check out https://steamcommunity.com/comment/Guide/formattinghelp.
+[hr][/hr]
+
+[h1] Ancient Legacy Mod [EN/RU] [/h1]
+
+Welcome to a world where the boundaries between two legendary games blur. This mod brings the iconic mechanics and atmosphere of the Battle of the Ancients into [b]Terraria[/b]. Forget the usual progression — now your survival depends on how skillfully you wield the artifacts and abilities of legendary heroes.
+
+[h2] What awaits you in this mod? [/h2]
+[list]
+[*] [b]New Combat Strategies:[/b] Utilize unique active abilities. Risk your health for immense power, vanish into invisibility for an ambush, or create zones where time itself stands still.
+[*] [b]Familiar Mechanics:[/b] A system of buffs, cooldowns, and magical effects, ported directly from competitive battles.
+[*] [b]Loyal Companions:[/b] You are not alone — summon mighty warriors and machines to fight alongside you against Terraria’s bosses.
+[*] [b]Survival at Any Cost:[/b] Find ways to cheat death, regenerate resources on the fly, and deploy powerful defenses when things get critical.
+[/list]
+
+[h2] Features [/h2]
+[list]
+[*] [b]Seamless Integration:[/b] All items and effects are organically integrated into the gameplay loop.
+[*] [b]Flavorful Descriptions:[/b] Dialogue and tooltips are designed to capture the spirit of the original source material.
+[*] [b]Balance and Risk:[/b] Every powerful enhancement comes with a price. Are you ready to pay it for victory?
+[/list]
+
+[quote] The world has changed. Ancient forces have awakened within these lands. Will you harness their might, or become just another victim on the road to glory? [/quote]
+
+[hr][/hr]
+
+[h1] Ancient Legacy Mod [/h1]
+
+Добро пожаловать в мир, где границы между двумя легендарными играми стираются. Этот мод привносит в [b]Terraria[/b] культовую механику и атмосферу сражений за Древних. Забудьте о привычном прогрессе — теперь ваше выживание зависит от того, насколько умело вы используете артефакты и способности легендарных героев.
+
+[h2] Что ждет тебя в этом моде? [/h2]
+[list]
+[*] [b]Новые стратегии боя:[/b] Используйте уникальные активные способности. Рискуйте здоровьем ради огромной силы, уходите в невидимость для засады или создавайте зоны, в которых замирает само время.
+
+[*] [b]Знакомая механика:[/b] Система баффов, кулдаунов и магических эффектов, перенесенная прямиком из соревновательных битв.
+
+[*] [b]Верные спутники:[/b] Вы не одиноки — призывайте могучих воинов и механизмы, которые помогут вам в битвах с боссами Террарии.
+
+[*] [b]Выживание любой ценой:[/b] Найдите способы обмануть смерть, восстанавливайте ресурсы прямо на ходу и используйте мощную защиту, когда ситуация становится критической.
+[/list]
+
+[h2] Особенности: [/h2]
+[list]
+[*] [b]Полная интеграция:[/b] Все предметы и эффекты органично вписаны в игровой процесс.
+[*] [b]Атмосферный перевод:[/b] Описания и диалоги NPC адаптированы для русскоговорящих игроков.
+[*] [b]Баланс и риск:[/b] Каждое мощное усиление имеет свою цену. Готовы ли вы заплатить её за победу?
+[/list]
+
+[quote] Мир изменился. Древние силы пробудились в недрах этой земли. Сможешь ли ты обуздать их мощь или станешь очередной жертвой на пути к славе? [/quote]
+
+[hr][/hr]

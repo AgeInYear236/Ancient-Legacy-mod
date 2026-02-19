@@ -8,9 +8,9 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
-using testMod1.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Misc;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {   
     public class BannerDropSystem : ModSystem
     {

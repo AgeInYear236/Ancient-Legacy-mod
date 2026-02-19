@@ -1,0 +1,908 @@
+Content.SpecialSlotContext: Слот для аксессуаров с аурой
+
+Items: {
+	ItemSetBonus: {
+		AxeHelm:
+			'''
+			Максимальная скорость ограничена [[c/FF0000:Возможно, иногда прерывает движение]]
+			Вы получаете эффект «Шипы» с эффективностью 30%
+			Попадание по вам может нанести урон находящимся поблизости врагам
+			'''
+		AbaHead:
+			'''
+			Увеличивает максимальное здоровье на 100
+			Снижает затраты маны на 80%, атаки вместо этого расходуют 10 HP
+			Ваши атаки могут запускать лечебные снаряды
+			Вдохновлено: [c/0000FF:SHUJGAR]
+			'''
+		FrogHead:
+			'''
+			Рукопашные атаки могут призвать ноту, которая наделяет вас 3 случайными баффами: скорость, урон, скорость атаки.
+			Собрав 3 баффа одновременно, вы призываете маленького друга!
+			Вдохновлено: [c/0000FF:lipa_ii]
+			'''
+	}
+
+	AxeArmor: {
+		DisplayName: Нагрудник Акса
+		Tooltip:
+			'''
+			«Нагрудник легендарного воина»
+			Часть комплекта Акса
+			'''
+	}
+
+	AxeBoots: {
+		DisplayName: Ботинки Акса
+		Tooltip:
+			'''
+			Увеличивает максимальное здоровье на 10
+			Часть комплекта Акса
+
+			'''
+	}
+
+	AxeHelm: {
+		DisplayName: Голова Акса
+		Tooltip:
+			'''
+			Враги с большей вероятностью нападут на вас
+			Часть комплекта Акса
+			'''
+	}
+
+	AxeAxe: {
+		DisplayName: Топор Акса
+		Tooltip:
+			'''
+			Акс. Атакует!
+			Нажмите ПКМ, чтобы убить противника с < 20% ХП
+			'''
+	}
+
+	AxeAxeII: {
+		DisplayName: Усиленный топор Акса
+		Tooltip:
+			'''
+			Акс. АТАКУЕТ!
+			Нажмите ПКМ, чтобы убить противника с < 35% ХП
+			'''
+	}
+
+	AxeTerraAxe: {
+		DisplayName: Терра-топор Акса
+		Tooltip:
+			'''
+			АКС. АТАКУЕТ!
+			Нажмите ПКМ, чтобы убить противника с < 40% ХП
+			'''
+	}
+
+	KeeperStaff: {
+		DisplayName: Посох Хранителя
+		Tooltip:
+			'''
+			Атакуйте, чтобы вызвать вокруг себя свет.
+			Нажмите ПКМ, чтобы свет устремился вперёд.
+
+			«Пусть свет укажет вам путь!»
+			'''
+	}
+
+	LightPetItem: {
+		DisplayName: Сияющая монетка
+		Tooltip: Призови заблудившийся свет, чтобы он последовал за тобой
+	}
+
+	BlinkDagger: {
+		DisplayName: Блинк
+		Tooltip: Нажмите ПКМ, чтобы переместиться на курсор. Время перезарядки: 6 секунд.
+	}
+
+	GoldBag: {
+		DisplayName: Мешочек золота
+		Tooltip: Оооо! Блестяшка!
+	}
+
+	PatrolBannerItem: {
+		DisplayName: Знамя патруля
+		Tooltip: Возможно, Торговец Лавки заинтересуется этим!
+	}
+
+	RogueDagger: {
+		DisplayName: Кинжал Разбойницы
+		Tooltip:
+			'''
+			Выполняйте стремительные атаки, разрезая врагов пополам.
+			Нажмите ПКМ, чтобы совершить рывок к курсору. Время перезарядки: 6 сек.
+			'''
+	}
+
+	Tango: {
+		DisplayName: Танго
+		Tooltip:
+			'''
+			Восстанавливает 75 HP за 4 секунды.
+			Эти вкусные маленькие бобы!
+			'''
+	}
+
+	Mango: {
+		DisplayName: Зачарованное манго
+		Tooltip:
+			'''
+			Восстанавливает 50 маны за 4 секунды.
+			Лучший фрукт на свете!
+			'''
+	}
+
+	HuskarBlood: {
+		DisplayName: Кровь Хускара
+		Tooltip:
+			'''
+			Получение урона повышает ваши боевые возможности
+			Увеличивает весь урон и скорость атаки на 30% от процента недостающего здоровья
+
+			«Я покрою мир кровью…»
+			'''
+	}
+
+	Armlet: {
+		DisplayName: Армлет Мордигана
+		Tooltip:
+			'''
+			Постепенно истощает ваше здоровье, пока не останется 50 HP
+			Вместо этого дает бонус в 21 урона и 5 защиты
+			Эффект удваивается, если уровень здоровья ниже половины
+			Можно включать и выключать
+			'''
+	}
+
+	RadianceAcc: {
+		DisplayName: Радианс
+		Tooltip:
+			'''
+			Аксессуар с Аурой
+			Поджигает ближайших врагов, нанося постоянный урон
+			'''
+	}
+
+	HuskarSpear: {
+		DisplayName: Копье Хускара
+		Tooltip:
+			'''
+			Каждая атака наносит вам урон в размере 8 единиц здоровья.
+			Усиление каждой атаки составляет процент от недостающего вам здоровья, вплоть до 50%.
+			'''
+	}
+
+	ShadowrazeBook: {
+		DisplayName: Заклинание Шадоурейза
+		Tooltip: Выполняет 3 магические атаки, каждая на большем расстоянии, чем предыдущая
+	}
+
+	CKSword: {
+		DisplayName: Меч Хаоса
+		Tooltip:
+			'''
+			Базовый урон от атаки определяется случайным образом
+			Каждая атака имеет 15% шанс критического удара и 15% шанс вампиризма
+
+			«Пусть Боги Рандома решат вашу судьбу!»
+			'''
+	}
+
+	MagnusMallet: {
+		DisplayName: Молот Магнуса
+		Tooltip:
+			'''
+			Нажмите ПКМ, чтобы притянуть всех ближайших врагов перед собой.
+			Они будут оглушены на 2 секунды.
+			'''
+	}
+
+	ChainFrostTome: {
+		DisplayName: Книга Цепного Мороза
+		Tooltip:
+			'''
+			Выпускает снаряд, который отскакивает от врагов, в которых попал
+			Максимум 5 отскоков
+			'''
+	}
+
+	PugnaStaff: {
+		DisplayName: Посох Пугны
+		Tooltip: Удерживайте ПКМ, чтобы истощить ваше здоровье и передать его союзнику, находящемуся рядом с курсором
+	}
+
+	GhostScepter: {
+		DisplayName: Призрачный скипетр
+		Tooltip:
+			'''
+			Аксессуар с Аурой
+			Весь немагический урон снижается на 50%.
+			Весь магический урон увеличивается на 50%.
+			Ближайшие враги сильно замедляются.
+			'''
+	}
+
+	AghsShard: {
+		DisplayName: Осколок Аганима
+		Tooltip: Разблокирует новый слот для аксессуаров с аурой
+	}
+
+	PADagger: {
+		DisplayName: Кортик Фантомки
+		Tooltip:
+			'''
+			Выполняйте небольшие, но смертоносные атаки.
+			Нажмите ПКМ, чтобы телепортироваться к ближайшему врагу и нанести ему удар.
+
+			«Щекотно… ААААА!»
+			'''
+	}
+
+	Desolator: {
+		DisplayName: Дезолятор
+		Tooltip: Каждая атака снижает броню цели на 1, вплоть до 0
+	}
+
+	Desolator2: {
+		DisplayName: Адский Дезолятор
+		Tooltip: Каждая атака снижает броню цели на 3, вплоть до 0
+	}
+
+	MoonShard: {
+		DisplayName: Фрагмент Луны
+		Tooltip:
+			'''
+			Увеличивает скорость атаки на 20%
+
+			«Осколок разбитой луны…»
+			'''
+	}
+
+	MKBar: {
+		DisplayName: Посох Короля Обезьян
+		Tooltip: Выполнение 4 последовательных атак усиливает ваше оружие, повышая размер и урон
+	}
+
+	SlardarTrident: {
+		DisplayName: Трезубец Слардара
+		Tooltip: Выполнение 4 последовательных атак оглушает противника. Может происходить раз в 5 секунд.
+	}
+
+	SkullBasher: {
+		DisplayName: Башер
+		Tooltip: Ваши атаки ближнего боя имеют 7% шанс оглушить противника. Это может произойти один раз в 2,5 секунды.
+	}
+
+	TAShield: {
+		DisplayName: Щит Темпларки
+		Tooltip:
+			'''
+			Снижает максимальное здоровье на 100.
+			Нажмите клавишу способности «Refraction», чтобы окружить себя защитным щитом, предотвращающим 5 инстанций урона.
+			Нажмите клавишу способности «Meld», чтобы стать невидимым и скрытным. Во время действия способности ваш урон постоянно увеличивается.
+			'''
+	}
+
+	BladeMail: {
+		DisplayName: Шипастая кольчуга
+		Tooltip:
+			'''
+			Защита +4
+			Пассивно возвращает врагу 30% урона.
+			Нажмите клавишу способности «Blade Mail», чтобы вернуть 90% урона. Этот урон не учитывает броню.
+			'''
+	}
+
+	SniperRifle: {
+		DisplayName: Винтовка Снайпера
+		Tooltip:
+			'''
+			Нажмите ПКМ, чтобы произвести 20 выстрелов подряд. Во время этой атаки двигаться нельзя.
+
+			"Кря-кря!."
+			'''
+	}
+
+	BoneHook: {
+		DisplayName: Костяной крюк
+		Tooltip:
+			'''
+			Бросает крюк на врагов. Первый пораженный враг притягивается к вам.
+
+			"Ха, свежее мясо!"
+			'''
+	}
+
+	ShallowGrave: {
+		DisplayName: Неглубокая могила
+		Tooltip:
+			'''
+			Если вы вот-вот умрете, отмените свою смерть и получите иммунитет на 5 секунд.
+
+			"Легенды никогда не умирают!"
+			'''
+	}
+
+	BlackKingBar: {
+		DisplayName: Посох Черного короля
+		Tooltip:
+			'''
+			Нажмите клавишу способности BKB, чтобы снять все негативные эффекты, получить ускорение и снизить получаемый урон на 60% на 6 секунд.
+			Вдохновлено: [c/0000FF:tear_vyps: Ne ez bkbe]
+			'''
+	}
+
+	WispBottle: {
+		DisplayName: Висп в бутылке
+		Tooltip:
+			'''
+			Призывает дружелюбный огонeк, который следует за вами и исцеляет
+
+			"*вжик*, "*тиу*""
+			Вдохновлено: [c/0000FF:MrTorex]
+			'''
+	}
+
+	DrowRangerBow: {
+		DisplayName: Лук Дровки
+		Tooltip: Превращает деревянные стрелы в замороженные, замедляющие врагов
+	}
+
+	HoodwinkLauncher: {
+		DisplayName: Арбалет Белочки
+		Tooltip:
+			'''
+			Использует желуди в качестве снарядов
+			Не показывайте это в PETA!
+			'''
+	}
+
+	WindrangerBow: {
+		DisplayName: Лук Виндрейнджер
+		Tooltip: Нажмите ПКМ, чтобы зарядить усиленный выстрел, наносящий большой урон
+	}
+
+	SunStrikeTome: {
+		DisplayName: Солнечный удар
+		Tooltip: Излучайте мощные солнечные лучи с неба
+	}
+
+	Chronosphere: {
+		DisplayName: Хроносфера
+		Tooltip:
+			'''
+			Аксессуар с Аурой
+			Призывает магическую сферу, замедляющую всех врагов и снаряды в ней.
+
+			"Время здесь течёт по-другому…"
+			'''
+	}
+
+	FrogArmor: {
+		DisplayName: Броня Ларго
+		Tooltip: Увеличивает скорость ближнего боя на 12%
+	}
+
+	FrogHead: {
+		DisplayName: Голова Ларго
+		Tooltip: Увеличивает урон в ближнем бою на 10% и шанс критического удара на 5%
+	}
+
+	FrogLegs: {
+		DisplayName: Ботинки Ларго
+		Tooltip:
+			'''
+			Увеличивает урон в ближнем бою на 5%
+
+			Увеличивает скорость и высоту прыжка
+			"*Ква-ква, *ква-ква, прыжок*"
+			'''
+	}
+
+	AncientMoss: {
+		DisplayName: Древний Мох
+		Tooltip: Фу, как же это ужасно...
+	}
+
+	PoweredSteelBar: {
+		DisplayName: Заряженный железный слиток
+		Tooltip: Пульсирует силой
+	}
+
+	RawFury: {
+		DisplayName: Необузданная ярость
+		Tooltip: Держа его в руках, ты приходишь в ярость
+	}
+
+	AghanimScepter: {
+		DisplayName: Скипетр Аганима
+		Tooltip: Обречен великим магом
+	}
+
+	Madstone: {
+		DisplayName: Безумруд
+		Tooltip: Используется в производстве аксессуаров
+	}
+
+	MagicEnergy: {
+		DisplayName: Магическая энергия
+		Tooltip: Внутри можно услышать крики пикси
+	}
+
+	IceShell: {
+		DisplayName: Ледяная раковина
+		Tooltip: Твердый как камень, холодный как лед
+	}
+
+	Chainmail: {
+		DisplayName: Кольчуга
+		Tooltip: Защита +4
+	}
+
+	Moonstone: {
+		DisplayName: Лунный камень
+		Tooltip: Кусочек луны..
+	}
+
+	AbaArmor: {
+		DisplayName: Броня Абаддона
+		Tooltip:
+			'''
+			Увеличивает максимальное здоровье на 50
+			Снижает получаемый урон на 10%
+			Увеличивает магический урон на 20%
+			'''
+	}
+
+	AbaHead: {
+		DisplayName: Капюшон Абаддона
+		Tooltip: Увеличивает скорость магии на 10% и шанс критического удара на 12%.
+	}
+
+	AbaLegs: {
+		DisplayName: Ботинки Аббадона
+		Tooltip:
+			'''
+			Увеличивает скорость передвижения на 15%
+			Увеличивает магический урон на 10%
+			Позволяет уклоняться
+			'''
+	}
+
+	Timelapse: {
+		DisplayName: Перемотка времени
+		Tooltip:
+			'''
+			Отмотайте время назад, вернув себя в положение, в котором вы находились 5 секунд назад
+			Восстановит все характеристики до значений, зафиксированных за это время
+			'''
+	}
+
+	EnchantedPrism: {
+		DisplayName: Зачарованная призма
+		Tooltip: Свет отражается внутри...
+	}
+
+	AbaCape: {
+		DisplayName: Накидка Абаддона
+		Tooltip:
+			'''
+			Часть набора Абаддона
+			Какой классный плащ, дружище!
+			'''
+	}
+
+	PoisonAttack: {
+		DisplayName: Ядовитая атака
+		Tooltip:
+			'''
+			Ваши атаки наносят периодический урон и замедляют врага
+			Сумма суммируется до 10 раз
+			'''
+	}
+
+	GyroStaff: {
+		DisplayName: Гиро Посох
+		Tooltip:
+			'''
+			Призывает гирокоптер сражаться за вас!
+			Вдохновлено: [c/0000FF:Anigleb]
+
+			'''
+	}
+
+	Aegis: {
+		DisplayName: Эгида Бессмертия
+		Tooltip: Вы бессмертны
+	}
+
+	Bulwark: {
+		DisplayName: Бастион
+		Tooltip:
+			'''
+			Увеличивает урон от призванных существ на 10%
+			Увеличивает максимальное количество существ на 1
+			Защита +10
+			Каждое активное существо дает +2 к защите
+			'''
+	}
+
+	MarsSpear: {
+		DisplayName: Копье Марса
+		Tooltip: Призывает спартанского воина, чтобы он сражался за вас!
+	}
+
+	Eul: {
+		DisplayName: Посох Еула
+		Tooltip:
+			'''
+			Создаёт мощный воздушный вихрь, который подбрасывает вас в небо!
+			Одновременно могут существовать только 2 вихря
+			'''
+	}
+
+	TheLog: {
+		DisplayName: БРЕВНО
+		Tooltip:
+			'''
+			Нажмите правую кнопку мыши, чтобы нанести мощный удар по земле
+			Урон от удара увеличивается за каждого пораженного врага
+			'''
+	}
+
+	Fireball: {
+		DisplayName: Огненный шарик
+		Tooltip:
+			'''
+			Аммуниция
+			Хороший маленький шарик, держу пари, он вкусный!
+			'''
+	}
+
+	SnapfireShotgun: {
+		DisplayName: Дробовик Бабки
+		Tooltip:
+			'''
+			Выпускает три огненных шара, оставляющих за собой огненную область.
+			Использует Огненные шарики
+			Вдохновлено: [c/FF0000:Ultrapomoika]
+			'''
+	}
+
+	ScytheOfVyse: {
+		DisplayName: Коса Вайса
+		Tooltip:
+			'''
+			Теперь в ваших руках величайшее оружие из когда-либо созданных!
+
+			Будьте осторожны, его магия может быть непредсказуемой...
+			'''
+	}
+
+	ShardOfEternity: {
+		DisplayName: Осколок вечности
+		Tooltip: Величайший элемент из когда-либо существовавших!
+	}
+
+	BlackHole: {
+		Tooltip:
+			'''
+			Теперь вы владеете самым ужасающим оружием из когда-либо созданных!
+			Время применения: 3 секунды
+			После применения притягивает к вам всех ближайших врагов, нанося урон со временем.
+			Во время применения вы невосприимчивы к урону.
+			'''
+		DisplayName: Черная дыра
+	}
+
+	Multicast: {
+		DisplayName: Мультикаст
+		Tooltip:
+			'''
+			Ваши снаряды можно умножить!
+			2x - 10%
+			3x - 5%
+			4x - 2%
+			'''
+	}
+
+	TechiesMine: {
+		DisplayName: Мина Течиса
+		Tooltip:
+			'''
+			Сбрасывает на землю мину
+			Максимум 5 мин
+			Нажмите ПКМ, чтобы взорвать все мины
+			'''
+	}
+
+	LightningStrike: {
+		DisplayName: Удар молнии
+		Tooltip: При попадании по врагу с неба падают молнии
+	}
+
+	ShardOfDesolation: {
+		DisplayName: Осколок опустошения
+		Tooltip: Вокруг него сосредоточена злая энергия
+	}
+}
+
+Currency.GoldBagCurrency: Gold Bag
+
+Projectiles: {
+	MagicProjectile.DisplayName: Magic Projectile
+	AxeArmorProjectile.DisplayName: Axe Armor Projectile
+	KeeperStaffProjectile.DisplayName: Keeper Staff Projectile
+	KeeperStaffProjectile2.DisplayName: Keeper Staff Projectile2
+	LightPetProjectile.DisplayName: Light Pet Projectile
+	RogueDaggerSlash.DisplayName: Rogue Dagger Slash
+	HuskarSpearProjectile.DisplayName: Huskar Spear Projectile
+	ShadowrazeProjectile.DisplayName: Shadowraze Projectile
+	MagnusPullProjectile.DisplayName: Magnus Pull Projectile
+	ChainFrostProjectile.DisplayName: Chain Frost Projectile
+	PugnaBlastProjectile.DisplayName: Pugna Blast Projectile
+	PugnaLifeDrainProjectile.DisplayName: Pugna Life Drain Projectile
+	PABlinkProjectile.DisplayName: P A Blink Projectile
+	SniperProjectile.DisplayName: Sniper Projectile
+	BoneHookProjectile.DisplayName: Bone Hook Projectile
+	WispProjectile.DisplayName: Wisp Projectile
+	AcornProjectile.DisplayName: Acorn Projectile
+	SunStrikeProjectile.DisplayName: Sun Strike Projectile
+	ChronosphereProjectile.DisplayName: Chronosphere Projectile
+	Note1.DisplayName: Note1
+	Note2.DisplayName: Note2
+	Note3.DisplayName: Note3
+	FrogMinion.DisplayName: Frog Minion
+	AbaArmorProjectile.DisplayName: Aba Armor Projectile
+	GyroSummon.DisplayName: Gyro Summon
+	MarsSummon.DisplayName: Mars Summon
+	AirWall.DisplayName: Air Wall
+	TheLogSpear.DisplayName: The Log Spear
+	EchoSlam.DisplayName: Echo Slam
+	FireballProjectile.DisplayName: Fireball Projectile
+	FireZoneProjectile.DisplayName: Fire Zone Projectile
+	TechiesMineProjectile.DisplayName: Techies Mine Projectile
+	ThunderStrikeProjectile.DisplayName: Thunder Strike Projectile
+	BlackHoleProjectile.DisplayName: Black Hole Projectile
+}
+
+Buffs: {
+	LightPetBuff: {
+		DisplayName: Путеводный свет
+		Description: Потерянный свет указывает тебе путь!
+	}
+
+	TangoHealBuff: {
+		DisplayName: Вкусное Танго
+		Description: Восстановление здоровья со временем
+	}
+
+	MangoHealBuff: {
+		DisplayName: Вкусное Манго
+		Description: Восстановление маны со временем
+	}
+
+	ArmletBuff: {
+		DisplayName: Кровавое жертвоприношение
+		Description: Медленно поглощает ваше здоровье, давая бонус к урону и защите
+	}
+
+	HuskarSpearProjectileBuff: {
+		DisplayName: Эффект копья Хускара
+		Description: Это описание не должно использоваться
+	}
+
+	MagnusPullProjectileBuff: {
+		DisplayName: Притяжение Магнуса
+		Description: Это описание не должно использоваться
+	}
+
+	StunBuff: {
+		DisplayName: Оглушение
+		Description: Вы оглушены!
+	}
+
+	MagnusCooldown: {
+		DisplayName: Перезарядка оглушения
+		Description: Вы не можете оглушать врагов
+	}
+
+	GhostScepterBuff: {
+		DisplayName: Эффект Ghost Scepter
+		Description: Вы излучаете призрачную ауру!
+	}
+
+	RadianceBuff: {
+		DisplayName: Эффект Radiance
+		Description: Вы излучаете обжигающую ауру!
+	}
+
+	NoBloody: {
+		DisplayName: Без крови
+		Description: Вы не можете наносить критические удары
+	}
+
+	JinguMasteryBuff: {
+		DisplayName: Jingu Mastery
+		Description: Оружие усилено!
+	}
+
+	TA1Buff: {
+		DisplayName: Refraction
+		Description: Вы окружены щитом, который блокирует атаки
+	}
+
+	TA2Buff: {
+		DisplayName: Meld
+		Description: Вы готовы напасть на врага из засады!
+	}
+
+	BMBuff: {
+		DisplayName: Blade Mail
+		Description: Теперь вы колючий!
+	}
+
+	TA1CooldownBuff: {
+		DisplayName: Перезарядка Refraction
+		Description: Сейчас нельзя использовать Refraction
+	}
+
+	TA2CooldownBuff: {
+		DisplayName: Перезарядка Meld
+		Description: Сейчас нельзя использовать Meld
+	}
+
+	BMCooldownBuff: {
+		DisplayName: Перезарядка Blade Mail
+		Description: Сейчас нельзя использовать Blade Mail
+	}
+
+	ShallowGraveBuff: {
+		DisplayName: Shallow Grave
+		Description: Вы не можете умереть
+	}
+
+	ShallowGraveCooldownBuff: {
+		DisplayName: Перезарядка Shallow Grave
+		Description: Shallow Grave сейчас не может сработать
+	}
+
+	BlackKingBarBuff: {
+		DisplayName: Black King Bar
+		Description: Эффекты сняты, скорость увеличена, а входящий урон снижен
+	}
+
+	BlackKingBarCooldownBuff: {
+		DisplayName: Перезарядка Black King Bar
+		Description: Black King Bar на перезарядке!
+	}
+
+	ChronosphereBuff: {
+		DisplayName: Chronosphere
+		Description: Вы окружены магической сферой
+	}
+
+	ChronosphereCooldownBuff: {
+		DisplayName: Перезарядка Chronosphere
+		Description: Сейчас нельзя использовать Chronosphere
+	}
+
+	NoteDamageBuff: {
+		DisplayName: Нота урона
+		Description: Урон увеличен!
+	}
+
+	NoteMoveBuff: {
+		DisplayName: Нота движения
+		Description: Скорость передвижения увеличена!
+	}
+
+	NoteSpeedBuff: {
+		DisplayName: Нота скорости
+		Description: Скорость атаки увеличена!
+	}
+
+	FrogMinionBuff: {
+		DisplayName: Лягушонок-миньон
+		Description: Маленький милашка следует за вами!
+	}
+
+	TimelapseCooldownBuff: {
+		DisplayName: Перезарядка Timelapse
+		Description: Время сейчас нельзя повернуть вспять
+	}
+
+	PoisonAttackBuff: {
+		DisplayName: Ядовитая атака
+		Description: Нет
+	}
+
+	GyroSummonBuff: {
+		DisplayName: Призыв Гиро
+		Description: Дружественный гирокоптер помогает вам!
+	}
+
+	AegisBuff: {
+		DisplayName: Aegis of the Immortal
+		Description: Смерть переоценена. По крайней мере, сейчас...
+	}
+
+	AegisCooldownBuff: {
+		DisplayName: Перезарядка Aegis
+		Description: Сейчас нельзя возродиться
+	}
+
+	MarsSummonBuff: {
+		DisplayName: Призыв Марса
+		Description: Дружественный спартанский воин помогает вам!
+	}
+}
+
+NPCs: {
+	StashTrader: {
+		DisplayName: Торговец Лавки
+		Name: Смотритель Лавки
+
+		TownNPCMood: {
+			Content: Я всем доволен.
+			NoHome: Терпеть не могу отсутствие места для заначки!
+			FarFromHome: Я слишком далеко от дома.
+			DislikeCrowded: Мне не нравится толпа.
+			HateCrowded: Я ненавижу этих людей!!
+			LikeBiome: Мне нравится {BiomeName}.
+			DislikeBiome: Мне не нравится {BiomeName}.
+			LikeNPC: Мне нравится {NPCName}.
+			HateNPC: Я ненавижу {NPCName}.
+			LikeNPC_Princess: Мне нравится {NPCName}.
+			Princess_LovesNPC: Мне нравится {NPCName}.
+			LoveSpace: Обожаю, когда вокруг так много свободного места.
+		}
+
+		ChatOption1: Приветствую, путешественник! Хороший день, не так ли? У тебя есть.. [c/FFFF00:ЗОЛОТО]?
+		ChatOption2: Отличный день, чтобы заработать немного [c/FFFF00:ЗОЛОТА] и отдать его мне, а?
+		ChatOption3: Я хочу от жизни всего двух вещей — больше продаж и больше [c/FFFF00:ЗОЛОТА]!
+		ChatOption4: Извини, не могу сейчас помочь. Разве что ты достаточно богат.
+		HelpOption0: Легенды гласят, что при определенных условиях этот топорик можно превратить в магический тотем.
+		HelpOption1: Некоторые ПО-НАСТОЯЩЕМУ могущественные артефакты нельзя добыть простыми методами.
+		HelpOption2: Легенды рассказывают о магической жидкости, используемой для создания самого мощного оружия.
+		HelpOption3: У тебя при себе славный камень! Держу пари, с ним можно что-то сделать.
+		HelpOption11: Некоторые ПО-НАСТОЯЩЕМУ могущественные артефакты нельзя добыть простыми методами.
+		HelpOption21: Пожалуйста, спрячь эту штуку. Темная энергия вот-вот вырвется из нее.
+		HelpOption31: Будь я на твоем месте, я бы выбросил эту вещь подальше. Серьезно.
+		RewardOption1: Отличная работа! Вот твоя награда!
+		MiscOption1: Старайся лучше! Тебе стоит найти больше знамен!
+		Button2: Награды патруля
+		Best: Этот таинственный поставщик всегда знает, где найти лучшее снаряжение. Говорят, его рюкзак бездонен, а маскировка позволяет скрыться даже от самых зорких глаз.
+		Census.SpawnCondition: Иметь [i:AncientLegacyMod/PatrolBannerItem] в инвентаре (Баннер патруля)
+	}
+}
+
+Tiles: {
+	PatrolBanner.MapEntry: Баннер патруля
+	PatrolBannerTile.MapEntry: Баннер патруля
+	MapObject.Furniture: Баннер патруля
+}
+
+MapObject.PatrolBanner: Баннер патруля
+
+Keybinds: {
+	"Toggle Armlet.DisplayName": Активировать Армлет
+	"Activate Refraction.DisplayName": Активировать  Refraction
+	"Activate Meld.DisplayName": Активировать  Meld
+	"Activate Blade Mail.DisplayName": Активировать  Blade  Mail
+	"Activate Black King Bar.DisplayName": Активировать  BKB
+	"Activate Chronosphere.DisplayName": Активировать  Хроносферу
+	"Use Time Lapse.DisplayName": Использовать  Time  Lapse
+}
+
+ChatMessages.ShopEntry: Ассортимент магазина был обновлен!
+
+Death: {
+	Axe: " был разрублен пополам собственным оружием!"
+	Aba: " использовал могущественную магию, которая поглотила его душу"
+	Hex: " был превращен в пыль заклятием сглаза"
+}

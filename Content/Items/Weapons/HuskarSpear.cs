@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Projectiles;
+using AncientLegacyMod.Content.Items.Projectiles;
 
-namespace testMod1.Content.Items.Weapons
+namespace AncientLegacyMod.Content.Items.Weapons
 {
     public class HuskarSpear : ModItem
     {

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Buffs;
-using testMod1.Content.Players;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Buffs;
+using AncientLegacyMod.Content.Players;
 
-namespace testMod1.Content.Items.Accessories
+namespace AncientLegacyMod.Content.Items.Accessories
 {
     public class RadianceAcc : ModItem
     {

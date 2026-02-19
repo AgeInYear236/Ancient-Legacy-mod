@@ -8,16 +8,16 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using testMod1.Content;
-using testMod1.Content.Items.Accessories;
+using AncientLegacyMod.Content;
+using AncientLegacyMod.Content.Items.Accessories;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class SpecialSlot : ModAccessorySlot
     {
         public override string DyeTexture => null;
         public override string VanityTexture => null;
-        public override string FunctionalTexture => "testMod1/Content/Misc/AccessorySlot.png";
+        public override string FunctionalTexture => "AncientLegacyMod/Content/Misc/AccessorySlot.png";
 
         public override bool IsVisibleWhenNotEnabled()
         {
@@ -29,7 +29,7 @@ namespace testMod1.Common.Systems
 
             if (context == AccessorySlotType.FunctionalSlot)
             {
-                Main.instance.MouseText(Language.GetTextValue("Mods.testMod1.Content.SpecialSlotContext"));
+                Main.instance.MouseText(Language.GetTextValue("Mods.AncientLegacyMod.Content.SpecialSlotContext"));
             }
         }
         public override bool IsEnabled() => Player.GetModPlayer<BasicModPlayer>().extraSlotUnlocked;

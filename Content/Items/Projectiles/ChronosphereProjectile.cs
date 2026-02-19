@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class ChronosphereProjectile : ModProjectile
     {

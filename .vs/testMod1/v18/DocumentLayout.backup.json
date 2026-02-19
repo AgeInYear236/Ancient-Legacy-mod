@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\content\\items\\weapons\\blackhole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:content\\items\\weapons\\blackhole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\content\\npcs\\stashtradershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:content\\npcs\\stashtradershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\content\\items\\weapons\\shadowrazebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:content\\items\\weapons\\shadowrazebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\localization\\en-us_mods.testmod1.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:localization\\en-us_mods.testmod1.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\localization\\ru-ru_mods.testmod1.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:localization\\ru-ru_mods.testmod1.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\content\\npcs\\stashtrader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:content\\npcs\\stashtrader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\content\\items\\misc\\aegis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:content\\items\\misc\\aegis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\description.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:description.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\common\\systems\\bossdropmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:common\\systems\\bossdropmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\description_workshop.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:description_workshop.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\build.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:build.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\localization\\en-us_mods.testmod1.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:localization\\en-us_mods.testmod1.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\common\\systems\\customchestloot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:common\\systems\\customchestloot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\content\\npcs\\stashtradershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:content\\npcs\\stashtradershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\testmod1\\common\\systems\\bossdropmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D86FEF32-6530-7267-A557-457032C9E321}|testMod1.csproj|solutionrelative:common\\systems\\bossdropmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,106 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShadowrazeBook.cs",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\Items\\Weapons\\ShadowrazeBook.cs",
-              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\ShadowrazeBook.cs",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\Items\\Weapons\\ShadowrazeBook.cs",
-              "RelativeToolTip": "Content\\Items\\Weapons\\ShadowrazeBook.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T16:53:04.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BlackHole.cs",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\Items\\Weapons\\BlackHole.cs",
-              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\BlackHole.cs",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\Items\\Weapons\\BlackHole.cs",
-              "RelativeToolTip": "Content\\Items\\Weapons\\BlackHole.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowBUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T16:52:33.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Aegis.cs",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\Items\\Misc\\Aegis.cs",
-              "RelativeDocumentMoniker": "Content\\Items\\Misc\\Aegis.cs",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\Items\\Misc\\Aegis.cs",
-              "RelativeToolTip": "Content\\Items\\Misc\\Aegis.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T13:28:05.541Z"
+              "Title": "description_workshop.txt",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\description_workshop.txt",
+              "RelativeDocumentMoniker": "description_workshop.txt",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\description_workshop.txt",
+              "RelativeToolTip": "description_workshop.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-18T20:33:57.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ru-RU_Mods.testMod1.hjson",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Localization\\ru-RU_Mods.testMod1.hjson",
+              "RelativeDocumentMoniker": "Localization\\ru-RU_Mods.testMod1.hjson",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Localization\\ru-RU_Mods.testMod1.hjson",
+              "RelativeToolTip": "Localization\\ru-RU_Mods.testMod1.hjson",
+              "ViewState": "AgIAALUCAAAAAAAAAAAQwIoDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-18T17:17:45.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "build.txt",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\build.txt",
+              "RelativeDocumentMoniker": "build.txt",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\build.txt",
+              "RelativeToolTip": "build.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-18T16:57:41.921Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "description.txt",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\description.txt",
+              "RelativeDocumentMoniker": "description.txt",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\description.txt",
+              "RelativeToolTip": "description.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-18T16:25:31.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StashTrader.cs",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\NPCs\\StashTrader.cs",
               "RelativeDocumentMoniker": "Content\\NPCs\\StashTrader.cs",
               "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\NPCs\\StashTrader.cs",
               "RelativeToolTip": "Content\\NPCs\\StashTrader.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAIwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAcwMoAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:58:34.493Z"
+              "WhenOpened": "2026-02-16T12:58:34.493Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "StashTraderShop.cs",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\NPCs\\StashTraderShop.cs",
               "RelativeDocumentMoniker": "Content\\NPCs\\StashTraderShop.cs",
               "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Content\\NPCs\\StashTraderShop.cs",
               "RelativeToolTip": "Content\\NPCs\\StashTraderShop.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAuwD4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwDIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:23:49.112Z"
+              "WhenOpened": "2026-02-15T21:23:49.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CustomChestLoot.cs",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Common\\Systems\\CustomChestLoot.cs",
               "RelativeDocumentMoniker": "Common\\Systems\\CustomChestLoot.cs",
               "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Common\\Systems\\CustomChestLoot.cs",
               "RelativeToolTip": "Common\\Systems\\CustomChestLoot.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAcwCEAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAIBJwBMAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T14:16:52.992Z"
+              "WhenOpened": "2026-02-10T14:16:52.992Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "en-US_Mods.testMod1.hjson",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Localization\\en-US_Mods.testMod1.hjson",
               "RelativeDocumentMoniker": "Localization\\en-US_Mods.testMod1.hjson",
               "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Localization\\en-US_Mods.testMod1.hjson",
               "RelativeToolTip": "Localization\\en-US_Mods.testMod1.hjson",
-              "ViewState": "AgIAADIDAAAAAAAAAAAAAA4DAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACICAAAAAAAAAAAAACsCAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-01-17T10:14:33.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "BossDropModifier.cs",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Common\\Systems\\BossDropModifier.cs",
               "RelativeDocumentMoniker": "Common\\Systems\\BossDropModifier.cs",
               "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\testMod1\\Common\\Systems\\BossDropModifier.cs",
               "RelativeToolTip": "Common\\Systems\\BossDropModifier.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA+wB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T13:50:43.583Z"
+              "WhenOpened": "2026-02-05T13:50:43.583Z",
+              "EditorCaption": ""
             }
           ]
         }

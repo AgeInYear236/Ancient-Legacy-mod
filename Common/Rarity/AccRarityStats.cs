@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria.ModLoader;
 
-namespace testMod1.Common.Rarity
+namespace AncientLegacyMod.Common.Rarity
 {
     public class AccRarityStats : ModRarity
     {

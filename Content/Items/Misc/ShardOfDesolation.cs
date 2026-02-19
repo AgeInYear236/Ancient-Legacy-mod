@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Items.Materials;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Items.Materials;
 
-namespace testMod1.Content.Items.Misc
+namespace AncientLegacyMod.Content.Items.Misc
 {
     public class ShardOfDesolation : ModItem
     {

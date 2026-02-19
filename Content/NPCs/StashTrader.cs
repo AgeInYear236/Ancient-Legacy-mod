@@ -1,5 +1,8 @@
-﻿using System;
+﻿using AncientLegacyMod.Common.Systems;
+using AncientLegacyMod.Content.Items.Misc;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
@@ -10,15 +13,13 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
-using testMod1.Common.Systems;
-using testMod1.Content.Items.Misc;
 
-namespace testMod1.Content.NPCs
+namespace AncientLegacyMod.Content.NPCs
 {
     [AutoloadHead]
     public class StashTrader : ModNPC
     {
-        public override string Texture => "testmod1/Content/NPCs/StashTrader";
+        public override string Texture => "AncientLegacyMod/Content/NPCs/StashTrader";
 
         public override void SetStaticDefaults()
         {
@@ -115,19 +116,23 @@ namespace testMod1.Content.NPCs
 
         public override bool CanTownNPCSpawn(int numTownNPCs)
         {
-            for (int i = 0; i < Main.maxPlayers; i++)
+            for (int k = 0; k < Main.maxPlayers; k++)
             {
-                Player player = Main.player[i];
-
-                if (player.active)
+                Player player = Main.player[k];
+                if (!player.active)
                 {
-                    if (player.HasItem(ModContent.ItemType<PatrolBannerItem>()))
-                    {
-                        return true;
-                    }
+                    continue;
+                }
+
+
+                if (player.inventory.Any(item => item.type == ModContent.ItemType<PatrolBannerItem>()))
+                {
+                    return true;
                 }
             }
+
             return false;
+
         }
 
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
@@ -136,20 +141,20 @@ namespace testMod1.Content.NPCs
         BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
 
         //new FlavorTextBestiaryInfoElement("Этот таинственный поставщик всегда знает, где достать лучшее снаряжение. Говорят, его рюкзак бездонен, а камуфляж позволяет скрываться даже от самых зорких глаз.")
-        new FlavorTextBestiaryInfoElement("Mods.testMod1.NPCs.StashTrader.Best")
+        new FlavorTextBestiaryInfoElement("Mods.AncientLegacyMod.NPCs.StashTrader.Best")
     });
         }
 
         public override List<string> SetNPCNameList()
         {
             return new List<string>() {
-                    Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.Name")
+                    Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.Name")
                 };
         }
 
         public override void SetChatButtons(ref string button, ref string button2) { 
             button = Language.GetTextValue("LegacyInterface.28");
-            button2 = Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.Button2");
+            button2 = Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.Button2");
         }
 
         public override void OnChatButtonClicked(bool firstButton, ref string shop)
@@ -165,7 +170,7 @@ namespace testMod1.Content.NPCs
                 {
                     if (item != null && !item.IsAir && item.type == ModContent.ItemType<PatrolBannerItem>())
                     {
-                        Main.npcChatText = Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.RewardOption1");
+                        Main.npcChatText = Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.RewardOption1");
                         rewardCounter += 1;
                         Main.LocalPlayer.ConsumeItem(ModContent.ItemType<PatrolBannerItem>());
                     }
@@ -176,7 +181,7 @@ namespace testMod1.Content.NPCs
                 }
                 else
                 {
-                    Main.npcChatText = Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.MiscOption1");
+                    Main.npcChatText = Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.MiscOption1");
                 }
 
             }
@@ -198,18 +203,23 @@ namespace testMod1.Content.NPCs
 
                 if (player.active)
                 {
+                    if (player.HasItem(ItemID.PossessedHatchet))
+                    {
+                        chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.HelpOption0"));
+                        return chat.Get();
+                    }
                     if (player.HasItem(ModContent.ItemType<ShardOfEternity>()))
                     {
-                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption1"));
-                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption2"));
-                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption3"));
+                        chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.HelpOption1"));
+                        chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.HelpOption2"));
+                        chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.HelpOption3"));
                         return chat.Get();
                     }
                     if (player.HasItem(ModContent.ItemType<ShardOfDesolation>()))
                     {
-                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption11"));
-                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption21"));
-                        chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.HelpOption31"));
+                        chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.HelpOption11"));
+                        chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.HelpOption21"));
+                        chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.HelpOption31"));
                         return chat.Get();
                     }
                 }
@@ -217,9 +227,9 @@ namespace testMod1.Content.NPCs
 
 
 
-            chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption1"));
-            chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption2"));
-            chat.Add(Language.GetTextValue("Mods.testMod1.NPCs.StashTrader.ChatOption3"));
+            chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.ChatOption1"));
+            chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.ChatOption2"));
+            chat.Add(Language.GetTextValue("Mods.AncientLegacyMod.NPCs.StashTrader.ChatOption3"));
 
             return chat.Get();
         }

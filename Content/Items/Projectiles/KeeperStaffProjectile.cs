@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class KeeperStaffProjectile : ModProjectile
     {

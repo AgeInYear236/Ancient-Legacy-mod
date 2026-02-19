@@ -4,9 +4,9 @@ using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Armor;
+using AncientLegacyMod.Content.Items.Armor;
 
-namespace testMod1.Content.Items.Misc
+namespace AncientLegacyMod.Content.Items.Misc
 {
     public class FrogMinion : ModProjectile
     {

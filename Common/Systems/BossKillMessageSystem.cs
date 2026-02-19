@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class BossKillMessageSystem : GlobalNPC
     {
@@ -18,7 +18,7 @@ namespace testMod1.Common.Systems
                 {
                     string bossName = npc.TypeName;
 
-                    string message = $"Mods.testMod1.ChatMessages.ShopEntry";
+                    string message = $"Mods.AncientLegacyMod.ChatMessages.ShopEntry";
                     Color messageColor = new Color(255, 128, 0);
 
                     if (Main.netMode == NetmodeID.SinglePlayer)

@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using System.Collections.Generic;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class EchoSlam : ModProjectile
     {

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace testMod1.Content.Items.Misc
+namespace AncientLegacyMod.Content.Items.Misc
 {
     public abstract class BaseNote : ModProjectile
     {

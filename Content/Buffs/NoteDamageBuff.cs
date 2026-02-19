@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Buffs
+namespace AncientLegacyMod.Content.Buffs
 {
     // Пример для одного (остальные по аналогии)
     public class NoteDamageBuff : ModBuff

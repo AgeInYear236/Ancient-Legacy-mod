@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Armor
+namespace AncientLegacyMod.Content.Items.Armor
 {
     [AutoloadEquip(EquipType.Legs)]
     public class AbaLegs : ModItem

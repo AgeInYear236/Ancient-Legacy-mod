@@ -8,10 +8,10 @@ using Terraria.GameContent.UI;
 using Terraria.ID;
 using Terraria.IO;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Materials;
 
 
-namespace testMod1.Content.Items.Armor
+namespace AncientLegacyMod.Content.Items.Armor
 {
     [AutoloadEquip(EquipType.Legs)]
     public class AxeBoots : ModItem

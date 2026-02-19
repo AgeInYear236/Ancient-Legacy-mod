@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Summons
+namespace AncientLegacyMod.Content.Items.Summons
 {
     public class MarsSummon : ModProjectile
     {

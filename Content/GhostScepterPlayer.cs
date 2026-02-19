@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Buffs;
+using AncientLegacyMod.Content.Buffs;
 
-namespace testMod1.Content
+namespace AncientLegacyMod.Content
 {
     public class GhostScepterPlayer : ModPlayer
     {

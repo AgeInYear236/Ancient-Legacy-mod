@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
-using testMod1.Common.Systems;
+using AncientLegacyMod.Common.Systems;
 
-namespace testMod1.Content.Buffs
+namespace AncientLegacyMod.Content.Buffs
 {
     public class StunBuff : ModBuff
     {

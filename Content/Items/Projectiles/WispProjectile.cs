@@ -4,9 +4,9 @@ using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Accessories;
+using AncientLegacyMod.Content.Items.Accessories;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class WispProjectile : ModProjectile
     {
@@ -114,7 +114,7 @@ namespace testMod1.Content.Items.Projectiles
         {
             Player player = Main.player[Projectile.owner];
 
-            Texture2D beamTex = ModContent.Request<Texture2D>("testMod1/Content/Items/Misc/WispTether_Chain").Value;
+            Texture2D beamTex = ModContent.Request<Texture2D>("AncientLegacyMod/Content/Items/Misc/WispTether_Chain").Value;
             Vector2 start = Projectile.Center;
             Vector2 end = player.Center;
             Vector2 dist = end - start;

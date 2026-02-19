@@ -9,11 +9,11 @@ using Terraria.ID;
 using Terraria.IO;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Materials;
 
 
 
-namespace testMod1.Content.Items.Armor
+namespace AncientLegacyMod.Content.Items.Armor
 {
     [AutoloadEquip(EquipType.Head)]
     public class AxeHelm : ModItem
@@ -56,7 +56,7 @@ namespace testMod1.Content.Items.Armor
         public override void UpdateArmorSet(Player player)
         {
             modPlayer1 axePlayer = player.GetModPlayer<modPlayer1>();
-            player.setBonus = Language.GetTextValue("Mods.testMod1.Items.ItemSetBonus.AxeHelm");
+            player.setBonus = Language.GetTextValue("Mods.AncientLegacyMod.Items.ItemSetBonus.AxeHelm");
             axePlayer.isAxed = true;
 
         }

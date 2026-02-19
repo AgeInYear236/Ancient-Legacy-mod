@@ -4,9 +4,9 @@ using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Materials;
 
-namespace testMod1.Content.Items.Weapons
+namespace AncientLegacyMod.Content.Items.Weapons
 {
     public class AghanimScepter : ModItem
     {

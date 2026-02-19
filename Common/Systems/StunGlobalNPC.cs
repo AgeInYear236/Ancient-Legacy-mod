@@ -1,9 +1,9 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Buffs;
+using AncientLegacyMod.Content.Buffs;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class StunGlobalNPC : GlobalNPC
     {

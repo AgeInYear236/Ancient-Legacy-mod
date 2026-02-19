@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Materials;
 
-namespace testMod1.Content.Items.Accessories
+namespace AncientLegacyMod.Content.Items.Accessories
 {
     public class Bulwark : ModItem
     {

@@ -7,13 +7,13 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Tiles;
+using AncientLegacyMod.Content.Tiles;
 
-namespace testMod1.Content.Items.Misc
+namespace AncientLegacyMod.Content.Items.Misc
 {
     public class PatrolBannerItem : ModItem
     {
-        public override string Texture => "testMod1/Content/Items/Misc/PatrolBannerItem";
+        public override string Texture => "AncientLegacyMod/Content/Items/Misc/PatrolBannerItem";
 
         public override void SetStaticDefaults()
         {

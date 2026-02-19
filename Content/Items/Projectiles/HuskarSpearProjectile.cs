@@ -8,11 +8,11 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Systems;
-using testMod1.Content.Buffs;
-using testMod1.Content.Items.Weapons;
+using AncientLegacyMod.Common.Systems;
+using AncientLegacyMod.Content.Buffs;
+using AncientLegacyMod.Content.Items.Weapons;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class HuskarSpearProjectile : ModProjectile
     {

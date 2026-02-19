@@ -1,10 +1,10 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Accessories;
-using testMod1.Content.Items.Summons;
+using AncientLegacyMod.Content.Items.Accessories;
+using AncientLegacyMod.Content.Items.Summons;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class ChestLootSystem : ModSystem
     {

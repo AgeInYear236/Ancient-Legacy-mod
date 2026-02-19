@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Items.Misc;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Items.Misc;
 
-namespace testMod1.Content.Items.Weapons
+namespace AncientLegacyMod.Content.Items.Weapons
 {
     public class ScytheOfVyse : ModItem
     {
@@ -41,7 +41,7 @@ namespace testMod1.Content.Items.Weapons
 
             if (roll == 1)
             {
-                player.Hurt(Terraria.DataStructures.PlayerDeathReason.ByCustomReason(player.name + "Mods.testMod1.Death.Hex"), 666, 0);
+                player.Hurt(Terraria.DataStructures.PlayerDeathReason.ByCustomReason(player.name + "Mods.AncientLegacyMod.Death.Hex"), 666, 0);
 
                 for (int i = 0; i < 50; i++)
                 {

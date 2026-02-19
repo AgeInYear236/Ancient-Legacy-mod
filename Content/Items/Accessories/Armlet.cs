@@ -4,11 +4,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Accessories
+namespace AncientLegacyMod.Content.Items.Accessories
 {
     public class Armlet : ModItem
     {
-        public override string Texture => "testMod1/Content/Items/Accessories/ArmletOff";
+        public override string Texture => "AncientLegacyMod/Content/Items/Accessories/ArmletOff";
 
         public override void SetDefaults()
         {
@@ -29,7 +29,7 @@ namespace testMod1.Content.Items.Accessories
         {
             var modPlayer = Main.LocalPlayer.GetModPlayer<BasicModPlayer>();
 
-            string texturePath = modPlayer.armletActive ? "testMod1/Content/Items/Accessories/ArmletOn" : "testMod1/Content/Items/Accessories/ArmletOff";
+            string texturePath = modPlayer.armletActive ? "AncientLegacyMod/Content/Items/Accessories/ArmletOn" : "AncientLegacyMod/Content/Items/Accessories/ArmletOff";
             Texture2D texture = ModContent.Request<Texture2D>(texturePath).Value;
 
             spriteBatch.Draw(texture, position, null, drawColor, 0f, origin, scale, SpriteEffects.None, 0f);

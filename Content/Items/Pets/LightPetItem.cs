@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Buffs;
+using AncientLegacyMod.Content.Buffs;
 
-namespace testMod1.Content.Items.Pets
+namespace AncientLegacyMod.Content.Items.Pets
 {
     public class LightPetItem : ModItem
     {

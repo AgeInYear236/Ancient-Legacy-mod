@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Materials;
 
-namespace testMod1.Content.Items.Armor
+namespace AncientLegacyMod.Content.Items.Armor
 {
     [AutoloadEquip(EquipType.Head)]
     public class FrogHead : ModItem
@@ -33,7 +33,7 @@ namespace testMod1.Content.Items.Armor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = Language.GetTextValue("Mods.testMod1.Items.ItemSetBonus.FrogHead");
+            player.setBonus = Language.GetTextValue("Mods.AncientLegacyMod.Items.ItemSetBonus.FrogHead");
 
             /*player.setBonus = "Melee attacks can summon note, that empowers you with\n " +
                 "3 random buffs: speed, damage, attack speed\n " +

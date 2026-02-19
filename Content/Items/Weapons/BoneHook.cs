@@ -1,9 +1,9 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
+using AncientLegacyMod.Common.Rarity;
 
-namespace testMod1.Content.Items.Weapons
+namespace AncientLegacyMod.Content.Items.Weapons
 {
     public class BoneHook : ModItem
     {

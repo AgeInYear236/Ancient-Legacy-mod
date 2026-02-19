@@ -9,10 +9,10 @@ using Terraria.Chat;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
-using testMod1.Content.Buffs;
+using AncientLegacyMod.Common.Rarity;
+using AncientLegacyMod.Content.Buffs;
 
-namespace testMod1.Content.Items.Weapons
+namespace AncientLegacyMod.Content.Items.Weapons
 {
     public class MKBar : ModItem
     {

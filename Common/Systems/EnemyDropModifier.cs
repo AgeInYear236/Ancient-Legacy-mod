@@ -8,12 +8,12 @@ using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Accessories;
-using testMod1.Content.Items.Materials;
-using testMod1.Content.Items.Misc;
-using testMod1.Content.Items.Weapons;
+using AncientLegacyMod.Content.Items.Accessories;
+using AncientLegacyMod.Content.Items.Materials;
+using AncientLegacyMod.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Weapons;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class EnemyDropModifier : GlobalNPC
     {

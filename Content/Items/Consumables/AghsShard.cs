@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Consumables
+namespace AncientLegacyMod.Content.Items.Consumables
 {
     public class AghsShard : ModItem
     {

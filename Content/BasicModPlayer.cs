@@ -15,14 +15,14 @@ using Terraria.IO;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
-using testMod1.Content.Buffs;
-using testMod1.Content.Items.Accessories;
-using testMod1.Content.Items.Armor;
-using testMod1.Content.Items.Misc;
-using testMod1.Content.Items.Projectiles;
+using AncientLegacyMod.Content.Buffs;
+using AncientLegacyMod.Content.Items.Accessories;
+using AncientLegacyMod.Content.Items.Armor;
+using AncientLegacyMod.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Projectiles;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace testMod1.Content
+namespace AncientLegacyMod.Content
 {
     public class BasicModPlayer : ModPlayer   
     {
@@ -58,14 +58,14 @@ namespace testMod1.Content
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
             // ARMLET
-            if (testMod1.armletKeybind.JustPressed && hasArmlet)
+            if (AncientLegacyMod.armletKeybind.JustPressed && hasArmlet)
             {
                 armletActive = !armletActive;
                 Terraria.Audio.SoundEngine.PlaySound(SoundID.Item44, Player.Center);
             }
 
             // TA SHIELD 1 (Refraction)
-            if (testMod1.ta1Keybind.JustPressed && hasTAShield && !Player.HasBuff(ModContent.BuffType<TA1CooldownBuff>()))
+            if (AncientLegacyMod.ta1Keybind.JustPressed && hasTAShield && !Player.HasBuff(ModContent.BuffType<TA1CooldownBuff>()))
             {
                 shieldCharges = 5;
                 Player.AddBuff(ModContent.BuffType<TA1Buff>(), 30 * 60);
@@ -73,8 +73,8 @@ namespace testMod1.Content
                 Terraria.Audio.SoundEngine.PlaySound(SoundID.Item37, Player.Center);
             }
 
-            // TA SHIELD 2 (Meld/Ambush)
-            if (testMod1.ta2Keybind.JustPressed && hasTAShield && !Player.HasBuff(ModContent.BuffType<TA2Buff>()) && !Player.HasBuff(ModContent.BuffType<TA2CooldownBuff>()))
+            // TA SHIELD 2 (Meld)
+            if (AncientLegacyMod.ta2Keybind.JustPressed && hasTAShield && !Player.HasBuff(ModContent.BuffType<TA2Buff>()) && !Player.HasBuff(ModContent.BuffType<TA2CooldownBuff>()))
             {
                 isAmbushActive = true;
                 ambushTimer = 0;
@@ -82,7 +82,7 @@ namespace testMod1.Content
             }
 
             // BLADE MAIL
-            if (testMod1.bmKeybind.JustPressed && hasBladeMail && !Player.HasBuff(ModContent.BuffType<BMCooldownBuff>()))
+            if (AncientLegacyMod.bmKeybind.JustPressed && hasBladeMail && !Player.HasBuff(ModContent.BuffType<BMCooldownBuff>()))
             {
                 Player.AddBuff(ModContent.BuffType<BMBuff>(), 8 * 60);
                 Player.AddBuff(ModContent.BuffType<BMCooldownBuff>(), 20 * 60);
@@ -90,7 +90,7 @@ namespace testMod1.Content
 
 
             // BKB
-            if (testMod1.bkbKeybind.JustPressed && hasBKB && !Player.HasBuff(ModContent.BuffType<BlackKingBarCooldownBuff>()))
+            if (AncientLegacyMod.bkbKeybind.JustPressed && hasBKB && !Player.HasBuff(ModContent.BuffType<BlackKingBarCooldownBuff>()))
             {
                 Player.AddBuff(ModContent.BuffType<BlackKingBarBuff>(), 7 * 60);
                 Player.AddBuff(ModContent.BuffType<BlackKingBarCooldownBuff>(), 90 * 60);
@@ -99,7 +99,7 @@ namespace testMod1.Content
             }
 
             // CHRONOSPHERE
-            if (testMod1.chronoKeybind.JustPressed && hasChronosphere && !Player.HasBuff(ModContent.BuffType<ChronosphereCooldownBuff>()))
+            if (AncientLegacyMod.chronoKeybind.JustPressed && hasChronosphere && !Player.HasBuff(ModContent.BuffType<ChronosphereCooldownBuff>()))
             {
                 Player.AddBuff(ModContent.BuffType<ChronosphereBuff>(), 10 * 60);
                 Player.AddBuff(ModContent.BuffType<ChronosphereCooldownBuff>(), 120 * 60);
@@ -109,7 +109,7 @@ namespace testMod1.Content
             }
 
             // TIMELAPSE
-            if (testMod1.timelapseKeybind.JustPressed && hasTimelapse && !Player.HasBuff(ModContent.BuffType<TimelapseCooldownBuff>()))
+            if (AncientLegacyMod.timelapseKeybind.JustPressed && hasTimelapse && !Player.HasBuff(ModContent.BuffType<TimelapseCooldownBuff>()))
             {
                 RewindTime();
             }

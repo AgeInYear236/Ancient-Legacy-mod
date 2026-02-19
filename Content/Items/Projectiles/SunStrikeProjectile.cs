@@ -7,7 +7,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace testMod1.Content.Items.Projectiles
+namespace AncientLegacyMod.Content.Items.Projectiles
 {
     public class SunStrikeProjectile : ModProjectile
     {
@@ -100,7 +100,7 @@ namespace testMod1.Content.Items.Projectiles
         {
             if (Projectile.ai[0] >= 60)
             {
-                Texture2D texture = ModContent.Request<Texture2D>("testMod1/Content/Items/Misc/SunStrike").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("AncientLegacyMod/Content/Items/Misc/SunStrike").Value;
 
                 float progress = (Projectile.ai[0] - 60) / 40f;
                 float opacity = MathHelper.Lerp(1f, 0f, progress);

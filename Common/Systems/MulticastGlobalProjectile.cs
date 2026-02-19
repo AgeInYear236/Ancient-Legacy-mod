@@ -9,9 +9,9 @@ using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using testMod1.Content.Items.Accessories;
+using AncientLegacyMod.Content.Items.Accessories;
 
-namespace testMod1.Common.Systems
+namespace AncientLegacyMod.Common.Systems
 {
     public class EntitySource_Multicast : EntitySource_Parent
     {

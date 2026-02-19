@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Terraria;
 using Terraria.ModLoader;
-using testMod1.Common.Rarity;
+using AncientLegacyMod.Common.Rarity;
 
-namespace testMod1.Content.Items.Misc
+namespace AncientLegacyMod.Content.Items.Misc
 {
     public class ShardOfEternity : ModItem
     {
