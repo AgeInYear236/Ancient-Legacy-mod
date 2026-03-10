@@ -18,7 +18,7 @@ namespace AncientLegacyMod.Common.Systems
                 {
                     string bossName = npc.TypeName;
 
-                    string message = $"Mods.AncientLegacyMod.ChatMessages.ShopEntry";
+                    string message = Language.GetTextValue("Mods.AncientLegacyMod.ChatMessages.ShopEntry");
                     Color messageColor = new Color(255, 128, 0);
 
                     if (Main.netMode == NetmodeID.SinglePlayer)

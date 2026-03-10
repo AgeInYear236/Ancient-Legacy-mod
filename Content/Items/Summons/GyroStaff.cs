@@ -17,7 +17,7 @@ namespace AncientLegacyMod.Content.Items.Summons
     {
         public override void SetDefaults()
         {
-            Item.damage = 17;
+            Item.damage = 12;
             Item.DamageType = DamageClass.Summon;
             Item.mana = 10;
             Item.width = 32;

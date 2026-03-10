@@ -21,6 +21,12 @@ Items: {
 			Собрав 3 баффа одновременно, вы призываете маленького друга!
 			Вдохновлено: [c/0000FF:lipa_ii]
 			'''
+		ssh:
+			'''
+			+20% восстановления маны
+			+20% скорости передвижения
+			Когда вы тратите ману, то получаете бафф Перегрузки, которое наносит дополнительный урон и замедляет противников
+			'''
 	}
 
 	AxeArmor: {
@@ -629,6 +635,44 @@ Items: {
 		DisplayName: Осколок опустошения
 		Tooltip: Вокруг него сосредоточена злая энергия
 	}
+
+	BallLightning: {
+		DisplayName: Шаровая молния
+		Tooltip: Вы превращаетесь в молнию и летите к курсору!
+	}
+
+	ClownDagger: {
+		DisplayName: Кинжал клоуна
+		Tooltip: Больше не смешно?
+	}
+
+	UnstableComponent: {
+		Tooltip: Внутри заточены древние духи
+		DisplayName: Нестабильный компонент
+	}
+
+	ssl: {
+		Tooltip: +15% скорости передвижения
+		DisplayName: Ботинки Шторма
+	}
+
+	ssh: {
+		Tooltip:
+			'''
+			+10% магического урона
+			+5% магического крита
+			'''
+		DisplayName: Шляпа Шторма
+	}
+
+	ssb: {
+		Tooltip:
+			'''
+			+15% магического урона
+			+25% регенерации маны
+			'''
+		DisplayName: Броня Шторма
+	}
 }
 
 Currency.GoldBagCurrency: Gold Bag
@@ -668,6 +712,8 @@ Projectiles: {
 	TechiesMineProjectile.DisplayName: Techies Mine Projectile
 	ThunderStrikeProjectile.DisplayName: Thunder Strike Projectile
 	BlackHoleProjectile.DisplayName: Black Hole Projectile
+	// BallLightningProjectile.DisplayName: Ball Lightning Projectile
+	// ClownDaggerProjectile.DisplayName: Clown Dagger Projectile
 }
 
 Buffs: {
@@ -839,6 +885,21 @@ Buffs: {
 	MarsSummonBuff: {
 		DisplayName: Призыв Марса
 		Description: Дружественный спартанский воин помогает вам!
+	}
+
+	ClownBloodBuff: {
+		// Description: Mods.AncientLegacyMod.Buffs.ClownBloodBuff.Description
+		// DisplayName: Clown Blood Buff
+	}
+
+	OverloadSlowBuff: {
+		// Description: Mods.AncientLegacyMod.Buffs.OverloadSlowBuff.Description
+		// DisplayName: Overload Slow Buff
+	}
+
+	OverloadBuff: {
+		Description: Ваши атаки перегружены!
+		DisplayName: Перегрузка
 	}
 }
 

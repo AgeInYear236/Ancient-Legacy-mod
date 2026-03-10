@@ -22,6 +22,12 @@ Items: {
 			Collecting 3 buffs at once summons little friend!
 			Inspired by: [c/0000FF:lipa_ii]
 			'''
+		ssh:
+			'''
+			+20% mana regen
+			+20% movement speed
+			Spending mana grants Overload, which empowers your attacks and slow enemies
+			'''
 	}
 
 	AxeArmor: {
@@ -613,6 +619,48 @@ Items: {
 		DisplayName: Shard Of Desolation
 		Tooltip: Evil energy surrounds it
 	}
+
+	BallLightning: {
+		DisplayName: Ball Lightning
+		Tooltip: Transform player into magic energy, that moves towards cursor!
+	}
+
+	ClownDagger: {
+		DisplayName: Clown Dagger
+		Tooltip: Why nobody laughs?
+	}
+
+	UnstableComponent: {
+		Tooltip: Spiritual energy pulses inside
+		DisplayName: Unstable Component
+	}
+
+	ssl: {
+		Tooltip:
+			'''
+			+15% move speed
+			Fast, like the wind!
+			'''
+		DisplayName: Storm Spirit Boots
+	}
+
+	ssh: {
+		Tooltip:
+			'''
+			+10% magic damage
+			+5% magic crit
+			'''
+		DisplayName: Storm Spirit Hat
+	}
+
+	ssb: {
+		Tooltip:
+			'''
+			+15% magic damage
+			+25% mana regen
+			'''
+		DisplayName: Storm Spirit Breastplate
+	}
 }
 
 Currency.GoldBagCurrency: Gold Bag
@@ -652,6 +700,8 @@ Projectiles: {
 	TechiesMineProjectile.DisplayName: Techies Mine Projectile
 	ThunderStrikeProjectile.DisplayName: Thunder Strike Projectile
 	BlackHoleProjectile.DisplayName: Black Hole Projectile
+	BallLightningProjectile.DisplayName: Ball Lightning Projectile
+	ClownDaggerProjectile.DisplayName: Clown Dagger Projectile
 }
 
 Buffs: {
@@ -823,6 +873,21 @@ Buffs: {
 	MarsSummonBuff: {
 		DisplayName: Mars Summon
 		Description: Friendly spartan warrior assists you!
+	}
+
+	ClownBloodBuff: {
+		Description: Mods.AncientLegacyMod.Buffs.ClownBloodBuff.Description
+		DisplayName: Clown Blood Buff
+	}
+
+	OverloadSlowBuff: {
+		Description: Mods.AncientLegacyMod.Buffs.OverloadSlowBuff.Description
+		DisplayName: Overload Slow Buff
+	}
+
+	OverloadBuff: {
+		Description: You are overloaded!
+		DisplayName: Overload
 	}
 }
 

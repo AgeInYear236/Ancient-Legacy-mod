@@ -19,7 +19,12 @@ namespace AncientLegacyMod.Common.Systems
     {
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<Madstone>(), 50, 1, 3));
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<Madstone>(), 75, 1, 3));
+
+            if(Main.bloodMoon)
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ClownDagger>(), 125, 1, 1));
+            }
 
             if (npc.type == NPCID.Lavabat || npc.type == NPCID.LavaSlime
                 || npc.type == NPCID.Demon || npc.type == NPCID.BoneSerpentHead
