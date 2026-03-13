@@ -29,6 +29,7 @@ namespace AncientLegacyMod.Content.Items.Materials
             recipe.AddIngredient(ModContent.ItemType<Madstone>(), 20);
             recipe.AddIngredient(ItemID.DarkShard, 1);
             recipe.AddIngredient(ItemID.LightShard, 1);
+            recipe.AddIngredient(ItemID.ChlorophyteBar, 5);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
         }

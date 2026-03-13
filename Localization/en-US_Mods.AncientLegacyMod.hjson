@@ -24,10 +24,13 @@ Items: {
 			'''
 		ssh:
 			'''
-			+20% mana regen
+			+20% mana regeneration
 			+20% movement speed
-			Spending mana grants Overload, which empowers your attacks and slow enemies
+			Spending mana grants the Overload buff, which deals bonus damage and slows enemies
 			'''
+		vsh: Use Remnant to create a Void Illusion that draws enemy attention
+		esh: Your attacks and your minions' attacks restore your health
+		emsh: Use Remnant to create a Fire Illusion. Use again to teleport to the Illusion's location
 	}
 
 	AxeArmor: {
@@ -265,12 +268,12 @@ Items: {
 
 	MKBar: {
 		DisplayName: Monkey King Bar
-		Tooltip: Performing 4 consecutive attacks enhance your weapon
+		Tooltip: Performing 4 consecutive attacks enhances your weapon
 	}
 
 	SlardarTrident: {
 		DisplayName: Slardar Trident
-		Tooltip: Performing 4 consecutive attacks stun enemy. Can occur once in 5 sec
+		Tooltip: Performing 4 consecutive attacks stuns enemy. Can occur once in 5 sec
 	}
 
 	SkullBasher: {
@@ -400,7 +403,7 @@ Items: {
 
 	AncientMoss: {
 		DisplayName: Ancient Moss
-		Tooltip: Euu, it stinks...
+		Tooltip: Eww, it stinks...
 	}
 
 	PoweredSteelBar: {
@@ -638,7 +641,7 @@ Items: {
 	ssl: {
 		Tooltip:
 			'''
-			+15% move speed
+			+15% movement speed
 			Fast, like the wind!
 			'''
 		DisplayName: Storm Spirit Boots
@@ -648,7 +651,7 @@ Items: {
 		Tooltip:
 			'''
 			+10% magic damage
-			+5% magic crit
+			+5% magic critical strike chance
 			'''
 		DisplayName: Storm Spirit Hat
 	}
@@ -657,9 +660,110 @@ Items: {
 		Tooltip:
 			'''
 			+15% magic damage
-			+25% mana regen
+			+25% mana regeneration
 			'''
-		DisplayName: Storm Spirit Breastplate
+		DisplayName: Storm Spirit Armor
+	}
+
+	vsl: {
+		Tooltip:
+			'''
+			+20% movement speed
+			Enemies are less likely to target you
+			'''
+		DisplayName: Void Spirit Boots
+	}
+
+	vsh: {
+		Tooltip:
+			'''
+			20% increased ranged damage
+			15% increased ranged critical strike chance
+			'''
+		DisplayName: Void Spirit Mask
+	}
+
+	vsb: {
+		Tooltip:
+			'''
+			10% increased ranged attack speed
+			Immunity to Shimmer
+			'''
+		DisplayName: Void Spirit Armor
+	}
+
+	esl: {
+		Tooltip:
+			'''
+			15% increased whip speed
+			Immunity to knockback
+			15% decreased movement speed
+			'''
+		DisplayName: Earth Spirit Boots
+	}
+
+	esh: {
+		Tooltip:
+			'''
+			Increases your max number of minions by 2
+			12% increased summon damage
+			20% increased whip power
+			'''
+		DisplayName: Earth Spirit Mask
+	}
+
+	esb: {
+		Tooltip:
+			'''
+			Increases maximum health by 50
+			Reduces taken damage by 10%
+			20% increased whip range
+			12% increased summon damage
+			'''
+		DisplayName: Earth Spirit Armor
+	}
+
+	emsl: {
+		Tooltip: +35% movement speed
+		DisplayName: Ember Spirit Boots
+	}
+
+	emsh: {
+		Tooltip:
+			'''
+			+15% critical strike chance
+			+10% damage
+			'''
+		DisplayName: Ember Spirit Mask
+	}
+
+	emsb: {
+		Tooltip:
+			'''
+			+25% attack speed
+			+10% damage
+			'''
+		DisplayName: Ember Spirit Armor
+	}
+
+	VoidFragment: {
+		Tooltip: A shard of the dark dimension
+		DisplayName: Void Fragment
+	}
+
+	FractureWhip: {
+		Tooltip: Attacks release boulders, that hit enemies
+		DisplayName: Fracture Whip
+	}
+
+	EmberKatana: {
+		Tooltip: Press RMB to perform two attacks on your cursor
+		DisplayName: Ember Katana
+	}
+
+	VoidGlaive: {
+		DisplayName: Void Glaive
+		Tooltip: Launches dangerously spinning glaive
 	}
 }
 
@@ -702,6 +806,12 @@ Projectiles: {
 	BlackHoleProjectile.DisplayName: Black Hole Projectile
 	BallLightningProjectile.DisplayName: Ball Lightning Projectile
 	ClownDaggerProjectile.DisplayName: Clown Dagger Projectile
+	VoidRemnant.DisplayName: Void Remnant
+	EmberRemnant.DisplayName: Ember Remnant
+	FractureWhipProjectile.DisplayName: Fracture Whip Projectile
+	FractureShard.DisplayName: Fracture Shard
+	EmberSlash.DisplayName: Ember Slash
+	VoidGlaiveProjectile.DisplayName: Void Glaive Projectile
 }
 
 Buffs: {
@@ -901,7 +1011,7 @@ NPCs: {
 			NoHome: I hate not having a stash place!
 			FarFromHome: I am too far from home.
 			DislikeCrowded: I dislike crowds.
-			HateCrowded: I hate this people!!
+			HateCrowded: I hate these people!!
 			LikeBiome: I like {BiomeName}.
 			DislikeBiome: I dislike {BiomeName}.
 			LikeNPC: I like {NPCName}.
@@ -946,6 +1056,7 @@ Keybinds: {
 	"Activate Black King Bar.DisplayName": Activate  Black  King  Bar
 	"Activate Chronosphere.DisplayName": Activate  Chronosphere
 	"Use Time Lapse.DisplayName": Use  Time  Lapse
+	"Use Remnant.DisplayName": Use  Remnant
 }
 
 ChatMessages.ShopEntry: The shop has been updated!

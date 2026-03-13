@@ -22,6 +22,7 @@ namespace AncientLegacyMod
         public static ModKeybind bkbKeybind;
         public static ModKeybind chronoKeybind;
         public static ModKeybind timelapseKeybind;
+        public static ModKeybind remnantKeybind;
 
 
         public override void Load()
@@ -34,6 +35,7 @@ namespace AncientLegacyMod
             bkbKeybind = KeybindLoader.RegisterKeybind(this, "Activate Black King Bar", "O");
             chronoKeybind = KeybindLoader.RegisterKeybind(this, "Activate Chronosphere", "I");
             timelapseKeybind = KeybindLoader.RegisterKeybind(this, "Use Time Lapse", "U");
+            remnantKeybind = KeybindLoader.RegisterKeybind(this, "Use Remnant", "Y");
 
         }
 
@@ -46,6 +48,7 @@ namespace AncientLegacyMod
             bkbKeybind = null;
             chronoKeybind = null;
             timelapseKeybind = null;
+            remnantKeybind = null;
         }
 
         public override void PostSetupContent()

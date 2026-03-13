@@ -40,6 +40,7 @@ namespace AncientLegacyMod.Content.NPCs
             var hood = new Item(ModContent.ItemType<HoodwinkLauncher>()) { shopCustomPrice = 550, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
             var drow = new Item(ModContent.ItemType<DrowRangerBow>()) { shopCustomPrice = 2000, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
             var wr = new Item(ModContent.ItemType<WindrangerBow>()) { shopCustomPrice = 5000, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
+            var frac = new Item(ModContent.ItemType<FractureWhip>()) { shopCustomPrice = 5500, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
             var ss = new Item(ModContent.ItemType<SunStrikeTome>()) { shopCustomPrice = 7000, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
             var snap = new Item(ModContent.ItemType<SnapfireShotgun>()) { shopCustomPrice = 3500, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
             var mars = new Item(ModContent.ItemType<MarsSpear>()) { shopCustomPrice = 3500, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
@@ -72,6 +73,7 @@ namespace AncientLegacyMod.Content.NPCs
             shop.Add(ck, Condition.DownedPlantera);
             shop.Add(pugna, Condition.DownedPlantera);
             shop.Add(wr, Condition.DownedPlantera);
+            shop.Add(frac, Condition.DownedPlantera);
 
             shop.Add(hook, Condition.DownedDukeFishron);
             shop.Add(mine, Condition.DownedDukeFishron);

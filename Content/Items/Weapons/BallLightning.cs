@@ -57,6 +57,7 @@ namespace AncientLegacyMod.Content.Items.Weapons
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.Star, 10);
             recipe.AddIngredient(ItemID.ManaCrystal, 3);
+            recipe.AddIngredient(ItemID.Ectoplasm, 10);
             recipe.AddIngredient(ModContent.ItemType<MagicEnergy>(), 10);
             recipe.AddTile(TileID.CrystalBall);
             recipe.Register();

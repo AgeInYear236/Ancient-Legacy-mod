@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\description.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:description.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\items\\projectiles\\emberslash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\items\\projectiles\\emberslash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\description_workshop.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:description_workshop.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\items\\weapons\\emberkatana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\items\\weapons\\emberkatana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\items\\projectiles\\fracturewhipprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\items\\projectiles\\fracturewhipprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\items\\weapons\\fracturewhip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\items\\weapons\\fracturewhip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\localization\\en-us_mods.ancientlegacymod.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:localization\\en-us_mods.ancientlegacymod.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\localization\\ru-ru_mods.ancientlegacymod.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -17,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\ancientlegacymod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:ancientlegacymod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\npcs\\stashtrader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\npcs\\stashtrader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\build.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:build.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +38,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ru-RU_Mods.AncientLegacyMod.hjson",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
-              "RelativeDocumentMoniker": "Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
-              "RelativeToolTip": "Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
-              "ViewState": "AgIAAHwDAAAAAAAAAAAAAIwDAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-19T21:48:12.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AncientLegacyMod.cs",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\AncientLegacyMod.cs",
-              "RelativeDocumentMoniker": "AncientLegacyMod.cs",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\AncientLegacyMod.cs",
-              "RelativeToolTip": "AncientLegacyMod.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwDgAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T21:42:28.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StashTrader.cs",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\NPCs\\StashTrader.cs",
-              "RelativeDocumentMoniker": "Content\\NPCs\\StashTrader.cs",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\NPCs\\StashTrader.cs",
-              "RelativeToolTip": "Content\\NPCs\\StashTrader.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAYwHsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T21:07:54.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "build.txt",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\build.txt",
-              "RelativeDocumentMoniker": "build.txt",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\build.txt",
-              "RelativeToolTip": "build.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-02-18T21:34:28.477Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "description.txt",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\description.txt",
-              "RelativeDocumentMoniker": "description.txt",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\description.txt",
-              "RelativeToolTip": "description.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-02-18T21:34:27.892Z",
+              "Title": "EmberSlash.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Projectiles\\EmberSlash.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Projectiles\\EmberSlash.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Projectiles\\EmberSlash.cs",
+              "RelativeToolTip": "Content\\Items\\Projectiles\\EmberSlash.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwBsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T14:45:23.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "description_workshop.txt",
-              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\description_workshop.txt",
-              "RelativeDocumentMoniker": "description_workshop.txt",
-              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\description_workshop.txt",
-              "RelativeToolTip": "description_workshop.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-02-18T21:32:20.697Z",
+              "Title": "EmberKatana.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Weapons\\EmberKatana.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\EmberKatana.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Weapons\\EmberKatana.cs",
+              "RelativeToolTip": "Content\\Items\\Weapons\\EmberKatana.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T14:44:48.235Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FractureWhipProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Projectiles\\FractureWhipProjectile.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Projectiles\\FractureWhipProjectile.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Projectiles\\FractureWhipProjectile.cs",
+              "RelativeToolTip": "Content\\Items\\Projectiles\\FractureWhipProjectile.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIAwwCgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T22:05:06.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FractureWhip.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Weapons\\FractureWhip.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Weapons\\FractureWhip.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Weapons\\FractureWhip.cs",
+              "RelativeToolTip": "Content\\Items\\Weapons\\FractureWhip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T22:04:47.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "en-US_Mods.AncientLegacyMod.hjson",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\en-US_Mods.AncientLegacyMod.hjson",
+              "RelativeDocumentMoniker": "Localization\\en-US_Mods.AncientLegacyMod.hjson",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\en-US_Mods.AncientLegacyMod.hjson",
+              "RelativeToolTip": "Localization\\en-US_Mods.AncientLegacyMod.hjson",
+              "ViewState": "AgIAAJkCAAAAAAAAAAAkwN8CAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-08T20:07:11.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ru-RU_Mods.AncientLegacyMod.hjson",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
+              "RelativeDocumentMoniker": "Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
+              "RelativeToolTip": "Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
+              "ViewState": "AgIAAIsCAAAAAAAAAAAAAPkCAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-19T21:48:12.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AncientLegacyMod.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\AncientLegacyMod.cs",
+              "RelativeDocumentMoniker": "AncientLegacyMod.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\AncientLegacyMod.cs",
+              "RelativeToolTip": "AncientLegacyMod.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwDIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T21:42:28.514Z"
             }
           ]
         }

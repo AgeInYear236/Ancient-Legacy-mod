@@ -27,6 +27,9 @@ Items: {
 			+20% скорости передвижения
 			Когда вы тратите ману, то получаете бафф Перегрузки, которое наносит дополнительный урон и замедляет противников
 			'''
+		vsh: Используйте Ремнанта, чтобы создать Иллюзию Пустоты. Враги будут атаковать её
+		esh: Ваши атаки и атаки ваших миньонов восстанавливают вам здоровье
+		emsh: Используйте Ремнанта, чтобы создать Иллюзию Огня. Используйте еще раз, чтобы телепортироваться к Иллюзии
 	}
 
 	AxeArmor: {
@@ -653,7 +656,7 @@ Items: {
 
 	ssl: {
 		Tooltip: +15% скорости передвижения
-		DisplayName: Ботинки Шторма
+		DisplayName: Ботинки Духа Шторма
 	}
 
 	ssh: {
@@ -662,7 +665,7 @@ Items: {
 			+10% магического урона
 			+5% магического крита
 			'''
-		DisplayName: Шляпа Шторма
+		DisplayName: Шляпа Духа Шторма
 	}
 
 	ssb: {
@@ -671,7 +674,109 @@ Items: {
 			+15% магического урона
 			+25% регенерации маны
 			'''
-		DisplayName: Броня Шторма
+		DisplayName: Броня Духа Шторма
+	}
+
+	vsl: {
+		Tooltip:
+			'''
+			Скорость передвижения +20%
+			Враги с меньшей вероятностью атакуют вас
+			'''
+		DisplayName: Ботинки Духа Пустоты
+	}
+
+	vsh: {
+		Tooltip:
+			'''
+			Увеличивает урон для дальних атак на 20%
+			Увеличивает криттический шанс для дальних атак на 15%
+
+			'''
+		DisplayName: Маска Духа Пустоты
+	}
+
+	vsb: {
+		Tooltip:
+			'''
+			Увеличивает скорость для дальних атак на 10%
+			Иммунитет к Шимеру
+			'''
+		DisplayName: Броня Духа Пустоты
+	}
+
+	esl: {
+		Tooltip:
+			'''
+			Увеличивает скорость хлыста на 15%
+			Иммунитет к отбрасыванию
+			Скорость снижена на 15%
+			'''
+		DisplayName: Ботинки Духа Земли
+	}
+
+	esh: {
+		Tooltip:
+			'''
+			Увеличивает количество призываемых существ на 2
+			Увеличивает призываемый урона на 12%
+			Увеличивает силу хлыста на 20%
+			'''
+		DisplayName: Маска Духа Земли
+	}
+
+	esb: {
+		Tooltip:
+			'''
+			Увеличивает здоровье на 50
+			Уменьшает входящий урон на 10%
+			Увеличивает радиус хлыста на 20%
+			Увеличивает призываемый урон на 12%
+			'''
+		DisplayName: Броня Духа Земли
+	}
+
+	emsl: {
+		Tooltip: +35% скорости передвижения
+		DisplayName: Ботинки Духа Огня
+	}
+
+	emsh: {
+		Tooltip:
+			'''
+			Шанс критического урона +15%
+			Урон +10%
+			'''
+		DisplayName: Маска Духа Огня
+	}
+
+	emsb: {
+		Tooltip:
+			'''
+			Скорость атаки +25%
+			Урон +10%
+			'''
+		DisplayName: Броня Духа Огня
+	}
+
+	VoidFragment: {
+		Tooltip: Осколок темного измерения
+		DisplayName: Фрагмент Пустоты
+	}
+
+	FractureWhip: {
+		Tooltip: Удары выпускают каменные осколки, поражающие врагов
+		DisplayName: Хлыст Разлом
+	}
+
+	EmberKatana: {
+		Tooltip: Нажмите ПКМ, чтобы нанести два быстрых удара в точке курсора
+		DisplayName: Тлеющая катана
+	}
+
+	VoidGlaive: {
+		DisplayName: Глефа Пустоты
+		Tooltip: Запускает опасно вращающуюся глефу
 	}
 }
 
@@ -712,8 +817,14 @@ Projectiles: {
 	TechiesMineProjectile.DisplayName: Techies Mine Projectile
 	ThunderStrikeProjectile.DisplayName: Thunder Strike Projectile
 	BlackHoleProjectile.DisplayName: Black Hole Projectile
-	// BallLightningProjectile.DisplayName: Ball Lightning Projectile
-	// ClownDaggerProjectile.DisplayName: Clown Dagger Projectile
+	BallLightningProjectile.DisplayName: Ball Lightning Projectile
+	ClownDaggerProjectile.DisplayName: Clown Dagger Projectile
+	VoidRemnant.DisplayName: Void Remnant
+	EmberRemnant.DisplayName: Ember Remnant
+	// FractureWhipProjectile.DisplayName: Fracture Whip Projectile
+	// FractureShard.DisplayName: Fracture Shard
+	// EmberSlash.DisplayName: Ember Slash
+	// VoidGlaiveProjectile.DisplayName: Void Glaive Projectile
 }
 
 Buffs: {
@@ -957,7 +1068,8 @@ Keybinds: {
 	"Activate Blade Mail.DisplayName": Активировать  Blade  Mail
 	"Activate Black King Bar.DisplayName": Активировать  BKB
 	"Activate Chronosphere.DisplayName": Активировать  Хроносферу
-	"Use Time Lapse.DisplayName": Использовать  Time  Lapse
+	"Use Time Lapse.DisplayName": Использовать  Перемотку времени
+	"Use Remnant.DisplayName": Использовать Ремнанта
 }
 
 ChatMessages.ShopEntry: Ассортимент магазина был обновлен!

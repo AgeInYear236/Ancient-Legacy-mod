@@ -26,7 +26,8 @@ namespace AncientLegacyMod.Common.Systems
 
             if (npc.type == NPCID.Plantera)
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<WindrangerBow>(), 4));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<WindrangerBow>(), 6));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FractureWhip>(), 6));
             }
 
             if (npc.type == NPCID.Deerclops)
@@ -54,7 +55,7 @@ namespace AncientLegacyMod.Common.Systems
 
             if (npc.boss)
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<GoldBag>(), 1, 10, 150));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<GoldBag>(), 1, 10, 30));
             }
         }
     }
