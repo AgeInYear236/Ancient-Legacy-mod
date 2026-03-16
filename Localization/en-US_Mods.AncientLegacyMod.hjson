@@ -227,7 +227,7 @@ Items: {
 			'''
 			Aura accessory
 			All non-magic damage is reduced by 50%.
-			All magic damage is increased by 50%.
+			All magic damage is increased by 10%.
 			Nearby enemies are strongly slowed
 			'''
 	}
@@ -765,6 +765,36 @@ Items: {
 		DisplayName: Void Glaive
 		Tooltip: Launches dangerously spinning glaive
 	}
+
+	Parasma: {
+		Tooltip: Launches projectiles, which increase magic damage to target by 20%
+		DisplayName: Parasma
+	}
+
+	Vessel: {
+		Tooltip:
+			'''
+			Killing enemies trap their souls
+			Souls empower your attacks to heal 10 HP
+			'''
+		DisplayName: Spirit Vessel
+	}
+
+	Bottle: {
+		Tooltip: '''Death or Magic Mirror refresh charges
+					Inspired by: [c/FF00FF:Radikylitka]'''
+		DisplayName: Bottle
+	}
+
+	Tarrasque: {
+		Tooltip: '''+200 max HP
+					+20 armor
+					-25% damage
+					-15% critical strike chance
+					Increase health regeneration by percent of your missing health
+					'''
+		DisplayName: Сердце Тарраска
+	}
 }
 
 Currency.GoldBagCurrency: Gold Bag
@@ -812,6 +842,8 @@ Projectiles: {
 	FractureShard.DisplayName: Fracture Shard
 	EmberSlash.DisplayName: Ember Slash
 	VoidGlaiveProjectile.DisplayName: Void Glaive Projectile
+	VesselProjectile.DisplayName: Vessel Projectile
+	ParasmaProjectile.DisplayName: Parasma Projectile
 }
 
 Buffs: {
@@ -999,6 +1031,11 @@ Buffs: {
 		Description: You are overloaded!
 		DisplayName: Overload
 	}
+
+	ParasmaDebuff: {
+		Description: Mods.AncientLegacyMod.Buffs.ParasmaDebuff.Description
+		DisplayName: Parasma Debuff
+	}
 }
 
 NPCs: {
@@ -1044,6 +1081,7 @@ Tiles: {
 	PatrolBanner.MapEntry: Patrol Banner
 	PatrolBannerTile.MapEntry: Patrol Banner Tile
 	MapObject.Furniture: Patrol Banner
+	MagicGlassTile.MapEntry: Magic Glass Tile
 }
 
 MapObject.PatrolBanner: Patrol Banner
@@ -1065,4 +1103,9 @@ Death: {
 	Axe: " was slain in half by his own weapon!"
 	Aba: " used strong magic powers, that devoured his soul"
 	Hex: " was hexed to dust"
+}
+
+Misc: {
+	Bottle: "Charges left: "
+	Vessel: "Souls left: "
 }

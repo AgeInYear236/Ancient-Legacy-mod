@@ -38,7 +38,6 @@ namespace AncientLegacyMod.Content.Items.Accessories
             recipe.AddIngredient(ItemID.AncientBattleArmorMaterial, 2);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
-
         }
     }
 }

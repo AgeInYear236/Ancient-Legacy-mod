@@ -18,6 +18,7 @@ namespace AncientLegacyMod.Content.Items.Projectiles
             Projectile.tileCollide = false;
             Projectile.friendly = true;
             Projectile.timeLeft = 600;
+            Projectile.alpha = 100;
         }
 
         public override void AI()

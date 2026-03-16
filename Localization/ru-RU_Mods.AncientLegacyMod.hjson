@@ -230,7 +230,7 @@ Items: {
 			'''
 			Аксессуар с Аурой
 			Весь немагический урон снижается на 50%.
-			Весь магический урон увеличивается на 50%.
+			Весь магический урон увеличивается на 10%.
 			Ближайшие враги сильно замедляются.
 			'''
 	}
@@ -778,6 +778,36 @@ Items: {
 		DisplayName: Глефа Пустоты
 		Tooltip: Запускает опасно вращающуюся глефу
 	}
+
+	Parasma: {
+		Tooltip: Выпускает снаряды, повышающие магический урон по цели на 20%
+		DisplayName: Паразма
+	}
+
+	Vessel: {
+		Tooltip:
+			'''
+			Убийста противников захватывают их души
+			Ваши атаки могут выпустить душу, восстанавливающую 10 ХП
+			'''
+		DisplayName: Сосуд Душ
+	}
+
+	Bottle: {
+		Tooltip: '''Смерть или Волшебное зеркало восстанавливают заряды
+					Вдохновлено: [c/FF00FF:Radikylitka]'''
+		DisplayName: Бутылка
+	}
+
+	Tarrasque: {
+		Tooltip: '''+200 макс. здоровья
+					+20 брони
+					-25% урона
+					-15% шанс критического удара
+					Увеличивает восстаовление здоровья в процентах от отсутствующего здоровья
+					'''
+		DisplayName: Сердце Тарраска
+	}
 }
 
 Currency.GoldBagCurrency: Gold Bag
@@ -825,6 +855,8 @@ Projectiles: {
 	// FractureShard.DisplayName: Fracture Shard
 	// EmberSlash.DisplayName: Ember Slash
 	// VoidGlaiveProjectile.DisplayName: Void Glaive Projectile
+	// VesselProjectile.DisplayName: Vessel Projectile
+	// ParasmaProjectile.DisplayName: Parasma Projectile
 }
 
 Buffs: {
@@ -1012,6 +1044,11 @@ Buffs: {
 		Description: Ваши атаки перегружены!
 		DisplayName: Перегрузка
 	}
+
+	ParasmaDebuff: {
+		// Description: Mods.AncientLegacyMod.Buffs.ParasmaDebuff.Description
+		// DisplayName: Parasma Debuff
+	}
 }
 
 NPCs: {
@@ -1057,6 +1094,7 @@ Tiles: {
 	PatrolBanner.MapEntry: Баннер патруля
 	PatrolBannerTile.MapEntry: Баннер патруля
 	MapObject.Furniture: Баннер патруля
+	// MagicGlassTile.MapEntry: Magic Glass Tile
 }
 
 MapObject.PatrolBanner: Баннер патруля
@@ -1078,4 +1116,9 @@ Death: {
 	Axe: " был разрублен пополам собственным оружием!"
 	Aba: " использовал могущественную магию, которая поглотила его душу"
 	Hex: " был превращен в пыль заклятием сглаза"
+}
+
+Misc: {
+	Bottle: "Зарядов осталось: "
+	Vessel: "Душ внутри: "
 }

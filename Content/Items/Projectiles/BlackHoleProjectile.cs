@@ -21,6 +21,7 @@ namespace AncientLegacyMod.Content.Items.Projectiles
             Projectile.penetrate = -1;
             Projectile.tileCollide = false;
             Projectile.ignoreWater = true;
+            Projectile.alpha = 255;
         }
 
         public override void AI()

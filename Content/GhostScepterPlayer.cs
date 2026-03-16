@@ -28,7 +28,7 @@ namespace AncientLegacyMod.Content
 
             Player.GetDamage(DamageClass.Melee) *= 0.5f;
             Player.GetDamage(DamageClass.Ranged) *= 0.5f;
-            Player.GetDamage(DamageClass.Magic) *= 1.5f;
+            Player.GetDamage(DamageClass.Magic) *= 1.1f;
 
             if (Player.whoAmI == Main.myPlayer && Main.rand.NextBool(2))
             {

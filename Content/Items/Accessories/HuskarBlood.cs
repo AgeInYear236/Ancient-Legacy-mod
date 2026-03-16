@@ -17,7 +17,7 @@ namespace AncientLegacyMod.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-
+            Item.material = true;
             Item.width = 24;
             Item.height = 28;
             Item.accessory = true;
