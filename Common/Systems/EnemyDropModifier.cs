@@ -79,7 +79,23 @@ namespace AncientLegacyMod.Common.Systems
                 npcLoot.Add(ItemDropRule.OneFromOptions(1, lootTable));
             }
 
-            if(npc.type == NPCID.RedDevil && Main.hardMode && Main.expertMode)
+            if (npc.type == NPCID.BigMimicHallow)
+            {
+                npcLoot.RemoveWhere(rule => rule is OneFromOptionsDropRule opt &&
+                    opt.dropIds.Contains(ItemID.DaedalusStormbow));
+
+                int[] lootTable = new int[] {
+                ItemID.DaedalusStormbow,
+                ItemID.FlyingKnife,
+                ItemID.CrystalVileShard,
+                ItemID.IlluminantHook,
+                ModContent.ItemType<Flux>()
+                };
+
+                npcLoot.Add(ItemDropRule.OneFromOptions(1, lootTable));
+            }
+
+            if (npc.type == NPCID.RedDevil && Main.hardMode && Main.expertMode)
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HuskarSpear>(), 100));
             }

@@ -38,7 +38,7 @@ namespace AncientLegacyMod.Content.Items.Weapons
 
             Item.knockBack = 5;
             Item.rare = ItemRarityID.Purple;
-            Item.value = Item.sellPrice(0, 50, 0, 0);
+            Item.value = Item.sellPrice(gold: 30);
             Item.autoReuse = true;
             Item.noMelee = true;
 

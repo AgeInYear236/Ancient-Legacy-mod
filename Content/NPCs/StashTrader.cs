@@ -1,5 +1,6 @@
 ﻿using AncientLegacyMod.Common.Systems;
 using AncientLegacyMod.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Placeables;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -12,7 +12,7 @@ namespace AncientLegacyMod.Content.Items.Armor
         {
             Item.width = 18;
             Item.height = 18;
-            Item.value = Item.sellPrice(0, 1, 50, 0);
+            Item.value = Item.sellPrice(gold: 2);
             Item.rare = ItemRarityID.Green;
             Item.defense = 12;
         }

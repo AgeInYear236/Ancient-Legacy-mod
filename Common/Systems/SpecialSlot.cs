@@ -49,6 +49,10 @@ namespace AncientLegacyMod.Common.Systems
             {
                 return true;
             }
+            if (item.type == ModContent.ItemType<Vessel>())
+            {
+                return true;
+            }
 
             return false; 
         }

@@ -25,7 +25,7 @@ namespace AncientLegacyMod.Content.Items.Weapons
             Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 5;
-            Item.value = Item.sellPrice(0, 10, 0, 0);
+            Item.value = Item.sellPrice(gold: 8);
             Item.rare = ModContent.RarityType<CoolStuffRarity>();
             Item.UseSound = SoundID.Item1; 
 

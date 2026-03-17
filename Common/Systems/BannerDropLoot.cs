@@ -2,8 +2,8 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using AncientLegacyMod.Content.Items.Misc;
 using AncientLegacyMod.Common.Systems;
+using AncientLegacyMod.Content.Items.Placeables;
 
 namespace AncientLegacyMod.Common.Systems
 {

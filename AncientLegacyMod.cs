@@ -1,6 +1,7 @@
 using AncientLegacyMod.Common.Systems;
 using AncientLegacyMod.Content.Items.Armor;
 using AncientLegacyMod.Content.Items.Misc;
+using AncientLegacyMod.Content.Items.Placeables;
 using AncientLegacyMod.Content.NPCs;
 using System;
 using System.Collections.Generic;

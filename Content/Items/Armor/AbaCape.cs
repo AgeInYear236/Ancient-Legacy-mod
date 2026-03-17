@@ -16,7 +16,7 @@ namespace AncientLegacyMod.Content.Items.Armor
             Item.accessory = true;
             Item.vanity = true;
             Item.rare = ItemRarityID.Purple;
-            Item.value = Item.sellPrice(0, 2, 0, 0);
+            Item.value = Item.sellPrice(gold: 2);
         }
 
         public override void UpdateVanity(Player player)

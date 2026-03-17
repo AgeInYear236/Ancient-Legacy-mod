@@ -31,7 +31,7 @@ namespace AncientLegacyMod.Content.Items.Accessories
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.LuckPotionGreater, 10);
-            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 12);
+            recipe.AddIngredient(ModContent.ItemType<Madstone>(), 200);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 

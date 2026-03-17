@@ -22,7 +22,7 @@ namespace AncientLegacyMod.Content.Items.Weapons
             Item.shootSpeed = 15f;
             Item.UseSound = SoundID.Item1;
             Item.rare = ModContent.GetInstance<MeleeRarity2>().Type;
-            Item.value = Item.sellPrice(0, 5, 50, 0);
+            Item.value = Item.sellPrice(gold:5, silver:50);
             Item.DamageType = DamageClass.Melee;
         }
 

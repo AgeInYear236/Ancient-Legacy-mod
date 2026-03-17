@@ -21,7 +21,7 @@ namespace AncientLegacyMod.Content.Items.Accessories
             Item.height = 28;
             Item.accessory = true;
             Item.rare = ModContent.GetInstance<AccRarityPas>().Type;
-            Item.value = Item.sellPrice(0, 5, 0, 0);
+            Item.value = Item.sellPrice(gold: 3);
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
@@ -36,8 +36,8 @@ namespace AncientLegacyMod.Content.Items.Accessories
             recipe.AddIngredient(ModContent.ItemType<PoweredSteelBar>(), 12);
             recipe.AddIngredient(ModContent.ItemType<MagicEnergy>(), 8);
             recipe.AddIngredient(ModContent.ItemType<Madstone>(), 40);
-            recipe.AddIngredient(ItemID.SoulofNight, 6);
-            recipe.AddIngredient(ItemID.DarkShard, 1);
+            recipe.AddIngredient(ModContent.ItemType<VoidFragment>(), 5);
+            recipe.AddIngredient(ItemID.DarkShard, 2);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 

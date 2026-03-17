@@ -49,7 +49,7 @@ namespace AncientLegacyMod.Content.Items.Armor
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<PoweredSteelBar>(), 10);
             recipe.AddIngredient(ModContent.ItemType<UnstableComponent>(), 6);
-            recipe.AddIngredient(ModContent.ItemType<UnstableComponent>(), 8);
+            recipe.AddIngredient(ModContent.ItemType<VoidFragment>(), 8);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 

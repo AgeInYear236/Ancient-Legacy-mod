@@ -15,7 +15,7 @@ namespace AncientLegacyMod.Content.Items.Accessories
             Item.height = 24;
             Item.accessory = true;
             Item.rare = ModContent.GetInstance<MiscRarity>().Type;
-            Item.value = Item.sellPrice(0, 15, 0, 0);
+            Item.value = Item.sellPrice(gold: 5);
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)

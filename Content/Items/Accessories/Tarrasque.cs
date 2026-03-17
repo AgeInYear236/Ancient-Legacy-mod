@@ -34,8 +34,7 @@ namespace AncientLegacyMod.Content.Items.Accessories
             if (maxLife > 0)
             {
                 missingHealthPercent = 1f - (float)currentLife / maxLife;
-                player.lifeRegen = (int)(100 * missingHealthPercent);
-                Main.NewText(player.lifeRegen);
+                player.lifeRegen = (int)(80 * missingHealthPercent);
             }
             else
             {

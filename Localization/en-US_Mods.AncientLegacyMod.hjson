@@ -774,6 +774,7 @@ Items: {
 	Vessel: {
 		Tooltip:
 			'''
+			Aura accessory
 			Killing enemies trap their souls
 			Souls empower your attacks to heal 10 HP
 			'''
@@ -781,19 +782,91 @@ Items: {
 	}
 
 	Bottle: {
-		Tooltip: '''Death or Magic Mirror refresh charges
-					Inspired by: [c/FF00FF:Radikylitka]'''
+		Tooltip:
+			'''
+			Death or Magic Mirror refresh charges
+			Inspired by: [c/FF00FF:Radikylitka]
+			'''
 		DisplayName: Bottle
 	}
 
 	Tarrasque: {
-		Tooltip: '''+200 max HP
-					+20 armor
-					-25% damage
-					-15% critical strike chance
-					Increase health regeneration by percent of your missing health
-					'''
-		DisplayName: Сердце Тарраска
+		Tooltip:
+			'''
+			+200 max HP
+			+20 armor
+			-25% damage
+			-15% critical strike chance
+			Increase health regeneration by percent of your missing health
+			'''
+		DisplayName: Heart of Tarrasque
+	}
+
+	tileTestItem: {
+		Tooltip: ""
+		DisplayName: tile Test Item
+	}
+
+	Voidstone: {
+		Tooltip:
+			'''
+			Increase mana regeneration
+			+10% magic damage
+			'''
+		DisplayName: Voidstone
+	}
+
+	Flux: {
+		Tooltip: Your attacks can slow and confuse enemies
+		DisplayName: Flux
+	}
+
+	WeightedDice: {
+		DisplayName: Weighted Dice
+		Tooltip:
+			'''
+			Your attacks deal 10 more or 10 less damage
+			'Luck is just a well-calculated risk'
+			'''
+	}
+
+	Vambrace: {
+		DisplayName: Vambrace of Might
+		Tooltip:
+			'''
+			Right-click in inventory to switch forms
+			[c/FF0000:Strength:] +20 HP, +5 Defense
+			[c/00FF00:Agility:] +5% Damage, +10% Movement Speed
+			[c/0000FF:Intelligence:] +40 Mana, -10% Mana Cost
+			'''
+	}
+
+	Doubloon: {
+		DisplayName: Golden Doubloon
+		Tooltip:
+			'''
+			Equalizes maximum Health and Mana
+			Calculates the average value of both
+			'''
+	}
+
+	OutworldStaff: {
+		DisplayName: Outworld Staff
+		Tooltip:
+			'''
+			25% chance to release a shockwave when damaged
+			The shockwave knocks back all nearby enemies
+			'''
+	}
+
+	GiantRing: {
+		DisplayName: Giant Ring
+		Tooltip:
+			'''
+			+100 Max HP, +15 Defense and +25% Damage
+			-20% Attack Speed and -15% Movement Speed
+			'You feel the ground tremble beneath your feet'
+			'''
 	}
 }
 
@@ -1108,4 +1181,13 @@ Death: {
 Misc: {
 	Bottle: "Charges left: "
 	Vessel: "Souls left: "
+}
+
+Neutral: {
+	Vambrace: {
+		ModeText: State:
+		Mode0: Strength
+		Mode1: Agility
+		Mode2: Intelligence
+	}
 }
