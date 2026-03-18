@@ -13,7 +13,6 @@ namespace AncientLegacyMod.Content.Items.Neutrals.Tier5
 {
     public class GiantRing : ModItem
     {
-
         public override void SetDefaults()
         {
             Item.width = 32;

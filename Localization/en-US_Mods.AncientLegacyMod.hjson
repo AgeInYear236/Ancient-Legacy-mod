@@ -854,7 +854,7 @@ Items: {
 		DisplayName: Outworld Staff
 		Tooltip:
 			'''
-			25% chance to release a shockwave when damaged
+			10% chance to release a shockwave when damaged
 			The shockwave knocks back all nearby enemies
 			'''
 	}
@@ -866,6 +866,46 @@ Items: {
 			+100 Max HP, +15 Defense and +25% Damage
 			-20% Attack Speed and -15% Movement Speed
 			'You feel the ground tremble beneath your feet'
+			'''
+	}
+
+	LeatherBoots: {
+		DisplayName: Leather Boots
+		Tooltip: Slightly increases movement speed and jump height
+	}
+
+	PhaseBoots: {
+		DisplayName: Phase Boots
+		Tooltip: Grants +4 defense and significantly boosts mobility
+	}
+
+	TravelBoots: {
+		DisplayName: Boots of Travel
+		Tooltip:
+			'''
+			Grants incredible speed and jump height
+			Use Travel Boots to teleport home
+			'''
+	}
+
+	TranquilBoots: {
+		DisplayName: Tranquil Boots
+		Tooltip:
+			'''
+			Increases speed and significantly boosts life regeneration
+			Brings peace to a weary traveler
+			'''
+	}
+
+	PowerTreads: {
+		DisplayName: Power Treads
+		Tooltip:
+			'''
+			Versatile boots that adapt to the hero's needs
+			Right-click in inventory to change bonus
+			[c/FF0000:Strength:] +20 HP, +5 Defense
+			[c/00FF00:Agility:] +5% Damage, +10% Movement Speed
+			[c/0000FF:Intelligence:] +40 Mana, -10% Mana Cost
 			'''
 	}
 }
@@ -1168,6 +1208,7 @@ Keybinds: {
 	"Activate Chronosphere.DisplayName": Activate  Chronosphere
 	"Use Time Lapse.DisplayName": Use  Time  Lapse
 	"Use Remnant.DisplayName": Use  Remnant
+	"Use Travel Boots.DisplayName": Use  Travel  Boots
 }
 
 ChatMessages.ShopEntry: The shop has been updated!
@@ -1185,6 +1226,15 @@ Misc: {
 
 Neutral: {
 	Vambrace: {
+		ModeText: State:
+		Mode0: Strength
+		Mode1: Agility
+		Mode2: Intelligence
+	}
+}
+
+Boots: {
+	PT: {
 		ModeText: State:
 		Mode0: Strength
 		Mode1: Agility

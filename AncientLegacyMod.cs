@@ -24,6 +24,7 @@ namespace AncientLegacyMod
         public static ModKeybind chronoKeybind;
         public static ModKeybind timelapseKeybind;
         public static ModKeybind remnantKeybind;
+        public static ModKeybind travelKeybind;
 
 
         public override void Load()
@@ -37,6 +38,7 @@ namespace AncientLegacyMod
             chronoKeybind = KeybindLoader.RegisterKeybind(this, "Activate Chronosphere", "I");
             timelapseKeybind = KeybindLoader.RegisterKeybind(this, "Use Time Lapse", "U");
             remnantKeybind = KeybindLoader.RegisterKeybind(this, "Use Remnant", "Y");
+            travelKeybind = KeybindLoader.RegisterKeybind(this, "Use Travel Boots", "H");
 
         }
 
@@ -50,6 +52,7 @@ namespace AncientLegacyMod
             chronoKeybind = null;
             timelapseKeybind = null;
             remnantKeybind = null;
+            travelKeybind = null;
         }
 
         public override void PostSetupContent()

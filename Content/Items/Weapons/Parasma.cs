@@ -11,7 +11,7 @@ namespace AncientLegacyMod.Content.Items.Weapons
     {
         public override void SetDefaults()
         {
-            Item.damage = 38;
+            Item.damage = 10;
             Item.DamageType = DamageClass.Magic;
             Item.mana = 10;
             Item.width = 34;

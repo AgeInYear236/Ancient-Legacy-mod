@@ -8,7 +8,7 @@ using AncientLegacyMod.Common.Rarity;
 
 namespace AncientLegacyMod.Content.Items.Materials
 {
-    public   class IceShell : ModItem
+    public class IceShell : ModItem
     {
         public override void SetDefaults()
         {

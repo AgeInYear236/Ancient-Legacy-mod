@@ -46,6 +46,7 @@ namespace AncientLegacyMod.Content.NPCs
             var mars = new Item(ModContent.ItemType<MarsSpear>()) { shopCustomPrice = 3500, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
             var ls = new Item(ModContent.ItemType<LightningStrike>()) { shopCustomPrice = 7200, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
             var mine = new Item(ModContent.ItemType<TechiesMine>()) { shopCustomPrice = 7000, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
+            var par = new Item(ModContent.ItemType<Parasma>()) { shopCustomPrice = 4500, shopSpecialCurrency = AncientLegacyMod.goldCurrencyId };
 
 
             shop.Add(tango);
@@ -66,6 +67,7 @@ namespace AncientLegacyMod.Content.NPCs
             shop.Add(snap, Condition.Hardmode);
 
             shop.Add(sf, Condition.DownedQueenSlime);
+            shop.Add(par, Condition.DownedQueenSlime);
 
             shop.Add(axe2, Condition.DownedMechBossAny);
             shop.Add(pa, Condition.DownedMechBossAny);
