@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\build.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:build.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\ancientlegacymod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:ancientlegacymod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\common\\systems\\goldcurrencysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:common\\systems\\goldcurrencysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\items\\misc\\goldbag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\items\\misc\\goldbag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\npcs\\stashtradershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\npcs\\stashtradershop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|c:\\users\\vania\\documents\\my games\\terraria\\tmodloader\\modsources\\ancientlegacymod\\content\\items\\neutrals\\neutraldropsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CD26DC9-5D14-7CA1-9CB6-80286419F467}|AncientLegacyMod.csproj|solutionrelative:content\\items\\neutrals\\neutraldropsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,24 +42,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AncientLegacyMod.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\AncientLegacyMod.cs",
+              "RelativeDocumentMoniker": "AncientLegacyMod.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\AncientLegacyMod.cs",
+              "RelativeToolTip": "AncientLegacyMod.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAB/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:04:01.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoldBag.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Misc\\GoldBag.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Misc\\GoldBag.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Misc\\GoldBag.cs",
+              "RelativeToolTip": "Content\\Items\\Misc\\GoldBag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:03:28.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GoldCurrencySystem.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Common\\Systems\\GoldCurrencySystem.cs",
+              "RelativeDocumentMoniker": "Common\\Systems\\GoldCurrencySystem.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Common\\Systems\\GoldCurrencySystem.cs",
+              "RelativeToolTip": "Common\\Systems\\GoldCurrencySystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:03:26.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StashTraderShop.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\NPCs\\StashTraderShop.cs",
+              "RelativeDocumentMoniker": "Content\\NPCs\\StashTraderShop.cs",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\NPCs\\StashTraderShop.cs",
+              "RelativeToolTip": "Content\\NPCs\\StashTraderShop.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAFwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:01:13.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "build.txt",
+              "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\build.txt",
+              "RelativeDocumentMoniker": "build.txt",
+              "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\build.txt",
+              "RelativeToolTip": "build.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-18T21:09:40.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "NeutralDropSystem.cs",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Neutrals\\NeutralDropSystem.cs",
               "RelativeDocumentMoniker": "Content\\Items\\Neutrals\\NeutralDropSystem.cs",
               "ToolTip": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Content\\Items\\Neutrals\\NeutralDropSystem.cs",
               "RelativeToolTip": "Content\\Items\\Neutrals\\NeutralDropSystem.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAQwEwAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T15:48:12.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "en-US_Mods.AncientLegacyMod.hjson",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\en-US_Mods.AncientLegacyMod.hjson",
               "RelativeDocumentMoniker": "Localization\\en-US_Mods.AncientLegacyMod.hjson",
@@ -47,12 +132,11 @@
               "RelativeToolTip": "Localization\\en-US_Mods.AncientLegacyMod.hjson",
               "ViewState": "AgIAAHYDAAAAAAAAAAAAAIkDAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-08T20:07:11.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T20:07:11.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ru-RU_Mods.AncientLegacyMod.hjson",
               "DocumentMoniker": "C:\\Users\\vania\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\AncientLegacyMod\\Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
               "RelativeDocumentMoniker": "Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
@@ -60,8 +144,7 @@
               "RelativeToolTip": "Localization\\ru-RU_Mods.AncientLegacyMod.hjson",
               "ViewState": "AgIAAIUDAAAAAAAAAAAAAJcDAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-19T21:48:12.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T21:48:12.929Z"
             }
           ]
         }

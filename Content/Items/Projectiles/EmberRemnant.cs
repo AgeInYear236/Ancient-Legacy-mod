@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,6 +40,13 @@ namespace AncientLegacyMod.Content.Items.Projectiles
             {
                 Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.Firefly);
             }
+        }
+
+        public override bool PreDraw(ref Color lightColor)
+        {
+            SpriteEffects effects = Projectile.direction == -1 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+
+            return true;
         }
     }
 }

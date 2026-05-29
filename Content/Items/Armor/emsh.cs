@@ -85,17 +85,20 @@ namespace AncientLegacyMod.Content.Items.Armor
 
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
-
             if (hasSet && AncientLegacyMod.remnantKeybind.JustPressed)
             {
                 if (remnantCooldown > 0)
                 {
                     return;
                 }
+
                 if (remnantProjectileID == -1 || !Main.projectile[remnantProjectileID].active || Main.projectile[remnantProjectileID].type != ModContent.ProjectileType<Content.Items.Projectiles.EmberRemnant>())
                 {
-
                     remnantProjectileID = Projectile.NewProjectile(Player.GetSource_FromThis(), Player.Center, Vector2.Zero, ModContent.ProjectileType<Content.Items.Projectiles.EmberRemnant>(), 0, 0, Player.whoAmI);
+
+                    Projectile remnant = Main.projectile[remnantProjectileID];
+                    remnant.direction = Player.direction;
+                    remnant.spriteDirection = Player.direction;
 
                     Terraria.Audio.SoundEngine.PlaySound(SoundID.Item8, Player.Center);
                 }

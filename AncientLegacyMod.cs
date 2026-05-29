@@ -27,9 +27,11 @@ namespace AncientLegacyMod
         public static ModKeybind travelKeybind;
 
 
+
+
         public override void Load()
         {
-            goldCurrencyId = CustomCurrencyManager.RegisterCurrency(new GoldCurrencySystem(ModContent.ItemType<GoldBag>(), 999L));
+            goldCurrencyId = CustomCurrencyManager.RegisterCurrency(new GoldCurrencySystem(ModContent.ItemType<GoldBag>(), 9999L));
             armletKeybind = KeybindLoader.RegisterKeybind(this, "Toggle Armlet", "L");
             ta1Keybind = KeybindLoader.RegisterKeybind(this, "Activate Refraction", "K");
             ta2Keybind = KeybindLoader.RegisterKeybind(this, "Activate Meld", "J");
